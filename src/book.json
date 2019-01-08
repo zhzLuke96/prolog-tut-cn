@@ -1,0 +1,53 @@
+{
+    "title": "Prolog 教程",
+    "author": "lukr",
+    "language": "zh-hans",
+    "plugins": [
+        "-lunr",
+        "-search",
+        "search-pro",
+        "-highlight",
+        "prism",
+        "github",
+        "splitter",
+        "anchors",
+        "copy-code-button",
+        "anchor-navigation-ex",
+        "disqus",
+        "tbfed-pagefooter"
+    ],
+    "style": {
+        "website": "styles/website.css"
+    },
+    "pluginsConfig": {
+        "theme-default": {
+            "showLevel": true
+        },
+        "search-pro": {
+            "cutWordLib": "nodejieba"
+        },
+        "github": {
+            "url": "https://github.com/zhzLuke96/prolog-tut-cn"
+        },
+        "anchor-navigation-ex": {
+            "float": {
+                "showLevel": false,
+                "showLevelIcon": false,
+                "mode": "float",
+                "showGoTop": true,
+                "associatedWithSummary":true,
+                "level1Icon": "fa fa-hand-o-right",
+                "level2Icon": "fa fa-hand-o-right",
+                "level3Icon": "fa fa-hand-o-right"
+            }
+        },
+        "disqus": {
+            "shortName": "prolog-tut-cn"
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy zhzluker96 2019",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm"
+        }
+    }
+}

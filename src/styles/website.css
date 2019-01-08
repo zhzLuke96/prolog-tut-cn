@@ -1,0 +1,9 @@
+.page-inner{
+    padding-left: 3rem !important;
+}
+pre{
+    text-shadow: none !important;
+}
+.token.operator{
+    background: transparent !important;
+}

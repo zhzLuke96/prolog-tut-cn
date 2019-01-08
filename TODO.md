@@ -1,9 +1,6 @@
 # TODO
 todo list
 
-# gh-pages branch
-准备基于 mkdoc 或者 gitbook 做一个在线版本
-
 # Article retouching
 因为代码都是基于SWIPL的，需要修改和润色很多地方，同时也夹杂自己一些私货
 

@@ -10,10 +10,16 @@ prolog chinese tutorial.
 
 (古老的语言搭配小众的圈子，很无力的说...)
 
+# code 
+code中的代码都是基于`swipl`的
+
+为增加可读性，部分代码我会多写一份中文版本的
+
 # refer
 - [Prolog Tutorial Cn](https://oracle-abc.wikidot.com/prolog-tutorial-cn)
 - [中山大学人工智能 prolog 授课 ppt](#)
 - [prolog_tutorial J.R.Fisher](https://www.cpp.edu/~jrfisher/www/prolog_tutorial/)
+- [Prolog 入门](https://programmermagazine.github.io/201308/htm/article3.html)
 
 # LICENSE
 MIT
