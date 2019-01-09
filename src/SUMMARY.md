@@ -4,14 +4,14 @@
 
 ----
 
-## Prolog 简介
+## Quick Start
 * [What is Prolog](tut/chapter0.0.md)
 * [环境配置](tut/chapter0.1.md)
 * [动手试试](tut/chapter0.2.md)
 
 ----
 
-## 教程
+## 从零开始
 * [入门](tut/chapter1.md)
 * [事实](tut/chapter2.md)
 * [简单查询](tut/chapter3.md)
@@ -20,6 +20,9 @@
 * [小结](tut/chapter6.md)
 
 ----
+
+## Hello Prolog
+* [Hello world](hello-pl/c1.md)
 
 ## 庖丁解牛
 * [庖丁解牛](codeseen/README.md)

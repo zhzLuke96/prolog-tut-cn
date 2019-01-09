@@ -30,12 +30,12 @@
             "url": "https://github.com/zhzLuke96/prolog-tut-cn"
         },
         "anchor-navigation-ex": {
+            "showLevel": true,
+            "associatedWithSummary":false,
+            "mode": "float",
+            "showGoTop": true,
             "float": {
-                "showLevel": false,
-                "showLevelIcon": false,
-                "mode": "float",
-                "showGoTop": true,
-                "associatedWithSummary":true,
+                "showLevelIcon": true,
                 "level1Icon": "fa fa-hand-o-right",
                 "level2Icon": "fa fa-hand-o-right",
                 "level3Icon": "fa fa-hand-o-right"

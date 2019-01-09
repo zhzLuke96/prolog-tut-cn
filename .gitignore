@@ -56,3 +56,10 @@ typings/
  
 # dotenv environment variables file
 .env
+
+# win executable file
+*.exe
+*.out
+
+# local bash file
+*.sh
