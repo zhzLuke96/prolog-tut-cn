@@ -195,3 +195,30 @@ no 
 ```
 就可以开始调试你的程序了。
 
+### swipl debug
+> 上面所述的是vspl的用法，swipl略有不同<br>
+> 在swipl中，有更加强大的`guidebug`工具，非常好用。除了跟踪脚本运行还能监控stack（并且这个gui工具也是基于pl编写的！）<br>
+> 关于gui的就不谈了，官方文档更清晰，并且也不用太多说明<br>
+
+如果不想要`GUI`的跟踪输出，在swipl中需要这么用
+
+```
+?- visible(+all), leash(-exit).
+true.
+
+?- trace.
+true.
+
+[trace] ?-
+```
+
+> 在跟踪时按`h`显示帮助，不过一般的情况全程按`c(小写)`就够用了，毕竟还不是特别复杂的程序
+
+退出`trace`模式
+```
+[trace] ?- nodebug.
+true.
+
+?-
+```
+
