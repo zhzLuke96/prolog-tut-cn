@@ -1,3 +1,8 @@
+
+:-dynamic here/1.
+:-dynamic location/2.
+:-dynamic have/1.
+
 room(kitchen).
 room(office).
 room(hall).
@@ -73,6 +78,52 @@ look :-
     nl,
     list_connections(Place).
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% chapter 8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+goto(Place):- 
+    can_go(Place), 
+    move(Place), 
+    look.
+
+move(Place):- 
+    retract(here(_)), 
+    asserta(here(Place)).
+
+can_go(Place):- 
+    here(X), 
+    connect(X, Place). 
+can_go(_):- 
+    write('You can''t get there from here.'),
+    nl, fail.
+
+take(X):- 
+    can_take(X), 
+    take_object(X).
+
+can_take(Thing) :- 
+    here(Place), 
+    location(Thing, Place).
+can_take(Thing) :- 
+    write('There is no '), 
+    write(Thing), 
+    write(' here.'), 
+    nl, fail.
+
+take_object(X) :- 
+    retract(location(X,_)), 
+    asserta(have(X)),
+    write('taken'),
+    nl.
+
+drop(X):-
+    here(Place),
+    asserta(location(X,Place)), 
+    retract(have(X)),
+    write('dropped.'),
+    nl.
+
 /** <examples> Your example queries go here, e.g.
-?- X #> where_food(X,Y), write(X), write(" => "), write(Y), nl, fail.
+?- X #> take(apple).
 */

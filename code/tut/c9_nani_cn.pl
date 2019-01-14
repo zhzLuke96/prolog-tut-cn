@@ -1,4 +1,7 @@
 :- encoding(utf8).
+:-dynamic 我在/1.
+:-dynamic 存在/2.
+:-dynamic 拥有/1.
 
 房间( 厨房 ).
 房间( 办公室 ).
@@ -76,6 +79,67 @@
     nl,
     显示连接房间(Place).
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% chapter 8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+走到(Place):- 
+    可达(Place), 
+    移动(Place), 
+    环顾四周.
+
+移动(Place):- 
+    retract(我在(_)), 
+    asserta(我在(Place)).
+
+可达(Place):- 
+    我在(X), 
+    连接的(X, Place). 
+可达(_):- 
+    write('无法到那里.'),
+    nl, fail.
+
+拿起(X):- 
+    可拿起(X), 
+    拿起物体(X).
+
+可拿起(Thing) :- 
+    我在(Place), 
+    存在(Thing, Place).
+可拿起(Thing) :- 
+    write('这里没有 '), 
+    write(Thing), 
+    write(' .'), 
+    nl, fail.
+
+拿起物体(X) :- 
+    retract(存在(X,_)), 
+    asserta(拥有(X)),
+    write('拿起了.'),
+    nl.
+
+放下(X):-
+    我在(Place),
+    asserta(存在(X,Place)), 
+    retract(拥有(X)),
+    write('已放下.'),
+    nl.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% chapter 9
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+存在(信封, 桌子). 
+存在(邮票, 信封).
+存在(钥匙, 信封).
+
+包含(T1,T2) :-
+    存在(T1,T2). 
+
+包含(T1,T2) :- 
+    存在(X,T2), 
+    包含(T1,X). 
+
 /** <examples> Your example queries go here, e.g.
-?- X #> 环顾四周.
+?- X #> 拿起(苹果).
 */
