@@ -77,7 +77,7 @@ no 
 
 每一层还可以有`子目标`，理论上来讲，这种目标的嵌套可以是无穷的。但是由于计算机的硬件限制，`子目标`只可能有有限次嵌套。
 
-下图显示了这种目标嵌套的流程图，请你注意第一层的第三个目标是如何把控制权回溯到第二层的`子目标`中的。
+上图显示了这种目标嵌套的流程图，请你注意第一层的第三个目标是如何把控制权回溯到第二层的`子目标`中的。
 
 在这个例子中，第一层的中间的那个目标的结果依赖于第二层的目标的结果。此目标会把程序的控制权传给他的`子目标`。
 
@@ -206,7 +206,8 @@ Y2 = kitchen
 location(_01, kitchen), edible(_01).
 ```
 当内部变量取某值时，例如`'apple'`，`X1`和`X2`将同时绑定为此值，这是`Prolog`变量和其他语言的变量的基本的区别。如果你学过`C`语言，容易看出，实际上`X1`和`X2`都是指针变量，当它们没有绑定值时，它们的值为`NULL`，一旦绑定，它们就会指向某个具体的位置，上例中它们同时指向了`_01`这个变量，其实`_01`变量还是个指针，直到最后某个指针指向了具体的值，那么所有的指针变量就都被绑定成了此值。
-使用规则
+
+## 使用规则
 使用规则我们可以很容易的解决单向门的问题。我们可以再定义有两个子句的谓词来描述这种双向的联系。此谓词为`connect/2`。
 ```prolog
 connect(X,Y) :- 
@@ -265,7 +266,7 @@ list_things(Place) :- 
         tab(2),
         write(X),
         nl, fail. 
-        list_things(AnyPlace). 
+list_things(AnyPlace). 
 ```
 如上所示，加入`list_things(AnyPlace)`子句后就可以解决了，第一个`list_things/1`的子句把所有的物品列出，并且失败，而由于第二个子句永远是成功的，所以`list_things/1`也将是成功的。`AnyPlace`变量的值我们并不关心，所以我们可以使用无名变量‘`_`’来代替它。
 ```js
@@ -287,10 +288,10 @@ list_connections(_).
 我们来试试功能，
 ```js
 ?- list_connections(hall). 
-dining
-room
-office 
-yes
+        dining
+        room
+        office 
+true.
 ```
 终于可以来编写`look/0`了，
 ```prolog
@@ -309,16 +310,15 @@ look :-
 在我们定义的事实中有`here(kitchen).`它代表玩家所在的位置。以后我们将学习如何改变此事实。现在来试是功能吧，
 ```js
 ?- look.
-You are in the kitchen 
+You are in the kitchen
 You can see:
-apple 
-broccoli
-crackers 
+  apple
+  broccoli
+  crackers
 You can go to:
-office 
-cellar 
-dining 
-room 
-yes 
+  office
+  cellar
+  dining room
+true.
 ```
 好了到此，我们已经学会了`Prolog`的基本编程方法，下一章将总结一下，并再举几个例子，此后我们将进入较深的学习。

@@ -18,6 +18,7 @@
 * [混合查询](tut/chapter4.md)
 * [规则](tut/chapter5.md)
 * [小结](tut/chapter6.md)
+* [算术](tut/chapter7.md)
 
 ----
 
