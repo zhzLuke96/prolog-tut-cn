@@ -1,0 +1,1181 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>流程控制 · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter16.html" />
+    
+    
+    <link rel="prev" href="chapter14.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="chapter0.0.html">
+            
+                <a href="chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter0.1.html">
+            
+                <a href="chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter0.2.html">
+            
+                <a href="chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="chapter8.html">
+            
+                <a href="chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="chapter9.html">
+            
+                <a href="chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="chapter11.html">
+            
+                <a href="chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="chapter12.html">
+            
+                <a href="chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="chapter13.html">
+            
+                <a href="chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="chapter14.html">
+            
+                <a href="chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.15" data-path="chapter15.html">
+            
+                <a href="chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="chapter16.html">
+            
+                <a href="chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="chapter17.html">
+            
+                <a href="chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../hello-pl/c0.1.html">
+            
+                <a href="../hello-pl/c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../hello-pl/c0.2.html">
+            
+                <a href="../hello-pl/c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../hello-pl/c1.html">
+            
+                <a href="../hello-pl/c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../hello-pl/c2.html">
+            
+                <a href="../hello-pl/c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../hello-pl/c3.html">
+            
+                <a href="../hello-pl/c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../hello-pl/c4.html">
+            
+                <a href="../hello-pl/c4.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../hello-pl/c5.html">
+            
+                <a href="../hello-pl/c5.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../hello-pl/c6.html">
+            
+                <a href="../hello-pl/c6.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../hello-pl/c7.html">
+            
+                <a href="../hello-pl/c7.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../hello-pl/c8.html">
+            
+                <a href="../hello-pl/c8.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../hello-pl/c9.html">
+            
+                <a href="../hello-pl/c9.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    AI和专家系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../hello-pl/c10.html">
+            
+                <a href="../hello-pl/c10.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../hello-pl/c11.html">
+            
+                <a href="../hello-pl/c11.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../main/logic.html">
+            
+                <a href="../main/logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../main/turing.html">
+            
+                <a href="../main/turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../main/puzzles.html">
+            
+                <a href="../main/puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../main/AFTERME.html">
+            
+                <a href="../main/AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >流程控制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#&#x6D41;&#x7A0B;&#x63A7;&#x5236;"><b>1. </b>&#x6D41;&#x7A0B;&#x63A7;&#x5236;</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#&#x9012;&#x5F52;&#x5FAA;&#x73AF;"><b>2. </b>&#x9012;&#x5F52;&#x5FAA;&#x73AF;</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#&#x5C3E;&#x9012;&#x5F52;"><b>3. </b>&#x5C3E;&#x9012;&#x5F52;</a></li></ul></div><a href="#&#x6D41;&#x7A0B;&#x63A7;&#x5236;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6D41;&#x7A0B;&#x63A7;&#x5236;"><a name="&#x6D41;&#x7A0B;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x6D41;&#x7A0B;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6D41;&#x7A0B;&#x63A7;&#x5236;</h1>
+<p>&#x5728;&#x524D;&#x9762;&#x7684;&#x7AE0;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E86;&#x89E3;&#x4E86;Prolog&#x662F;&#x5982;&#x4F55;&#x89E3;&#x91CA;&#x76EE;&#x6807;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x901A;&#x8FC7;&#x5B9E;&#x4F8B;&#x8BF4;&#x660E;&#x4E86;Prolog&#x7684;&#x8FD0;&#x884C;&#x6D41;&#x7A0B;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E00;&#x7AE0;&#xFF0C;&#x7EE7;&#x7EED;&#x63A2;&#x7D22;Prolog&#x7684;&#x7A0B;&#x5E8F;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4ECB;&#x7ECD;&#x548C;&#x4E00;&#x822C;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#x76F8;&#x4F3C;&#x7684;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x3002;</p>
+<p>&#x524D;&#x9762;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x8C13;&#x8BCD;<code>fail</code>&#x548C;<code>write/1</code>&#x6765;&#x5217;&#x5370;&#x51FA;&#x6E38;&#x620F;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x7269;&#x54C1;&#x3002;&#x8FD9;&#x79CD;&#x6D41;&#x7A0B;&#x63A7;&#x5236;&#x7C7B;&#x4F3C;&#x4E8E;&#x4E00;&#x822C;&#x8BED;&#x8A00;&#x4E2D;<code>&#x201C;do&#xFF0C;while&#x201D;</code>&#x8BED;&#x53E5;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x4ECB;&#x7ECD;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x5931;&#x8D25;&#x6765;&#x5B8C;&#x6210;&#x76F8;&#x540C;&#x529F;&#x80FD;&#x7684;&#x5185;&#x90E8;&#x8C13;&#x8BCD;---<code>repeat/0</code>&#x3002;&#x5B83;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x65F6;&#x6C38;&#x8FDC;&#x6210;&#x529F;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x56DE;&#x6EAF;&#x65F6;&#x4E5F;&#x6C38;&#x8FDC;&#x6210;&#x529F;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x6D41;&#x7A0B;&#x4E0D;&#x53EF;&#x80FD;&#x56DE;&#x6EAF;&#x901A;&#x8FC7;<code>repeat/0</code>&#x3002;</p>
+<div align="center" style="align:center">
+    <img src="img/c16i1.png">
+</div>
+
+
+
+<p>&#x5982;&#x679C;&#x67D0;&#x4E2A;&#x5B50;&#x53E5;&#x4E2D;&#x6709;<code>repeat/0</code>&#xFF0C;&#x5E76;&#x4E14;&#x5176;&#x540E;&#x6709;<code>fail/0</code>&#x8C13;&#x8BCD;&#x51FA;&#x73B0;&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x6C38;&#x8FDC;&#x5FAA;&#x73AF;&#x4E0B;&#x53BB;&#x3002;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x6B7B;&#x5FAA;&#x73AF;&#x7684;Prolog&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5728;<code>repeat/0</code>&#x8C13;&#x8BCD;&#x540E;&#x9762;&#x52A0;&#x5165;&#x51E0;&#x4E2A;&#x4E2D;&#x95F4;&#x76EE;&#x6807;&#xFF0C;&#x5E76;&#x4E14;&#x6700;&#x540E;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x6D4B;&#x8BD5;&#x6761;&#x4EF6;&#x7ED3;&#x675F;&#xFF0C;&#x90A3;&#x4E48;&#x7A0B;&#x5E8F;&#x5C06;&#x4E00;&#x76F4;&#x5FAA;&#x73AF;&#x5230;&#x6761;&#x4EF6;&#x6EE1;&#x8DB3;&#x4E3A;&#x6B62;&#x3002;&#x8FD9;&#x76F8;&#x5F53;&#x4E8E;&#x5176;&#x5B83;&#x7A0B;&#x5E8F;&#x8BED;&#x8A00;&#x4E2D;&#x7684;<code>&#x201C;do until&#x201D;</code>&#x3002;&#x5728;&#x7F16;&#x5199;<code>&#x201C;&#x5BFB;&#x627E;Nani&#x201D;</code>&#x8FD9;&#x4E2A;&#x6E38;&#x620F;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x6B63;&#x597D;&#x9700;&#x8981;&#x8FD9;&#x79CD;&#x6D41;&#x7A0B;&#x6765;&#x7F16;&#x5199;&#x6700;&#x9AD8;&#x5C42;&#x7684;&#x547D;&#x4EE4;&#x5FAA;&#x73AF;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5148;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5B83;&#x53EA;&#x662F;&#x7B80;&#x5355;&#x7684;&#x8BFB;&#x5165;&#x547D;&#x4EE4;&#x5E76;&#x4E14;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x56DE;&#x663E;&#x51FA;&#x6765;&#xFF0C;&#x76F4;&#x5230;&#x7528;&#x6237;&#x8F93;&#x5165;&#x4E86;<code>end</code>&#x547D;&#x4EE4;&#x3002;&#x5185;&#x90E8;&#x8C13;&#x8BCD;<code>read/1</code>&#x53EF;&#x4EE5;&#x4ECE;&#x63A7;&#x5236;&#x53F0;&#x5BF9;&#x5165;&#x4E00;&#x6761;Prolog&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x6B64;&#x5B57;&#x7B26;&#x4E32;&#x5FC5;&#x987B;&#x4F7F;&#x7528;<code>&#x201C;.&#x201D;</code>&#x7ED3;&#x675F;&#xFF0C;&#x5C31;&#x50CF;&#x6240;&#x6709;&#x7684;Prolog&#x5B50;&#x53E5;&#x4E00;&#x6837;&#x3002;</p>
+<pre class="language-"><code class="lang-prolog">command_loop<span class="token operator">:-</span> 
+    repeat<span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;Enter command (end to exit): &apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">read</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token punctuation">,</span>
+    <span class="token variable">X</span> <span class="token operator">=</span> end<span class="token operator">.</span>
+</code></pre>
+<p>&#x6700;&#x540E;&#x9762;&#x7684;&#x90A3;&#x4E2A;&#x76EE;&#x6807;<code>x=end</code>&#x53EA;&#x6709;&#x5728;&#x7528;&#x6237;&#x8F93;&#x5165;<code>end</code>&#x65F6;&#x624D;&#x4F1A;&#x6210;&#x529F;&#xFF0C;&#x800C;<code>repeat/0</code>&#x5728;&#x56DE;&#x6EAF;&#x65F6;&#x5C06;&#x6C38;&#x8FDC;&#x6210;&#x529F;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#x5C06;&#x4F7F;&#x5F97;&#x4E2D;&#x95F4;&#x7684;&#x76EE;&#x6807;&#x80FD;&#x591F;&#x88AB;&#x91CD;&#x590D;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x5C31;&#x662F;&#x52A0;&#x5165;&#x4E2D;&#x95F4;&#x7684;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x90E8;&#x5206;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7B80;&#x5355;&#x7684;&#x56DE;&#x663E;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5148;&#x6765;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8C13;&#x8BCD;<code>do/1</code>&#xFF0C;&#x5B83;&#x7528;&#x6765;&#x6267;&#x884C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x8C13;&#x8BCD;&#x3002;&#x5728;&#x8BB8;&#x591A;&#x7A0B;&#x5E8F;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#x53EB;&#x505A;<code>&#x201C;do case&#x201D;</code>&#xFF0C;&#x800C;&#x5728;Prolog&#x4E2D;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x591A;&#x6761;&#x5B50;&#x53E5;&#x6765;&#x5B8C;&#x6210;&#x76F8;&#x540C;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;<code>do/1</code>&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>do/1</code>&#x6765;&#x5B9A;&#x4E49;&#x547D;&#x4EE4;&#x7684;&#x540C;&#x4E49;&#x8BCD;&#xFF0C;&#x4F8B;&#x5982;&#x73A9;&#x5BB6;&#x53EF;&#x4EE5;&#x8F93;&#x5165;<code>goto(X)</code>&#x6216;&#x8005;<code>go(X)</code>&#xFF0C;&#x8FD9;&#x90FD;&#x5C06;&#x8FD0;&#x884C;<code>goto(X)</code>&#x5B50;&#x53E5;&#x3002;</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">do</span><span class="token punctuation">(</span><span class="token function">goto</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">goto</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span><span class="token function">go</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">goto</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>inventory<span class="token punctuation">)</span><span class="token operator">:-</span>
+    inventory<span class="token punctuation">,</span><span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>look<span class="token punctuation">)</span><span class="token operator">:-</span>
+    look<span class="token punctuation">,</span><span class="token operator">!.</span>
+</code></pre>
+<p>&#x6B64;&#x5904;&#x7684;<code>cut</code>&#x6709;&#x4E24;&#x4E2A;&#x7528;&#x9014;&#x3002;&#x7B2C;&#x4E00;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x627E;&#x5230;&#x4E86;&#x4E00;&#x6761;&#x8BE5;&#x6267;&#x884C;&#x7684;do&#x5B50;&#x53E5;&#xFF0C;&#x5C31;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x53BB;&#x5BFB;&#x627E;&#x66F4;&#x591A;&#x7684;do&#x5B50;&#x53E5;&#x4E86;&#xFF1B;&#x7B2C;&#x4E8C;&#xFF0C;&#x5B83;&#x6709;&#x6548;&#x5730;&#x9632;&#x6B62;&#x4E86;&#x5728;&#x56DE;&#x6EAF;&#x65F6;&#x53C8;&#x91CD;&#x65B0;&#x8FD0;&#x884C;<code>read</code>&#x76EE;&#x6807;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x53E6;&#x5916;&#x7684;&#x51E0;&#x6761;<code>do/1</code>&#x7684;&#x5B50;&#x53E5;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;<code>do(end)</code>&#x5B50;&#x53E5;&#xFF0C;&#x90A3;&#x4E48;&#x6761;&#x4EF6;<code>X=end</code>&#x5C31;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x6210;&#x7ACB;&#xFF0C;&#x6240;&#x4EE5;<code>end</code>&#x662F;&#x7ED3;&#x675F;&#x6E38;&#x620F;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x6700;&#x540E;&#x4E00;&#x4E2A;<code>do/1</code>&#x5B50;&#x53E5;&#x8003;&#x8651;&#x4E0D;&#x5408;&#x6CD5;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">do</span><span class="token punctuation">(</span><span class="token function">take</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">take</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>end<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">do</span><span class="token punctuation">(</span><span class="token variable">_</span><span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;Invalid command&apos;</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x6B63;&#x5F0F;&#x7F16;&#x5199;<code>command_loop/0</code>&#x8C13;&#x8BCD;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x524D;&#x9762;&#x8BF4;&#x7F16;&#x5199;&#x7684;<code>puzzle/1</code>&#x548C;&#x672C;&#x7AE0;&#x4ECB;&#x7ECD;&#x7684;<code>do/1</code>&#x8C13;&#x8BCD;&#x6765;&#x5B8C;&#x6210;&#x547D;&#x4EE4;&#x7684;&#x89E3;&#x91CA;&#x5DE5;&#x4F5C;&#x3002;&#x5E76;&#x4E14;&#x6211;&#x4EEC;&#x5C06;&#x8003;&#x8651;&#x6E38;&#x620F;&#x7ED3;&#x675F;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6E38;&#x620F;&#x6709;&#x4E24;&#x79CD;&#x7ED3;&#x675F;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x73A9;&#x5BB6;&#x8F93;&#x5165;&#x4E86;<code>end</code>&#x547D;&#x4EE4;&#xFF0C;&#x6216;&#x8005;&#x73A9;&#x5BB6;&#x627E;&#x5230;&#x4E86;<code>Nani</code>&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8C13;&#x8BCD;<code>end_condition/1</code>&#x6765;&#x5B8C;&#x6210;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#x3002;</p>
+<pre class="language-"><code class="lang-prolog">command_loop<span class="token operator">:-</span> 
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;Welcome to Nani Search&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token punctuation">,</span>
+    repeat<span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;&gt;nani&gt; &apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">read</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">puzzle</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">do</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token punctuation">,</span>
+    <span class="token function">end_condition</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+    <span class="token function">end_condition</span><span class="token punctuation">(</span>end<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">end_condition</span><span class="token punctuation">(</span><span class="token variable">_</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">have</span><span class="token punctuation">(</span>nani<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;Congratulations&apos;</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h1 id="&#x9012;&#x5F52;&#x5FAA;&#x73AF;"><a name="&#x9012;&#x5F52;&#x5FAA;&#x73AF;" class="anchor-navigation-ex-anchor" href="#&#x9012;&#x5F52;&#x5FAA;&#x73AF;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x9012;&#x5F52;&#x5FAA;&#x73AF;</h1>
+<p>&#x5728;Prolog&#x7A0B;&#x5E8F;&#x4E2D;&#x4F7F;&#x7528;<code>assert</code>&#x548C;<code>retract</code>&#x8C13;&#x8BCD;&#x52A8;&#x6001;&#x5730;&#x6539;&#x53D8;&#x6570;&#x636E;&#x5E93;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4E0D;&#x662F;&#x7EAF;&#x903B;&#x8F91;&#x7A0B;&#x5E8F;&#x7684;&#x8BBE;&#x8BA1;&#x65B9;&#x6CD5;&#x3002;&#x5C31;&#x50CF;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x4E00;&#x6837;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x8C13;&#x8BCD;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E9B;&#x4E0D;&#x53EF;&#x9884;&#x6D4B;&#x7684;&#x95EE;&#x9898;&#x3002;&#x7531;&#x4E8E;&#x4F7F;&#x7528;&#x4E86;&#x8FD9;&#x79CD;&#x8C13;&#x8BCD;&#xFF0C;&#x53EF;&#x662F;&#x4F1A;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x4E2D;&#x4E24;&#x4E2A;&#x672C;&#x6765;&#x5E94;&#x8BE5;&#x72EC;&#x7ACB;&#x7684;&#x90E8;&#x5206;&#x4E92;&#x76F8;&#x5F71;&#x54CD;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;<code>puzzle(goto(cellar))</code>&#x7684;&#x7ED3;&#x679C;&#x4F9D;&#x8D56;&#x4E8E;<code>turned_on(flashlight)</code>&#x662F;&#x5426;&#x5B58;&#x5728;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#xFF0C;&#x800C;<code>turned_on(flashlight)</code>&#x662F;&#x4F7F;&#x7528;<code>turn_on</code>&#x8C13;&#x8BCD;&#x52A8;&#x6001;&#x5730;&#x52A0;&#x5165;&#x5230;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x3002;&#x6240;&#x4EE5;&#x5982;&#x679C;<code>turn_on/1</code>&#x4E2D;&#x95F4;&#x6709;&#x9519;&#x8BEF;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x76F4;&#x63A5;&#x5F71;&#x54CD;&#x5230;<code>puzzle</code>&#xFF0C;&#x8FD9;&#x4E2D;&#x7A0B;&#x5E8F;&#x4E4B;&#x95F4;&#x7684;&#x9690;&#x5F62;&#x8054;&#x7CFB;&#x6B63;&#x662F;&#x9020;&#x6210;&#x9519;&#x8BEF;&#x7684;&#x7F6A;&#x9B41;&#x7978;&#x9996;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x6539;&#x9020;&#x7A0B;&#x5E8F;&#xFF0C;&#x53EA;&#x4F7F;&#x7528;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x4FE1;&#x606F;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5168;&#x5C40;&#x6570;&#x636E;&#x3002;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x60F3;&#x8C61;&#x6210;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x3002;</p>
+<p>&#x5728;&#x672C;&#x6E38;&#x620F;&#x4E2D;&#xFF0C;&#x6E38;&#x620F;&#x7684;&#x72B6;&#x6001;&#x662F;&#x4F7F;&#x7528;<code>location/2</code>&#x3001;<code>here/1</code>&#x3001;<code>have/1</code>&#x4EE5;&#x53CA;<code>turned_on/1(turned_off/1)</code>&#x6765;&#x5B9A;&#x4E49;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x8C13;&#x8BCD;&#x5B9A;&#x4E49;&#x6E38;&#x620F;&#x7684;&#x521D;&#x59CB;&#x72B6;&#x6001;&#xFF0C;&#x5176;&#x540E;&#x73A9;&#x5BB6;&#x7684;&#x64CD;&#x4F5C;&#x5C06;&#x4F7F;&#x7528;<code>assert</code>&#x548C;<code>retract</code>&#x52A8;&#x6001;&#x5730;&#x6539;&#x53D8;&#x8FD9;&#x4E9B;&#x72B6;&#x6001;&#xFF0C;&#x76F4;&#x5230;&#x6700;&#x540E;&#x8FBE;&#x5230;&#x4E86;<code>have(nani)</code>&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x7ED3;&#x6784;&#x6765;&#x50A8;&#x5B58;&#x6E38;&#x620F;&#x7684;&#x72B6;&#x6001;&#x6765;&#x5B8C;&#x6210;&#x76F8;&#x540C;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6E38;&#x620F;&#x7684;&#x547D;&#x4EE4;&#x5C06;&#x628A;&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#x5F53;&#x4F5C;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x52A8;&#x6001;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x903B;&#x8F91;&#x53D8;&#x91CF;&#x662F;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;&#x8D4B;&#x503C;&#x6765;&#x6539;&#x53D8;&#x5B83;&#x4EEC;&#x7684;&#x503C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6240;&#x6709;&#x7684;&#x547D;&#x4EE4;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x65E7;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x5B9E;&#x884C;&#x7684;&#x72B6;&#x6001;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x9762;&#x7684;<code>repeat-fail</code>&#x5FAA;&#x73AF;&#x7ED3;&#x6784;&#x65E0;&#x6CD5;&#x5B8C;&#x6210;&#x53C2;&#x6570;&#x7684;&#x4F20;&#x9012;&#x8FC7;&#x7A0B;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x5C31;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x7A0B;&#x5E8F;&#x628A;&#x72B6;&#x6001;&#x4F20;&#x7ED9;&#x5B83;&#x81EA;&#x5DF1;&#xFF0C;&#x800C;&#x8FB9;&#x754C;&#x6761;&#x4EF6;&#x5219;&#x662F;&#x5230;&#x8FBE;&#x4E86;&#x6E38;&#x620F;&#x7684;&#x6700;&#x7EC8;&#x72B6;&#x6001;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x7A0B;&#x5E8F;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x7F16;&#x5236;&#x800C;&#x6210;&#x7684;&#x3002;</p>
+<p>&#x6E38;&#x620F;&#x7684;&#x72B6;&#x6001;&#x4F7F;&#x7528;&#x5217;&#x8868;&#x50A8;&#x5B58;&#xFF0C;&#x5217;&#x8868;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x524D;&#x9762;&#x6240;&#x5B9A;&#x4E49;&#x7684;&#x72B6;&#x6001;&#x8C13;&#x8BCD;&#xFF0C;&#x8BF7;&#x770B;<code>initial_state/1</code>&#x8C13;&#x8BCD;&#x3002;&#x800C;&#x6BCF;&#x4E2A;&#x547D;&#x4EE4;&#x90FD;&#x8981;&#x5BF9;&#x8FD9;&#x4E2A;&#x5217;&#x8868;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x8C13;&#x8BCD;<code>get_state/3</code>,<code>add_state/4</code>, &#x548C;<code>del_state/4</code>&#x5C31;&#x662F;&#x5B8C;&#x6210;&#x8FD9;&#x4E2A;&#x4EFB;&#x52A1;&#x7684;&#xFF0C;&#x5B83;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x64CD;&#x4F5C;&#x72B6;&#x6001;&#x5217;&#x8868;&#x7684;&#x65B9;&#x6CD5;&#x3002; </p>
+<p>&#x8FD9;&#x79CD;Prolog&#x7A0B;&#x5E8F;&#x5C31;&#x662F;&#x7EAF;&#x903B;&#x8F91;&#x7684;&#xFF0C;&#x5B83;&#x5B8C;&#x5168;&#x907F;&#x514D;&#x7684;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x6570;&#x636E;&#x7684;&#x9EBB;&#x70E6;&#x3002;&#x4F46;&#x662F;&#x5B83;&#x9700;&#x8981;&#x66F4;&#x590D;&#x6742;&#x7684;&#x8C13;&#x8BCD;&#x6765;&#x64CD;&#x4F5C;&#x53C2;&#x6570;&#x4E2D;&#x7684;&#x72B6;&#x6001;&#x3002;&#x800C;&#x5217;&#x8868;&#x64CD;&#x4F5C;&#x4E0E;&#x9012;&#x5F52;&#x7A0B;&#x5E8F;&#x5219;&#x662F;&#x6700;&#x96BE;&#x8C03;&#x8BD5;&#x7684;&#x4E86;&#x3002;&#x81F3;&#x4E8E;&#x4F7F;&#x7528;&#x54EA;&#x79CD;&#x65B9;&#x6CD5;&#x5C31;&#x8981;&#x6709;&#x4F60;&#x51B3;&#x5B9A;&#x4E86;&#x3002;</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">% a nonassertive version of nani search </span>
+nani <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;Welcome to Nani Search&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span>
+    <span class="token function">initial_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">control_loop</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">control_loop</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">end_condition</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">control_loop</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    repeat<span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;&gt; &apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">read</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">constraint</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">do</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">NewState</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">control_loop</span><span class="token punctuation">(</span><span class="token variable">NewState</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% initial dynamic state </span>
+<span class="token function">initial_state</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token function">here</span><span class="token punctuation">(</span>kitchen<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">have</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">location</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+        kitchen<span class="token operator">/</span>apple<span class="token punctuation">,</span>
+        kitchen<span class="token operator">/</span>broccoli<span class="token punctuation">,</span>
+        office<span class="token operator">/</span>desk<span class="token punctuation">,</span>
+        office<span class="token operator">/</span>flashlight<span class="token punctuation">,</span>
+        cellar<span class="token operator">/</span>nani <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">status</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    flashlight<span class="token operator">/</span>off<span class="token punctuation">,</span>
+    game<span class="token operator">/</span>on<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% static state </span>
+<span class="token function">rooms</span><span class="token punctuation">(</span><span class="token punctuation">[</span>office<span class="token punctuation">,</span> kitchen<span class="token punctuation">,</span> cellar<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">doors</span><span class="token punctuation">(</span><span class="token punctuation">[</span>office<span class="token operator">/</span>kitchen<span class="token punctuation">,</span> cellar<span class="token operator">/</span>kitchen<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">connect</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span><span class="token variable">Y</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">doors</span><span class="token punctuation">(</span><span class="token variable">DoorList</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token operator">/</span><span class="token variable">Y</span><span class="token punctuation">,</span> <span class="token variable">DoorList</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">connect</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span><span class="token variable">Y</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">doors</span><span class="token punctuation">(</span><span class="token variable">DoorList</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token variable">Y</span><span class="token operator">/</span><span class="token variable">X</span><span class="token punctuation">,</span> <span class="token variable">DoorList</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% list utilities </span>
+<span class="token function">member</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token variable">X</span><span class="token operator">|</span><span class="token variable">Y</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">member</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token variable">Y</span><span class="token operator">|</span><span class="token variable">Z</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span><span class="token variable">Z</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">delete</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">delete</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token variable">X</span><span class="token operator">|</span><span class="token variable">T</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token variable">T</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">delete</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token variable">H</span><span class="token operator">|</span><span class="token variable">T</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token variable">H</span><span class="token operator">|</span><span class="token variable">Z</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">delete</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span> <span class="token variable">T</span><span class="token punctuation">,</span> <span class="token variable">Z</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% state manipulation utilities </span>
+<span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> here<span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token function">here</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">State</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> have<span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token function">have</span><span class="token punctuation">(</span><span class="token variable">Haves</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">State</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span> <span class="token variable">Haves</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> location<span class="token punctuation">,</span> <span class="token variable">Loc</span><span class="token operator">/</span><span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token function">location</span><span class="token punctuation">(</span><span class="token variable">Locs</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">State</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token variable">Loc</span><span class="token operator">/</span><span class="token variable">X</span><span class="token punctuation">,</span> <span class="token variable">Locs</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> status<span class="token punctuation">,</span> <span class="token variable">Thing</span><span class="token operator">/</span><span class="token variable">Stat</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token variable">Stats</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">State</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token variable">Thing</span><span class="token operator">/</span><span class="token variable">Stat</span><span class="token punctuation">,</span> <span class="token variable">Stats</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">del_state</span><span class="token punctuation">(</span><span class="token variable">OldState</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">location</span><span class="token punctuation">(</span><span class="token variable">NewLocs</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token variable">Temp</span><span class="token punctuation">]</span><span class="token punctuation">,</span> location<span class="token punctuation">,</span> <span class="token variable">Loc</span><span class="token operator">/</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">delete</span><span class="token punctuation">(</span><span class="token function">location</span><span class="token punctuation">(</span><span class="token variable">Locs</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">OldState</span><span class="token punctuation">,</span> <span class="token variable">Temp</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">delete</span><span class="token punctuation">(</span><span class="token variable">Loc</span><span class="token operator">/</span><span class="token variable">X</span><span class="token punctuation">,</span> <span class="token variable">Locs</span><span class="token punctuation">,</span> <span class="token variable">NewLocs</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">add_state</span><span class="token punctuation">(</span><span class="token variable">OldState</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">here</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">|</span><span class="token variable">Temp</span><span class="token punctuation">]</span><span class="token punctuation">,</span> here<span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">delete</span><span class="token punctuation">(</span><span class="token function">here</span><span class="token punctuation">(</span><span class="token variable">_</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">OldState</span><span class="token punctuation">,</span> <span class="token variable">Temp</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">add_state</span><span class="token punctuation">(</span><span class="token variable">OldState</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">have</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token variable">X</span><span class="token operator">|</span><span class="token variable">Haves</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">|</span><span class="token variable">Temp</span><span class="token punctuation">]</span><span class="token punctuation">,</span> have<span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">delete</span><span class="token punctuation">(</span><span class="token function">have</span><span class="token punctuation">(</span><span class="token variable">Haves</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">OldState</span><span class="token punctuation">,</span> <span class="token variable">Temp</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">add_state</span><span class="token punctuation">(</span><span class="token variable">OldState</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token variable">Thing</span><span class="token operator">/</span><span class="token variable">Stat</span><span class="token operator">|</span><span class="token variable">TempStats</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">|</span><span class="token variable">Temp</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    status<span class="token punctuation">,</span> <span class="token variable">Thing</span><span class="token operator">/</span><span class="token variable">Stat</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+<span class="token function">delete</span><span class="token punctuation">(</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token variable">Stats</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token variable">OldState</span><span class="token punctuation">,</span> <span class="token variable">Temp</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token function">delete</span><span class="token punctuation">(</span><span class="token variable">Thing</span><span class="token operator">/</span><span class="token variable">_</span><span class="token punctuation">,</span> <span class="token variable">Stats</span><span class="token punctuation">,</span> <span class="token variable">TempStats</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% end condition </span>
+<span class="token function">end_condition</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> have<span class="token punctuation">,</span> nani<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;You win&apos;</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">end_condition</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> status<span class="token punctuation">,</span> game<span class="token operator">/</span>off<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;quitter&apos;</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% constraints and puzzles together </span>
+<span class="token function">constraint</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token function">goto</span><span class="token punctuation">(</span>cellar<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token operator">!</span><span class="token punctuation">,</span> <span class="token function">can_go_cellar</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">constraint</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token function">goto</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token operator">!</span><span class="token punctuation">,</span> <span class="token function">can_go</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">constraint</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token function">take</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token operator">!</span><span class="token punctuation">,</span> <span class="token function">can_take</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">constraint</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token function">turn_on</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token operator">!</span><span class="token punctuation">,</span> <span class="token function">can_turn_on</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">constraint</span><span class="token punctuation">(</span><span class="token variable">_</span><span class="token punctuation">,</span> <span class="token variable">_</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">can_go</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span><span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> here<span class="token punctuation">,</span> <span class="token variable">H</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+<span class="token function">connect</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span><span class="token variable">H</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">can_go</span><span class="token punctuation">(</span><span class="token variable">_</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;You can&apos;&apos;t get there from here&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span> fail<span class="token operator">.</span>
+<span class="token function">can_go_cellar</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">can_go</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> cellar<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token operator">!</span><span class="token punctuation">,</span> <span class="token function">cellar_puzzle</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">cellar_puzzle</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> have<span class="token punctuation">,</span> flashlight<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> status<span class="token punctuation">,</span> flashlight<span class="token operator">/</span>on<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">cellar_puzzle</span><span class="token punctuation">(</span><span class="token variable">_</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;It&apos;&apos;s dark in the cellar&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span> fail<span class="token operator">.</span>
+
+<span class="token function">can_take</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> here<span class="token punctuation">,</span> <span class="token variable">H</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> location<span class="token punctuation">,</span> <span class="token variable">H</span><span class="token operator">/</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">can_take</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;it is not here&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span> fail<span class="token operator">.</span>
+
+<span class="token function">can_turn_on</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> have<span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">can_turn_on</span><span class="token punctuation">(</span><span class="token variable">_</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;You don&apos;&apos;t have it&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span> fail<span class="token operator">.</span>
+
+<span class="token comment">% commands </span>
+<span class="token function">do</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> <span class="token function">goto</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">goto</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> <span class="token function">take</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">take</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> <span class="token function">turn_on</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">turn_on</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">State</span><span class="token punctuation">,</span> look<span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">look</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> quit<span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">quit</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">do</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">_</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;illegal command&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token operator">.</span>
+
+<span class="token function">look</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> here<span class="token punctuation">,</span> <span class="token variable">H</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">&apos;You are in &apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token variable">H</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span>
+    <span class="token function">list_things</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">H</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token operator">.</span>
+
+<span class="token function">list_things</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> <span class="token variable">H</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">State</span><span class="token punctuation">,</span> location<span class="token punctuation">,</span> <span class="token variable">H</span><span class="token operator">/</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">tab</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    fail<span class="token operator">.</span>
+<span class="token function">list_things</span><span class="token punctuation">(</span><span class="token variable">_</span><span class="token punctuation">,</span> <span class="token variable">_</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">goto</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">add_state</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> here<span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">look</span><span class="token punctuation">(</span><span class="token variable">New</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">take</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> here<span class="token punctuation">,</span> <span class="token variable">H</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">del_state</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">Temp</span><span class="token punctuation">,</span> location<span class="token punctuation">,</span> <span class="token variable">H</span><span class="token operator">/</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">add_state</span><span class="token punctuation">(</span><span class="token variable">Temp</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> have<span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">turn_on</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">add_state</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> status<span class="token punctuation">,</span> <span class="token variable">X</span><span class="token operator">/</span>on<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">quit</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">add_state</span><span class="token punctuation">(</span><span class="token variable">Old</span><span class="token punctuation">,</span> <span class="token variable">New</span><span class="token punctuation">,</span> status<span class="token punctuation">,</span> game<span class="token operator">/</span>off<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x9012;&#x5F52;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x5B8C;&#x6210;&#x4EFB;&#x52A1;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x9700;&#x8981;&#x8003;&#x8651;&#x3002;Prolog&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5806;&#x6808;&#x6765;&#x50A8;&#x5B58;&#x9012;&#x5F52;&#x7684;&#x4E00;&#x4E9B;&#x4E2D;&#x95F4;&#x4FE1;&#x606F;&#xFF0C;&#x5F53;&#x9012;&#x5F52;&#x6DF1;&#x5165;&#x4E0B;&#x53BB;&#x65F6;&#xFF0C;&#x5806;&#x6808;&#x4F1A;&#x8D8A;&#x6765;&#x8D8A;&#x5927;&#x3002;&#x5728;&#x672C;&#x6E38;&#x620F;&#x4E2D;&#xFF0C;&#x7531;&#x4E8E;&#x53C2;&#x6570;&#x8F83;&#x4E3A;&#x590D;&#x6742;&#xFF0C;&#x5806;&#x6808;&#x662F;&#x5F88;&#x5BB9;&#x6613;&#x6EA2;&#x51FA;&#x7684;&#x3002;</p>
+<p>&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;Prolog&#x5BF9;&#x4E8E;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x9012;&#x5F52;&#x6709;&#x4F18;&#x5316;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h1 id="&#x5C3E;&#x9012;&#x5F52;"><a name="&#x5C3E;&#x9012;&#x5F52;" class="anchor-navigation-ex-anchor" href="#&#x5C3E;&#x9012;&#x5F52;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x5C3E;&#x9012;&#x5F52;</h1>
+<p>&#x9012;&#x5F52;&#x6709;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x3002;&#x5728;&#x771F;&#x6B63;&#x7684;&#x9012;&#x5F52;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x5C42;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x4E0B;&#x4E00;&#x5C42;&#x8C03;&#x7528;&#x8FD4;&#x56DE;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;Prolog&#x5FC5;&#x987B;&#x5EFA;&#x7ACB;&#x5806;&#x6808;&#x6765;&#x50A8;&#x5B58;&#x6BCF;&#x4E00;&#x5C42;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x8FD9;&#x4E0E;&#x91CD;&#x590D;&#x64CD;&#x4F5C;&#x662F;&#x4E0D;&#x540C;&#x7684;&#xFF0C;&#x5728;&#x901A;&#x5E38;&#x7684;&#x8BED;&#x8A00;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x91CD;&#x590D;&#x64CD;&#x4F5C;&#x3002;&#x91CD;&#x590D;&#x64CD;&#x4F5C;&#x53EA;&#x9700;&#x8981;&#x628A;&#x4FE1;&#x606F;&#x4F20;&#x9012;&#x4E0B;&#x53BB;&#x5C31;&#x884C;&#x4E86;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x4FDD;&#x5B58;&#x6BCF;&#x4E00;&#x6B21;&#x8C03;&#x7528;&#x7684;&#x4FE1;&#x606F;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x6765;&#x5B9E;&#x73B0;&#x91CD;&#x590D;&#xFF0C;&#x8FD9;&#x79CD;&#x9012;&#x5F52;&#x5C31;&#x53EB;&#x505A;&#x5C3E;&#x9012;&#x5F52;&#x3002;&#x5B83;&#x7684;&#x901A;&#x5E38;&#x7684;&#x5F62;&#x5F0F;&#x662F;&#x9012;&#x5F52;&#x8BED;&#x53E5;&#x5728;&#x6700;&#x540E;&#xFF0C;&#x6BCF;&#x4E00;&#x5C42;&#x7684;&#x8BA1;&#x7B97;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x4E0B;&#x4E00;&#x5C42;&#x7684;&#x8FD4;&#x56DE;&#x4FE1;&#x606F;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x597D;&#x7684;Prolog&#x89E3;&#x91CA;&#x5668;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5806;&#x6808;&#x3002;</p>
+<p>&#x8BA1;&#x7B97;&#x9636;&#x4E58;&#x5C31;&#x5C5E;&#x4E8E;&#x5C3E;&#x9012;&#x5F52;&#x7C7B;&#x578B;&#x3002;&#x9996;&#x5148;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x901A;&#x5E38;&#x7684;&#x9012;&#x5F52;&#x5F62;&#x5F0F;&#x3002;&#x6CE8;&#x610F;&#x4ECE;&#x4E0B;&#x4E00;&#x5C42;&#x8FD4;&#x56DE;&#x7684;&#x53D8;&#x91CF;FF&#x7684;&#x503C;&#x88AB;&#x4F7F;&#x7528;&#x5230;&#x4E86;&#x4E0A;&#x4E00;&#x5C42;&#x3002;</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">factorial_1</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">factorial_1</span><span class="token punctuation">(</span><span class="token variable">N</span><span class="token punctuation">,</span><span class="token variable">F</span><span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token variable">N</span> <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token variable">NN</span> <span class="token operator">is</span> <span class="token variable">N</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token function">factorial_1</span><span class="token punctuation">(</span><span class="token variable">NN</span><span class="token punctuation">,</span><span class="token variable">FF</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token variable">F</span> <span class="token operator">is</span> <span class="token variable">N</span> <span class="token variable">FF</span><span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">factorial_1</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token variable">X</span> <span class="token operator">=</span> <span class="token number">120</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x53D8;&#x91CF;&#x6765;&#x50A8;&#x5B58;&#x524D;&#x9762;&#x8C03;&#x7528;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x628A;<code>factorial/3</code>&#x5199;&#x6210;&#x5C3E;&#x9012;&#x5F52;&#x7684;&#x5F62;&#x5F0F;&#x3002;&#x65B0;&#x7684;&#x53C2;&#x6570;&#x7684;&#x521D;&#x59CB;&#x503C;&#x4E3A;1&#x3002;&#x6BCF;&#x6B21;&#x9012;&#x5F52;&#x8C03;&#x7528;&#x5C06;&#x8BA1;&#x7B97;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x503C;&#xFF0C;&#x5F53;&#x5230;&#x8FBE;&#x4E86;&#x8FB9;&#x754C;&#x6761;&#x4EF6;&#xFF0C;&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x5C31;&#x7ED1;&#x5B9A;&#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">factorial_2</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token variable">F</span><span class="token punctuation">,</span><span class="token variable">F</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">factorial_2</span><span class="token punctuation">(</span><span class="token variable">N</span><span class="token punctuation">,</span><span class="token variable">T</span><span class="token punctuation">,</span><span class="token variable">F</span><span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token variable">N</span> <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token variable">TT</span> <span class="token operator">is</span> <span class="token variable">N</span> <span class="token variable">T</span><span class="token punctuation">,</span>
+    <span class="token variable">NN</span> <span class="token operator">is</span> <span class="token variable">N</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token function">factorial_2</span><span class="token punctuation">(</span><span class="token variable">NN</span><span class="token punctuation">,</span><span class="token variable">TT</span><span class="token punctuation">,</span><span class="token variable">F</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">factorial_2</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token variable">X</span> <span class="token operator">=</span> <span class="token number">120</span>
+</code></pre>
+<p>&#x5B83;&#x7684;&#x7ED3;&#x679C;&#x548C;&#x524D;&#x9762;&#x7684;&#x76F8;&#x540C;&#xFF0C;&#x4E0D;&#x8FC7;&#x7531;&#x4E8E;&#x4F7F;&#x7528;&#x4E86;&#x5C3E;&#x9012;&#x5F52;&#xFF0C;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5806;&#x6808;&#x6765;&#x50A8;&#x5B58;&#x4E2D;&#x95F4;&#x7684;&#x4FE1;&#x606F;&#x4E86;&#x3002;</p>
+<p>&#x628A;&#x5217;&#x8868;&#x7684;&#x5143;&#x7D20;&#x987A;&#x5E8F;&#x5012;&#x8FC7;&#x6765;&#x7684;&#x8C13;&#x8BCD;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5C3E;&#x9012;&#x5F52;&#x6765;&#x5B8C;&#x6210;&#x3002;</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">naive_reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">naive_reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token variable">H</span><span class="token operator">|</span><span class="token variable">T</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token variable">Rev</span><span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">naive_reverse</span><span class="token punctuation">(</span><span class="token variable">T</span><span class="token punctuation">,</span><span class="token variable">TR</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">append</span><span class="token punctuation">(</span><span class="token variable">TR</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token variable">H</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token variable">Rev</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">naive_reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span>ants<span class="token punctuation">,</span> mice<span class="token punctuation">,</span> zebras<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token variable">X</span> <span class="token operator">=</span> <span class="token punctuation">[</span>zebras<span class="token punctuation">,</span> mice<span class="token punctuation">,</span> ants<span class="token punctuation">]</span>
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x8C13;&#x8BCD;&#x5728;&#x903B;&#x8F91;&#x4E0A;&#x662F;&#x5B8C;&#x5168;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x4E0D;&#x8FC7;&#x5B83;&#x7684;&#x8FD0;&#x884C;&#x6548;&#x7387;&#x975E;&#x5E38;&#x4F4E;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x53EB;&#x505A;<code>&#x539F;&#x59CB;(naive)</code>&#x7684;&#x9012;&#x5F52;&#x3002;</p>
+<p>&#x5F53;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x50A8;&#x5B58;&#x90E8;&#x5206;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#x7684;&#x65B0;&#x7684;&#x53C2;&#x6570;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5C3E;&#x9012;&#x5F52;&#x6765;&#x91CD;&#x5199;&#x8FD9;&#x4E2A;&#x8C13;&#x8BCD;&#x3002;</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token variable">Rev</span><span class="token punctuation">,</span> <span class="token variable">Rev</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token variable">H</span><span class="token operator">|</span><span class="token variable">T</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token variable">Temp</span><span class="token punctuation">,</span> <span class="token variable">Rev</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">reverse</span><span class="token punctuation">(</span><span class="token variable">T</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token variable">H</span><span class="token operator">|</span><span class="token variable">Temp</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token variable">Rev</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span>ants<span class="token punctuation">,</span> mice<span class="token punctuation">,</span> zebras<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token variable">X</span> <span class="token operator">=</span> <span class="token punctuation">[</span>zebras<span class="token punctuation">,</span> mice<span class="token punctuation">,</span> ants<span class="token punctuation">]</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; zhzluke96 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-07-05 10:51
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter14.html" class="navigation navigation-prev " aria-label="Previous page: 截断！">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter16.html" class="navigation navigation-next " aria-label="Next page: 自然语言">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"流程控制","level":"3.15","depth":1,"next":{"title":"自然语言","level":"3.16","depth":1,"path":"tut/chapter16.md","ref":"tut/chapter16.md","articles":[]},"previous":{"title":"截断！","level":"3.14","depth":1,"path":"tut/chapter14.md","ref":"tut/chapter14.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"prism":{},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":true},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"tut/chapter15.md","mtime":"2020-07-05T10:51:23.165Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-05T10:52:24.521Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

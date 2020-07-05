@@ -1,0 +1,933 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>语法 · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="c1.html" />
+    
+    
+    <link rel="prev" href="c0.1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../tut/chapter0.0.html">
+            
+                <a href="../tut/chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../tut/chapter0.1.html">
+            
+                <a href="../tut/chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../tut/chapter0.2.html">
+            
+                <a href="../tut/chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../tut/chapter1.html">
+            
+                <a href="../tut/chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../tut/chapter2.html">
+            
+                <a href="../tut/chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../tut/chapter3.html">
+            
+                <a href="../tut/chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../tut/chapter4.html">
+            
+                <a href="../tut/chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../tut/chapter5.html">
+            
+                <a href="../tut/chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../tut/chapter6.html">
+            
+                <a href="../tut/chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../tut/chapter7.html">
+            
+                <a href="../tut/chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../tut/chapter8.html">
+            
+                <a href="../tut/chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../tut/chapter9.html">
+            
+                <a href="../tut/chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../tut/chapter10.html">
+            
+                <a href="../tut/chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../tut/chapter11.html">
+            
+                <a href="../tut/chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../tut/chapter12.html">
+            
+                <a href="../tut/chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../tut/chapter13.html">
+            
+                <a href="../tut/chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../tut/chapter14.html">
+            
+                <a href="../tut/chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="../tut/chapter15.html">
+            
+                <a href="../tut/chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="../tut/chapter16.html">
+            
+                <a href="../tut/chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="../tut/chapter17.html">
+            
+                <a href="../tut/chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="c0.1.html">
+            
+                <a href="c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="c0.2.html">
+            
+                <a href="c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="c1.html">
+            
+                <a href="c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="c2.html">
+            
+                <a href="c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="c3.html">
+            
+                <a href="c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="c4.html">
+            
+                <a href="c4.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="c5.html">
+            
+                <a href="c5.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="c6.html">
+            
+                <a href="c6.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="c7.html">
+            
+                <a href="c7.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="c8.html">
+            
+                <a href="c8.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="c9.html">
+            
+                <a href="c9.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    AI和专家系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="c10.html">
+            
+                <a href="c10.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="c11.html">
+            
+                <a href="c11.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../main/logic.html">
+            
+                <a href="../main/logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../main/turing.html">
+            
+                <a href="../main/turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../main/puzzles.html">
+            
+                <a href="../main/puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../main/AFTERME.html">
+            
+                <a href="../main/AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >语法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#prolog-&#x8BED;&#x6CD5;"><b>1. </b>Prolog &#x8BED;&#x6CD5;</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#&#x57FA;&#x672C;&#x8BED;&#x6CD5;"><b>2. </b>&#x57FA;&#x672C;&#x8BED;&#x6CD5;</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#&#x6570;&#x636E;&#x7C7B;&#x578B;"><b>3. </b>&#x6570;&#x636E;&#x7C7B;&#x578B;</a></li></ul></div><a href="#prolog-&#x8BED;&#x6CD5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="prolog-&#x8BED;&#x6CD5;"><a name="prolog-&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#prolog-&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Prolog &#x8BED;&#x6CD5;</h1>
+<p>&#x8BED;&#x6CD5;&#x8FD9;&#x4E2A;&#x8BCD;&#x4ECE;&#x53E3;&#x4E2D;&#x8BF4;&#x51FA;&#x6765;&#x6709;&#x70B9;&#x751F;&#x6DA9;&#x964C;&#x751F;&#xFF0C;&#x751A;&#x81F3;&#x4E0D;&#x65F6;&#x8BA9;&#x6211;&#x56DE;&#x5FC6;&#x8D77;&#x9AD8;&#x4E2D;&#x5728;&#x64CD;&#x573A;&#x80CC;3500&#x4E2A;&#x82F1;&#x8BED;&#x5355;&#x8BCD;&#x7684;&#x65E5;&#x5B50;&#x3002;</p>
+<p>&#x8981;&#x662F;&#x4F60;&#x4E5F;&#x8FD9;&#x4E48;&#x60F3;&#xFF0C;&#x5927;&#x53EF;&#x653E;&#x8F7B;&#x677E;&#xFF0C;&#x4E0B;&#x9762;&#x6CA1;&#x6709;&#x90A3;&#x4E9B;&#x6709;&#x7684;&#x6CA1;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x76F4;&#x51FB;&#x4E3B;&#x9898;&#xFF0C;&#x5C31;&#x770B;&#x770B;&#x8FD9;&#x4E2A;prolog&#x7A0B;&#x5E8F;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x5199;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x5747;&#x662F;&#x57FA;&#x4E8E;swipl&#x98CE;&#x683C;&#x7684;&#x4EE3;&#x7801;&#x3002;swipl&#x662F;prolog&#x65B9;&#x8A00;&#x7684;&#x4E00;&#x652F;&#xFF0C;&#x6BD4;&#x8F83;&#x53CB;&#x597D;&#x9664;&#x4E86;&#x57FA;&#x672C;&#x7684;prolog&#x8C13;&#x8BCD;&#x6F14;&#x7ECE;&#xFF0C;&#x8FD8;&#x7701;&#x53BB;&#x4E86;&#x5F88;&#x591A;&#x5570;&#x55E6;&#x7684;&#x5B9A;&#x4E49;&#x89C4;&#x8303;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x6709;&#x4E0D;&#x5C11;&#x597D;&#x7528;&#x7684;&#x5E93;</p>
+</blockquote>
+<p>refer: <a href="https://en.wikipedia.org/wiki/Prolog" target="_blank">wikipedia</a></p>
+<h1 id="&#x57FA;&#x672C;&#x8BED;&#x6CD5;"><a name="&#x57FA;&#x672C;&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x57FA;&#x672C;&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x57FA;&#x672C;&#x8BED;&#x6CD5;</h1>
+<pre class="language-"><code class="lang-prolog">&#x76F8;&#x7231;<span class="token punctuation">(</span>&#x5F20;&#x5B66;&#x53CB;<span class="token punctuation">,</span>&#x738B;&#x83F2;<span class="token punctuation">)</span><span class="token operator">.</span>
+&#x76F8;&#x7231;<span class="token punctuation">(</span>&#x5F20;&#x5B66;&#x53CB;<span class="token punctuation">,</span>&#x5468;&#x6167;&#x654F;<span class="token punctuation">)</span><span class="token operator">.</span>
+&#x76F8;&#x7231;<span class="token punctuation">(</span>&#x738B;&#x83F2;<span class="token punctuation">,</span>&#x8C22;&#x9706;&#x950B;<span class="token punctuation">)</span><span class="token operator">.</span>
+&#x76F8;&#x7231;<span class="token punctuation">(</span>&#x5468;&#x6167;&#x654F;<span class="token punctuation">,</span>&#x5F20;&#x5B66;&#x53CB;<span class="token punctuation">)</span><span class="token operator">.</span>
+&#x76F8;&#x7231;<span class="token punctuation">(</span>&#x8C22;&#x9706;&#x950B;<span class="token punctuation">,</span>&#x738B;&#x83F2;<span class="token punctuation">)</span><span class="token operator">.</span>
+&#x76F8;&#x7231;<span class="token punctuation">(</span>&#x8C22;&#x9706;&#x950B;<span class="token punctuation">,</span>&#x5468;&#x6167;&#x654F;<span class="token punctuation">)</span><span class="token operator">.</span>
+&#x76F8;&#x7231;<span class="token punctuation">(</span>&#x5218;&#x5FB7;&#x534E;<span class="token punctuation">,</span>&#x5468;&#x6167;&#x654F;<span class="token punctuation">)</span><span class="token operator">.</span>
+
+&#x7231;&#x4EBA;<span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span><span class="token variable">Y</span><span class="token punctuation">)</span><span class="token operator">:-</span> 
+    &#x76F8;&#x7231;<span class="token punctuation">(</span><span class="token variable">X</span><span class="token punctuation">,</span><span class="token variable">Y</span><span class="token punctuation">)</span><span class="token punctuation">,</span>&#x76F8;&#x7231;<span class="token punctuation">(</span><span class="token variable">Y</span><span class="token punctuation">,</span><span class="token variable">X</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>&#x629B;&#x5F00;&#x5B9A;&#x4E49;&#x548C;&#x66F4;&#x9AD8;&#x9636;&#x7684;&#x7528;&#x6CD5;&#xFF0C;prolog&#x7A0B;&#x5E8F;&#x5C31;&#x53EA;&#x6709;&#x4E24;&#x4E2A;&#x90E8;&#x5206;:</p>
+<ul>
+<li>&#x4E8B;&#x5B9E; Facts</li>
+<li>&#x89C4;&#x5219; Rules</li>
+</ul>
+<blockquote>
+<p>&#x5728;&#x4E4B;&#x540E;&#x7684;&#x5B66;&#x4E60;&#x4E2D;&#xFF0C;&#x4F60;&#x80AF;&#x5B9A;&#x4F1A;&#x6162;&#x6162;&#x89C9;&#x5BDF;&#x5230;&#x4E00;&#x4E2A;&#x5173;&#x4E8E;prolog&#x7684;&#x4E8B;&#x5B9E; <br>
+<code>&#x4E8B;&#x5B9E;&#x5373;&#x89C4;&#x5219;&#xFF0C;&#x89C4;&#x5219;&#x4EA6;&#x4E8B;&#x5B9E;</code> <br>
+&#x8FD9;&#x91CC;&#x5206;&#x5F00;&#x89E3;&#x91CA;&#x662F;&#x4E3A;&#x4E86;&#x7B26;&#x5408;&#x6B63;&#x5E38;&#x903B;&#x8F91;&#xFF0C;&#x66F4;&#x597D;&#x7406;&#x89E3; <br>
+&#xFF08;&#x5F53;&#x7136;&#x5728; prolog &#x4E2D;&#x4E8B;&#x5B9E;&#x53EF;&#x4EE5;&#x770B;&#x505A;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x89C4;&#x5219;&#x7684;<code>&#x8BED;&#x6CD5;&#x7CD6;</code>&#xFF09;</p>
+</blockquote>
+<h1 id="&#x6570;&#x636E;&#x7C7B;&#x578B;"><a name="&#x6570;&#x636E;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x6570;&#x636E;&#x7C7B;&#x578B;</h1>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; zhzluke96 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-07-05 10:51
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="c0.1.html" class="navigation navigation-prev " aria-label="Previous page: VScode环境配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="c1.html" class="navigation navigation-next " aria-label="Next page: Hello world">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"语法","level":"4.2","depth":1,"next":{"title":"Hello world","level":"4.3","depth":1,"path":"hello-pl/c1.md","ref":"hello-pl/c1.md","articles":[]},"previous":{"title":"VScode环境配置","level":"4.1","depth":1,"path":"hello-pl/c0.1.md","ref":"hello-pl/c0.1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"prism":{},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":true},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"hello-pl/c0.2.md","mtime":"2020-07-05T10:51:23.165Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-05T10:52:24.521Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
