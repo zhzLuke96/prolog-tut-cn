@@ -1,0 +1,27 @@
+{
+  "name": "prolog-tut-cn",
+  "version": "1.0.0",
+  "description": "prolog chinese tutorial.",
+  "main": "index.js",
+  "scripts": {
+    "gitbook-init": "gitbook install src",
+    "build": "gitbook build src docs",
+    "dev": "gitbook serve src docs",
+    "sev": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhzLuke96/prolog-tut-cn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhzLuke96/prolog-tut-cn/issues"
+  },
+  "homepage": "https://github.com/zhzLuke96/prolog-tut-cn#readme",
+  "dependencies": {
+    "gitbook": "^2.6.9",
+    "gitbook-cli": "^2.3.2"
+  }
+}

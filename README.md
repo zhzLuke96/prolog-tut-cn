@@ -1,25 +1,47 @@
 # prolog-tut-cn
-prolog chinese tutorial.
 
-希望对你有帮助，have fun.
+prolog tutorial.
 
-[github pages](https://zhzluke96.github.io/prolog-tut-cn/)
+## Table of Contents
 
-# 关于tut的来源
-原作者应该是 `垂钓听竹轩` ，但是现在他的个人网站已经没有维护了，那个什么AI中国网好像也改头换面了？
+- [prolog-tut-cn](#prolog-tut-cn)
+  - [Table of Contents](#table-of-contents)
+  - [Background](#background)
+  - [Usage](#usage)
+  - [Related Efforts](#related-efforts)
+  - [Maintainers](#maintainers)
+  - [Contributing](#contributing)
+    - [Contributors](#contributors)
+  - [License](#license)
 
-(古老而神秘的小圈子...）
+## Background
 
-# code文件夹
-存放关于各个章节中使用的代码，由于现在的`swipl`已经支持了`utf8编码`格式，为增加可读性，我会尽量为代码写一份中文版本并以`_cn`结尾的pl代码，加深理解
+原作者应该是 `垂钓听竹轩` ，但是现在他的个人网站已经没有维护了，那个什么 AI 中国网好像也改头换面了？
 
-# refer
-- [Prolog Tutorial Cn](https://oracle-abc.wikidot.com/prolog-tutorial-cn)
-- [中山大学人工智能 prolog 授课 ppt](#)
-- [prolog_tutorial J.R.Fisher](https://www.cpp.edu/~jrfisher/www/prolog_tutorial/)
-- [Prolog 入门](https://programmermagazine.github.io/201308/htm/article3.html)
-- [wikipedia prolog](https://en.wikipedia.org/wiki/Prolog)
-- [power of prolog](https://www.metalevel.at/prolog)
+> 古老而神秘的小圈子
 
-# LICENSE
-MIT
+prolog 最初用于编写所谓的 AI，显而易见现在 AI 已经是神经网络算法的天下了，但是我认为研究 prolog 仍然是值得的，prolog 的语法和设计魅力是远远大于它的任何一次执行结果的，背后的设计思想其实在某种位面（二次元?）上和当下流行的机器学习有不谋而合之处。
+
+## Usage
+
+👉 [github pages](https://zhzluke96.github.io/prolog-tut-cn/)
+
+## Related Efforts
+
+- [swipl](https://github.com/SWI-Prolog/swipl) SWI-Prolog offers a comprehensive free Prolog environment.
+
+## Maintainers
+
+[@zhzluke96](https://github.com/zhzluke96).
+
+## Contributing
+
+文章类型的 issues 没什么限制，大家随意讨论
+
+### Contributors
+
+Looking forward to your PR.
+
+## License
+
+[MIT](https://github.com/zhzLuke96/prolog-tut-cn/blob/master/LICENSE) © zhzLuke96
