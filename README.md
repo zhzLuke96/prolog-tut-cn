@@ -1,5 +1,7 @@
 # prolog-tut-cn
 
+![Publish page](https://github.com/zhzLuke96/prolog-tut-cn/workflows/Publish%20page/badge.svg?branch=master)
+
 prolog tutorial.
 
 ## Table of Contents
