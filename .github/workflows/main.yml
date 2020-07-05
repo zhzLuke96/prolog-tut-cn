@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+      paths:
+      - src/*
 
 jobs:
   build-and-deploy:
@@ -15,7 +17,7 @@ jobs:
           persist-credentials: false
 
       - name: Use NodeJS
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v1
 
       - name: Install and Build 🔧
         run: |
