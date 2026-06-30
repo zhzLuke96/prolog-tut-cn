@@ -1,11 +1,11 @@
 > 高阶阅读：本系列是深度代码分析，适合完成全部 Hello Prolog 章节后阅读。
-> 读前须知：本章需完成 Hello Prolog 全部章节。前置依赖：c3b（列表递归）, c5（元编译器）。
+> 读前须知：本章需完成 Hello Prolog 全部章节。前置依赖：[列表与递归](c3b_lists_recursion.md), [元编译器](../hello-pl/c5.md)。
 
 # bencode
 
 > DCG 基础请参考 Hello Prolog [c4 篇](../hello-pl/c4.md)。
 
-> 前置：c3b, c5 | 难度：★★★ | 后续：—
+> 前置：[列表与递归](../hello-pl/c3b_lists_recursion.md), [元编译器](../hello-pl/c5.md) | 难度：★★★ | 后续：—
 
 
 > 在油管看到一个 prolog 的讲座说到了它在特殊领域的优势

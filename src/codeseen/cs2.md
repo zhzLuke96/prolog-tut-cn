@@ -7,7 +7,7 @@
 > 如果说用 Prolog 实现 JSON 解析（cs1 的 bencode）是牛刀小试
 > 那用 Prolog 实现一个 Lisp 解释器就是真正意义上的"用逻辑写程序"
 
-> 前置：c5 | 难度：★★★ | 后续：—
+> 前置：[元编译器](../hello-pl/c5.md) | 难度：★★★ | 后续：—
 
 https://github.com/triska/lisprolog
 
