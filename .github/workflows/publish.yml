@@ -1,35 +1,29 @@
 name: Publish page
-
 on:
   push:
     branches:
       - master
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           persist-credentials: false
-
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
           node-version: 22
-
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10
-
-      - name: Install and Build 🔧
+      - name: Install and Build
         run: |
           pnpm install --frozen-lockfile
           pnpm build
-
-      - name: Deploy 🚀
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

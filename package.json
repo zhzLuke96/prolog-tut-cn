@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "prolog chinese tutorial.",
   "scripts": {
-    "build": "honkit build src docs",
+    "build": "node -e \"fs.mkdirSync('docs',{recursive:true})\" && honkit build src docs",
     "serve": "honkit serve src docs",
     "dev": "honkit serve src docs"
   },
