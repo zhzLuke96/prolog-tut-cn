@@ -7,7 +7,7 @@
         "-search",
         "search-pro",
         "-highlight",
-        "prism",
+        "honkit-plugin-prism",
         "github",
         "splitter",
         "anchors",

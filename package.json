@@ -2,12 +2,10 @@
   "name": "prolog-tut-cn",
   "version": "1.0.0",
   "description": "prolog chinese tutorial.",
-  "main": "index.js",
   "scripts": {
-    "gitbook-init": "gitbook install src",
-    "build": "gitbook build src docs",
-    "dev": "gitbook serve src docs",
-    "sev": "npm run dev"
+    "build": "honkit build src docs",
+    "serve": "honkit serve src docs",
+    "dev": "honkit serve src docs"
   },
   "repository": {
     "type": "git",
@@ -20,12 +18,20 @@
     "url": "https://github.com/zhzLuke96/prolog-tut-cn/issues"
   },
   "homepage": "https://github.com/zhzLuke96/prolog-tut-cn#readme",
-  "dependencies": {
-    "gitbook": "^3.2.3",
-    "gitbook-cli": "^2.3.2"
-  },
   "engines": {
-    "node": ">=10.0.0 <11.0.0",
-    "npm": ">=6.0.0 <7.0.0"
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-copy-code-button": "^0.0.2",
+    "gitbook-plugin-disqus": "^1.0.1",
+    "gitbook-plugin-github": "^3.0.0",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
+    "honkit": "^6.2.2",
+    "honkit-plugin-prism": "^2.5.4"
   }
 }
