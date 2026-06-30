@@ -1,3 +1,5 @@
+> 最后更新：2026-06-30 — Phase 1 已完成，Phase 2/3 大部分完成。详情见 notes/editor-task-breakdown.md
+
 # 迭代计划
 
 ## 已完成（Phase 0）
