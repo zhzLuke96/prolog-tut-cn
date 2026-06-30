@@ -1,0 +1,1258 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>单元测试 · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="c11.html" />
+    
+    
+    <link rel="prev" href="c9b.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../tut/chapter0.0.html">
+            
+                <a href="../tut/chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../tut/chapter0.1.html">
+            
+                <a href="../tut/chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../tut/chapter0.2.html">
+            
+                <a href="../tut/chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../tut/chapter1.html">
+            
+                <a href="../tut/chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../tut/chapter2.html">
+            
+                <a href="../tut/chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../tut/chapter3.html">
+            
+                <a href="../tut/chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../tut/chapter4.html">
+            
+                <a href="../tut/chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../tut/chapter5.html">
+            
+                <a href="../tut/chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../tut/chapter6.html">
+            
+                <a href="../tut/chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../tut/chapter7.html">
+            
+                <a href="../tut/chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../tut/chapter8.html">
+            
+                <a href="../tut/chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../tut/chapter9.html">
+            
+                <a href="../tut/chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../tut/chapter10.html">
+            
+                <a href="../tut/chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../tut/chapter11.html">
+            
+                <a href="../tut/chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../tut/chapter12.html">
+            
+                <a href="../tut/chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../tut/chapter13.html">
+            
+                <a href="../tut/chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../tut/chapter14.html">
+            
+                <a href="../tut/chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="../tut/chapter15.html">
+            
+                <a href="../tut/chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="../tut/chapter16.html">
+            
+                <a href="../tut/chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="../tut/chapter17.html">
+            
+                <a href="../tut/chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="c0.1.html">
+            
+                <a href="c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="c0.2.html">
+            
+                <a href="c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="c1.html">
+            
+                <a href="c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="c2.html">
+            
+                <a href="c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="c3.html">
+            
+                <a href="c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="c3b_lists_recursion.html">
+            
+                <a href="c3b_lists_recursion.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    列表与递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="c3c_backtracking_control.html">
+            
+                <a href="c3c_backtracking_control.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    回溯与控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="c4.html">
+            
+                <a href="c4.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="c5.html">
+            
+                <a href="c5.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="c6.html">
+            
+                <a href="c6.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="c7.html">
+            
+                <a href="c7.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="c8.html">
+            
+                <a href="c8.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="c9a.html">
+            
+                <a href="c9a.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    规则引擎与约束求解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="c9b.html">
+            
+                <a href="c9b.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    搜索与自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.15" data-path="c10.html">
+            
+                <a href="c10.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="c11.html">
+            
+                <a href="c11.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../main/logic.html">
+            
+                <a href="../main/logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../main/turing.html">
+            
+                <a href="../main/turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../main/puzzles.html">
+            
+                <a href="../main/puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../main/AFTERME.html">
+            
+                <a href="../main/AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >单元测试</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#单元测试"><b>1. </b>单元测试</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#从最痛苦的例子开始"><b>1.1. </b>从最痛苦的例子开始</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#plunit：prolog-的测试框架"><b>1.2. </b>plunit：Prolog 的测试框架</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#test1-和-test3"><b>1.3. </b>test/1 和 test/3</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#测试之前章节的谓词"><b>1.4. </b>测试之前章节的谓词</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#forall：批量扫一遍"><b>1.5. </b>forall：批量扫一遍</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#setupcleanup"><b>1.6. </b>setup/cleanup</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#自动化：runtests"><b>1.7. </b>自动化：run_tests</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#运行全部"><b>1.7.1. </b>运行全部</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#指定测试集"><b>1.7.2. </b>指定测试集</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#加载时自动跑"><b>1.7.3. </b>加载时自动跑</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#make-集成"><b>1.7.4. </b>Make 集成</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#ci-集成（github-actions）"><b>1.7.5. </b>CI 集成（GitHub Actions）</a></li></ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#实战：测试全书谓词"><b>1.8. </b>实战：测试全书谓词</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#结果怎么看"><b>1.9. </b>结果怎么看</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#总结"><b>1.10. </b>总结</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#参考"><b>1.11. </b>参考</a></li></ul></ul></div><a href="#单元测试" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="单元测试"><a name="单元测试" class="anchor-navigation-ex-anchor" href="#单元测试"><i class="fa fa-link" aria-hidden="true"></i></a>1. 单元测试</h1>
+<blockquote>
+<p>一句话概括：<code>plunit</code> —— 把谓词包在 <code>begin_tests/end_tests</code> 里，<code>run_tests</code> 一键验证。再也不用人肉 debug。</p>
+<p>学完这章，你能用 plunit 给你的 Prolog 代码写测试，改代码不再靠感觉。
+前置：<a href="c3.html">高阶谓词</a>, <a href="c7.html">模块化</a> | 难度：★★ | 后续：—</p>
+</blockquote>
+<p>代码改出 bug 了怎么办？</p>
+<p>你肯定遇到过这个场景：加了一个功能，原来跑得好好的程序突然不对了。看了十分钟代码——"逻辑没问题啊"。然后又看了十分钟——"擦，这里写错了"。</p>
+<p>靠眼睛检查代码，就像用鼻子听音乐——不是不行，但工具错了。</p>
+<p>我们需要单元测试。</p>
+<h2 id="从最痛苦的例子开始"><a name="从最痛苦的例子开始" class="anchor-navigation-ex-anchor" href="#从最痛苦的例子开始"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 从最痛苦的例子开始</h2>
+<p>假设你写了阶乘：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">fact</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">fact</span><span class="token punctuation">(</span>N<span class="token punctuation">,</span> F<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    N1 <span class="token operator">is</span> N <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token function">fact</span><span class="token punctuation">(</span>N1<span class="token punctuation">,</span> F1<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    F <span class="token operator">is</span> N <span class="token operator">*</span> F1<span class="token operator">.</span>
+</code></pre>
+<p>看起来没问题对吧？跑了几个例子也没报错。然后某天你改成尾递归优化版：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">fact_tail</span><span class="token punctuation">(</span>N<span class="token punctuation">,</span> F<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">fact_acc</span><span class="token punctuation">(</span>N<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> F<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">fact_acc</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> Acc<span class="token punctuation">,</span> Acc<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">fact_acc</span><span class="token punctuation">(</span>N<span class="token punctuation">,</span> Acc<span class="token punctuation">,</span> F<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    N1 <span class="token operator">is</span> N <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    Acc1 <span class="token operator">is</span> Acc <span class="token operator">*</span> N<span class="token punctuation">,</span>
+    <span class="token function">fact_acc</span><span class="token punctuation">(</span>N1<span class="token punctuation">,</span> Acc1<span class="token punctuation">,</span> F<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>调用 <code>fact_tail(5, X)</code> — <code>X = 120</code>，对的。够了？不，你漏了边界条件——<code>fact_tail(0, X)</code> 是什么？</p>
+<p>……你可能一开始根本没想到要检查这个。</p>
+<p>机器检查和人检查的区别就在这：人只会检查自己想到的，机器会检查你写下的所有断言。</p>
+<h2 id="plunit：prolog-的测试框架"><a name="plunit：prolog-的测试框架" class="anchor-navigation-ex-anchor" href="#plunit：prolog-的测试框架"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. plunit：Prolog 的测试框架</h2>
+<p>SWI-Prolog 自带 <code>plunit</code>。不用装任何东西。</p>
+<p>最简结构：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">begin_tests</span><span class="token punctuation">(</span>math<span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>add<span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">=:=</span> <span class="token number">2.</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>sub<span class="token punctuation">,</span> <span class="token punctuation">[</span>fail<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token number">1</span> <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">=:=</span> <span class="token number">3.</span>
+
+<span class="token operator">:-</span> <span class="token function">end_tests</span><span class="token punctuation">(</span>math<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>保存 <code>test_math.pl</code>，加载运行：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> run_tests<span class="token operator">.</span>
+<span class="token comment">% PL-Unit: math .. done</span>
+<span class="token comment">% 2 tests passed</span>
+true<span class="token operator">.</span>
+</code></pre>
+<p>看到 <code>done</code> 和 <code>passed</code> 了吗？这就是安全感。</p>
+<h2 id="test1-和-test3"><a name="test1-和-test3" class="anchor-navigation-ex-anchor" href="#test1-和-test3"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. test/1 和 test/3</h2>
+<p><code>test(Name)</code> — body 必须成功（默认断言）。</p>
+<p><code>test(Name, Options)</code> — 带选项：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fail</code></td>
+<td>预期失败</td>
+</tr>
+<tr>
+<td><code>true</code></td>
+<td>预期成功（默认）</td>
+</tr>
+<tr>
+<td><code>nondet</code></td>
+<td>允许多解</td>
+</tr>
+<tr>
+<td><code>forall(G)</code></td>
+<td>为 G 每个解运行测试</td>
+</tr>
+<tr>
+<td><code>blocked</code></td>
+<td>跳过（标记为阻塞）</td>
+</tr>
+<tr>
+<td><code>setup(G)</code></td>
+<td>测试前执行</td>
+</tr>
+<tr>
+<td><code>cleanup(G)</code></td>
+<td>测试后执行</td>
+</tr>
+<tr>
+<td><code>time(T)</code></td>
+<td>超时限制</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">begin_tests</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>reverse<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>member_success<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">member</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>member_fail<span class="token punctuation">,</span> <span class="token punctuation">[</span>fail<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">member</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>member_all<span class="token punctuation">,</span> <span class="token punctuation">[</span>nondet<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">end_tests</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h2 id="测试之前章节的谓词"><a name="测试之前章节的谓词" class="anchor-navigation-ex-anchor" href="#测试之前章节的谓词"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. 测试之前章节的谓词</h2>
+<p>拿 c6 的阶乘举例子：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">begin_tests</span><span class="token punctuation">(</span>factorial<span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>base<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">factorial_tail</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>small<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">factorial_tail</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>large<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token number">0.1</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">factorial_tail</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">,</span> _<span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>negative<span class="token punctuation">,</span> <span class="token punctuation">[</span>fail<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">factorial_tail</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> _<span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>edge_zero<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">factorial_tail</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">end_tests</span><span class="token punctuation">(</span>factorial<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><code>[time(0.1)]</code> 是说这个测试不能超过 0.1 秒——防止尾递归写漏了导致栈溢出。</p>
+<p><code>[fail]</code> 表示这个测试预期失败——负数的阶乘不应该有解。</p>
+<h2 id="forall：批量扫一遍"><a name="forall：批量扫一遍" class="anchor-navigation-ex-anchor" href="#forall：批量扫一遍"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. forall：批量扫一遍</h2>
+<p>测试单个点不够，用 <code>forall</code> 批量扫：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">begin_tests</span><span class="token punctuation">(</span>double<span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>double_all<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">forall</span><span class="token punctuation">(</span><span class="token function">between</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">,</span> N<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+        D <span class="token operator">is</span> N <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        D <span class="token operator">=:=</span> N <span class="token operator">+</span> N<span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">end_tests</span><span class="token punctuation">(</span>double<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>1 到 100，全部验证 N*2 == N+N。一个测试顶一百个。</p>
+<h2 id="setupcleanup"><a name="setupcleanup" class="anchor-navigation-ex-anchor" href="#setupcleanup"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. setup/cleanup</h2>
+<p>测试数据库操作时，每个用例前后需要清理现场：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> dynamic <span class="token function">db/1</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">begin_tests</span><span class="token punctuation">(</span>db<span class="token punctuation">)</span><span class="token operator">.</span>
+
+    setup <span class="token operator">:-</span>
+        <span class="token function">assert</span><span class="token punctuation">(</span><span class="token function">db</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">assert</span><span class="token punctuation">(</span><span class="token function">db</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+    cleanup <span class="token operator">:-</span>
+        <span class="token function">retractall</span><span class="token punctuation">(</span><span class="token function">db</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>query_all<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">set</span><span class="token punctuation">(</span>Xs <span class="token operator">=</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">findall</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token function">db</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span> Xs<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">end_tests</span><span class="token punctuation">(</span>db<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><code>setup</code> 和 <code>cleanup</code> 在每个 test 前后自动跑——不会让测试互相污染。</p>
+<h2 id="自动化：runtests"><a name="自动化：runtests" class="anchor-navigation-ex-anchor" href="#自动化：runtests"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. 自动化：run_tests</h2>
+<h3 id="运行全部"><a name="运行全部" class="anchor-navigation-ex-anchor" href="#运行全部"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.1. 运行全部</h3>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> run_tests<span class="token operator">.</span>
+<span class="token comment">% PL-Unit: list .. done</span>
+<span class="token comment">% PL-Unit: factorial .. done</span>
+</code></pre>
+<h3 id="指定测试集"><a name="指定测试集" class="anchor-navigation-ex-anchor" href="#指定测试集"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.2. 指定测试集</h3>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">run_tests</span><span class="token punctuation">(</span>math<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token comment">% PL-Unit: math .. done</span>
+</code></pre>
+<h3 id="加载时自动跑"><a name="加载时自动跑" class="anchor-navigation-ex-anchor" href="#加载时自动跑"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.3. 加载时自动跑</h3>
+<p>在文件末尾加一行：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> run_tests<span class="token operator">.</span>
+</code></pre>
+<p>加载文件时自动执行所有测试。</p>
+<h3 id="make-集成"><a name="make-集成" class="anchor-navigation-ex-anchor" href="#make-集成"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.4. Make 集成</h3>
+<pre class="language-"><code class="lang-prolog">test_all <span class="token operator">:-</span>
+    <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"Running all tests...~n"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    run_tests<span class="token operator">.</span>
+</code></pre>
+<p>命令行调用：</p>
+<pre class="language-"><code class="lang-bash">swipl <span class="token parameter variable">-q</span> <span class="token parameter variable">-t</span> test_all <span class="token parameter variable">-s</span> test_suite.pl
+</code></pre>
+<h3 id="ci-集成（github-actions）"><a name="ci-集成（github-actions）" class="anchor-navigation-ex-anchor" href="#ci-集成（github-actions）"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.5. CI 集成（GitHub Actions）</h3>
+<pre class="language-"><code class="lang-yaml"><span class="token comment"># .github/workflows/ci.yml</span>
+<span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> Run Prolog tests
+  <span class="token key atrule">run</span><span class="token punctuation">:</span> swipl <span class="token punctuation">-</span>q <span class="token punctuation">-</span>t "run_tests" <span class="token punctuation">-</span>s tests/suite.pl
+</code></pre>
+<p>每次 push 自动跑全部测试——改了代码？先过测试再说。</p>
+<h2 id="实战：测试全书谓词"><a name="实战：测试全书谓词" class="anchor-navigation-ex-anchor" href="#实战：测试全书谓词"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. 实战：测试全书谓词</h2>
+<p>写一个统一测试套件，把前面章节的核心谓词都覆盖：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">%% 引入各模块</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token string">'../code/hello/fib'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token string">'../drafts/hello-pl/geometry'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% 测试套件</span>
+<span class="token operator">:-</span> <span class="token function">begin_tests</span><span class="token punctuation">(</span>hello_pl_suite<span class="token punctuation">)</span><span class="token operator">.</span>
+
+clear_m <span class="token operator">:-</span> <span class="token function">retractall</span><span class="token punctuation">(</span><span class="token function">m</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token comment">%% c1: Hello world</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>hello_world<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">with_output_to</span><span class="token punctuation">(</span><span class="token function">string</span><span class="token punctuation">(</span>S<span class="token punctuation">)</span><span class="token punctuation">,</span> hello<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        S <span class="token operator">==</span> <span class="token string">"Hello World!\n"</span><span class="token operator">.</span>
+
+    <span class="token comment">%% c6: Fibonacci with tabling</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>fib_base<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">fib</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">fib</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>fib_small<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">fib</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">89</span><span class="token punctuation">)</span><span class="token operator">.</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>fib_large<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">fib</span><span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">,</span> _<span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token comment">%% c7: Module - geometry</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>area_circle<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        geometry<span class="token operator">:</span><span class="token function">area</span><span class="token punctuation">(</span>circle<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> A<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">abs</span><span class="token punctuation">(</span>A <span class="token operator">-</span> <span class="token number">28.274</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">0.001</span><span class="token operator">.</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>area_rect<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        geometry<span class="token operator">:</span><span class="token function">area</span><span class="token punctuation">(</span>rect<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token comment">%% c8: Web server （仅测试 handler，不启动服务）</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>web_root<span class="token punctuation">,</span> <span class="token punctuation">[</span>blocked<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+        true<span class="token operator">.</span>
+
+    <span class="token comment">%% c9: 数独求解</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>sudoku_solve<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        Puzzle <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">]</span>
+                 <span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">]</span>
+                 <span class="token punctuation">,</span><span class="token punctuation">[</span>_<span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span> _<span class="token punctuation">]</span>
+                 <span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+                 <span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span>
+                 <span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span>
+                 <span class="token punctuation">,</span><span class="token punctuation">[</span>_<span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span> _<span class="token punctuation">]</span>
+                 <span class="token punctuation">,</span><span class="token punctuation">[</span>_<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span>
+                 <span class="token punctuation">,</span><span class="token punctuation">[</span>_<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token function">sudoku</span><span class="token punctuation">(</span>Puzzle<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        Puzzle <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">[</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                  <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">.</span>
+
+    <span class="token comment">%% c5: Meta-interpreter</span>
+    <span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span>meta_interpreter<span class="token punctuation">)</span><span class="token operator">.</span>
+
+    <span class="token function">test</span><span class="token punctuation">(</span>prove_true<span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">prove</span><span class="token punctuation">(</span>true<span class="token punctuation">)</span><span class="token operator">.</span>
+    <span class="token function">test</span><span class="token punctuation">(</span>prove_atom<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">setup</span><span class="token punctuation">(</span>clear_m<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">cleanup</span><span class="token punctuation">(</span>clear_m<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+        <span class="token function">assertz</span><span class="token punctuation">(</span><span class="token function">m</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">prove</span><span class="token punctuation">(</span><span class="token function">m</span><span class="token punctuation">(</span>foo<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">end_tests</span><span class="token punctuation">(</span>hello_pl_suite<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> run_tests<span class="token operator">.</span>
+</code></pre>
+<h2 id="结果怎么看"><a name="结果怎么看" class="anchor-navigation-ex-anchor" href="#结果怎么看"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. 结果怎么看</h2>
+<p>成功时：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> run_tests<span class="token operator">.</span>
+<span class="token comment">% PL-Unit: hello_pl_suite ......... done</span>
+<span class="token comment">% 9 tests passed</span>
+</code></pre>
+<p>失败时：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> run_tests<span class="token operator">.</span>
+<span class="token comment">% PL-Unit: hello_pl_suite . f ....</span>
+<span class="token comment">% ERROR: .../test: test fib_base: assertion failed</span>
+<span class="token comment">% 8 tests passed, 1 failed</span>
+</code></pre>
+<p>看到 <code>. f .</code> 中间那个 <code>f</code> 了吗——就是你的 bug 被揪出来了。</p>
+<h2 id="总结"><a name="总结" class="anchor-navigation-ex-anchor" href="#总结"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. 总结</h2>
+<ul>
+<li><code>:- begin_tests(Name)</code> / <code>:- end_tests(Name)</code> 定义测试集</li>
+<li><code>test(Name)</code> 或 <code>test(Name, Options)</code> 写用例</li>
+<li><code>fail</code> / <code>nondet</code> / <code>forall</code> / <code>setup</code> / <code>cleanup</code> / <code>blocked</code> / <code>time</code> 控制行为</li>
+<li><code>:- run_tests.</code> 自动执行</li>
+<li>配合 CI 实现每次提交自动跑</li>
+</ul>
+<p>有了测试，改代码不再心慌。你改了一行，机器替你跑一百个断言——谁敢说这不好？</p>
+<h2 id="参考"><a name="参考" class="anchor-navigation-ex-anchor" href="#参考"><i class="fa fa-link" aria-hidden="true"></i></a>1.11. 参考</h2>
+<ul>
+<li><a href="https://www.metalevel.at/prolog/testing" target="_blank">The Power of Prolog — Testing</a></li>
+<li>SWI-Prolog manual: plunit</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright © zhzluke96 2020 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2026-06-30 15:36
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="c9b.html" class="navigation navigation-prev " aria-label="Previous page: 搜索与自然语言">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="c11.html" class="navigation navigation-next " aria-label="Next page: GUI">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"单元测试","level":"4.15","depth":1,"next":{"title":"GUI","level":"4.16","depth":1,"path":"hello-pl/c11.md","ref":"hello-pl/c11.md","articles":[]},"previous":{"title":"搜索与自然语言","level":"4.14","depth":1,"path":"hello-pl/c9b.md","ref":"hello-pl/c9b.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","honkit-plugin-prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"honkit-plugin-prism":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":false,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"hello-pl/c10.md","mtime":"2026-06-30T15:36:35.937Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-06-30T15:36:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

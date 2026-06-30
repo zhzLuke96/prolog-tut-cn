@@ -1,0 +1,1178 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>模块化 · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="c8.html" />
+    
+    
+    <link rel="prev" href="c6.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../tut/chapter0.0.html">
+            
+                <a href="../tut/chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../tut/chapter0.1.html">
+            
+                <a href="../tut/chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../tut/chapter0.2.html">
+            
+                <a href="../tut/chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../tut/chapter1.html">
+            
+                <a href="../tut/chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../tut/chapter2.html">
+            
+                <a href="../tut/chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../tut/chapter3.html">
+            
+                <a href="../tut/chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../tut/chapter4.html">
+            
+                <a href="../tut/chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../tut/chapter5.html">
+            
+                <a href="../tut/chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../tut/chapter6.html">
+            
+                <a href="../tut/chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../tut/chapter7.html">
+            
+                <a href="../tut/chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../tut/chapter8.html">
+            
+                <a href="../tut/chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../tut/chapter9.html">
+            
+                <a href="../tut/chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../tut/chapter10.html">
+            
+                <a href="../tut/chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../tut/chapter11.html">
+            
+                <a href="../tut/chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../tut/chapter12.html">
+            
+                <a href="../tut/chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../tut/chapter13.html">
+            
+                <a href="../tut/chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../tut/chapter14.html">
+            
+                <a href="../tut/chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="../tut/chapter15.html">
+            
+                <a href="../tut/chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="../tut/chapter16.html">
+            
+                <a href="../tut/chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="../tut/chapter17.html">
+            
+                <a href="../tut/chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="c0.1.html">
+            
+                <a href="c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="c0.2.html">
+            
+                <a href="c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="c1.html">
+            
+                <a href="c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="c2.html">
+            
+                <a href="c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="c3.html">
+            
+                <a href="c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="c3b_lists_recursion.html">
+            
+                <a href="c3b_lists_recursion.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    列表与递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="c3c_backtracking_control.html">
+            
+                <a href="c3c_backtracking_control.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    回溯与控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="c4.html">
+            
+                <a href="c4.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="c5.html">
+            
+                <a href="c5.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="c6.html">
+            
+                <a href="c6.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.11" data-path="c7.html">
+            
+                <a href="c7.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="c8.html">
+            
+                <a href="c8.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="c9a.html">
+            
+                <a href="c9a.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    规则引擎与约束求解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="c9b.html">
+            
+                <a href="c9b.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    搜索与自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="c10.html">
+            
+                <a href="c10.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="c11.html">
+            
+                <a href="c11.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../main/logic.html">
+            
+                <a href="../main/logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../main/turing.html">
+            
+                <a href="../main/turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../main/puzzles.html">
+            
+                <a href="../main/puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../main/AFTERME.html">
+            
+                <a href="../main/AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >模块化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#模块化"><b>1. </b>模块化</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#从一团乱麻开始"><b>1.1. </b>从一团乱麻开始</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#module2-——-划地盘"><b>1.2. </b>module/2 —— 划地盘</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#usemodule1-——-用别人的地盘"><b>1.3. </b>use_module/1 —— 用别人的地盘</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#模块查找路径"><b>1.3.1. </b>模块查找路径</a></li></ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#可见性控制——给模块装个门"><b>1.4. </b>可见性控制——给模块装个门</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#借什么，借多少"><b>1.4.1. </b>借什么，借多少</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#模块限定调用"><b>1.4.2. </b>模块限定调用</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#运算符导出"><b>1.4.3. </b>运算符导出</a></li></ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#创建一个可发布的-prolog-library"><b>1.5. </b>创建一个可发布的 Prolog Library</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#模块的注意事项"><b>1.6. </b>模块的注意事项</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#动态谓词"><b>1.6.1. </b>动态谓词</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#多文件模块"><b>1.6.2. </b>多文件模块</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#模块与-meta-call"><b>1.6.3. </b>模块与 meta-call</a></li></ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#常见反模式"><b>1.7. </b>常见反模式</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#总结"><b>1.8. </b>总结</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#参考"><b>1.9. </b>参考</a></li></ul></ul></div><a href="#模块化" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="模块化"><a name="模块化" class="anchor-navigation-ex-anchor" href="#模块化"><i class="fa fa-link" aria-hidden="true"></i></a>1. 模块化</h1>
+<blockquote>
+<p>学完这章，你能用 module/2 把 Prolog 代码拆成模块、发布为 swipl pack，再也不会在一个文件里找不到谓词了。
+前置：<a href="c1.html">Hello world</a> | 难度：★★ | 后续：<a href="c8.html">web server</a></p>
+</blockquote>
+<p>你一个文件写了多少行了？100？200？Ctrl+F 找个谓词都要翻半天，改一个地方不敢动怕影响其他地方——这感觉我太熟悉了。</p>
+<p>学完这章，你能用 <code>module/2</code> 把代码拆成模块，用 <code>use_module/1</code> 组装起来，甚至发布成 pack 给全世界人用。</p>
+<h2 id="从一团乱麻开始"><a name="从一团乱麻开始" class="anchor-navigation-ex-anchor" href="#从一团乱麻开始"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 从一团乱麻开始</h2>
+<p>先看一个典型场景。你写了一个几何计算的小工具：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">%% geometry.pl</span>
+<span class="token function">area</span><span class="token punctuation">(</span>circle<span class="token punctuation">,</span> R<span class="token punctuation">,</span> A<span class="token punctuation">)</span> <span class="token operator">:-</span> A <span class="token operator">is</span> pi <span class="token operator">*</span> R <span class="token operator">*</span> R<span class="token operator">.</span>
+<span class="token function">area</span><span class="token punctuation">(</span>rect<span class="token punctuation">,</span> <span class="token punctuation">(</span>W<span class="token punctuation">,</span> H<span class="token punctuation">)</span><span class="token punctuation">,</span> A<span class="token punctuation">)</span> <span class="token operator">:-</span> A <span class="token operator">is</span> W <span class="token operator">*</span> H<span class="token operator">.</span>
+
+<span class="token function">perimeter</span><span class="token punctuation">(</span>circle<span class="token punctuation">,</span> R<span class="token punctuation">,</span> P<span class="token punctuation">)</span> <span class="token operator">:-</span> P <span class="token operator">is</span> <span class="token number">2</span> <span class="token operator">*</span> pi <span class="token operator">*</span> R<span class="token operator">.</span>
+<span class="token function">perimeter</span><span class="token punctuation">(</span>rect<span class="token punctuation">,</span> <span class="token punctuation">(</span>W<span class="token punctuation">,</span> H<span class="token punctuation">)</span><span class="token punctuation">,</span> P<span class="token punctuation">)</span> <span class="token operator">:-</span> P <span class="token operator">is</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token punctuation">(</span>W <span class="token operator">+</span> H<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% 后面还有 20 个谓词...</span>
+</code></pre>
+<p>然后你写了一个 main 程序要用它：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">%% main.pl</span>
+<span class="token function">area</span><span class="token punctuation">(</span>circle<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> A<span class="token punctuation">)</span><span class="token punctuation">,</span>   <span class="token comment">% 等等，这个 area 是哪来的？</span>
+</code></pre>
+<p>项目大了，问题就来了：</p>
+<ul>
+<li>命名冲突——两个文件都定义了 <code>area/2</code> 怎么办？</li>
+<li>不知道哪个谓词是公开接口，哪个是内部实现</li>
+<li>想复用代码只能复制粘贴</li>
+</ul>
+<p>这是所有脚本语言的通病。Prolog 的解决方案？<strong>模块</strong>。</p>
+<h2 id="module2-——-划地盘"><a name="module2-——-划地盘" class="anchor-navigation-ex-anchor" href="#module2-——-划地盘"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. module/2 —— 划地盘</h2>
+<p>文件开头加一行：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">%% geometry.pl</span>
+<span class="token operator">:-</span> <span class="token function">module</span><span class="token punctuation">(</span>geometry<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">area/3</span><span class="token punctuation">,</span> <span class="token function">perimeter/3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><strong>module</strong> 是标准的 Prolog directive。这一行做了两件事：</p>
+<ol>
+<li><strong>声明模块名</strong> — 这个文件属于 <code>geometry</code> 模块</li>
+<li><strong>定义导出列表</strong> — 外面能用的只有 <code>area/3</code> 和 <code>perimeter/3</code>，其他全是内部实现</li>
+</ol>
+<p>其他编辑器里写模块总有各种仪式感——Prolog 倒是直接，一行搞定。</p>
+<p>完整文件：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">%% geometry.pl</span>
+<span class="token operator">:-</span> <span class="token function">module</span><span class="token punctuation">(</span>geometry<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">area/3</span><span class="token punctuation">,</span> <span class="token function">perimeter/3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">area</span><span class="token punctuation">(</span>circle<span class="token punctuation">,</span> R<span class="token punctuation">,</span> A<span class="token punctuation">)</span> <span class="token operator">:-</span> A <span class="token operator">is</span> pi <span class="token operator">*</span> R <span class="token operator">*</span> R<span class="token operator">.</span>
+<span class="token function">area</span><span class="token punctuation">(</span>rect<span class="token punctuation">,</span> <span class="token punctuation">(</span>W<span class="token punctuation">,</span> H<span class="token punctuation">)</span><span class="token punctuation">,</span> A<span class="token punctuation">)</span> <span class="token operator">:-</span> A <span class="token operator">is</span> W <span class="token operator">*</span> H<span class="token operator">.</span>
+
+<span class="token function">perimeter</span><span class="token punctuation">(</span>circle<span class="token punctuation">,</span> R<span class="token punctuation">,</span> P<span class="token punctuation">)</span> <span class="token operator">:-</span> P <span class="token operator">is</span> <span class="token number">2</span> <span class="token operator">*</span> pi <span class="token operator">*</span> R<span class="token operator">.</span>
+<span class="token function">perimeter</span><span class="token punctuation">(</span>rect<span class="token punctuation">,</span> <span class="token punctuation">(</span>W<span class="token punctuation">,</span> H<span class="token punctuation">)</span><span class="token punctuation">,</span> P<span class="token punctuation">)</span> <span class="token operator">:-</span> P <span class="token operator">is</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token punctuation">(</span>W <span class="token operator">+</span> H<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<blockquote>
+<p>跨语言类比：模块 ≈ Python 的 <code>import</code> + 命名空间，但比 Python 更明确——不导出的谓词外部完全不可见，不像 Python 的 <code>_</code> 前缀靠自觉。</p>
+</blockquote>
+<h2 id="usemodule1-——-用别人的地盘"><a name="usemodule1-——-用别人的地盘" class="anchor-navigation-ex-anchor" href="#usemodule1-——-用别人的地盘"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. use_module/1 —— 用别人的地盘</h2>
+<p>有了模块，怎么用？</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">%% main.pl</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span>geometry<span class="token punctuation">)</span><span class="token operator">.</span>
+
+main <span class="token operator">:-</span>
+    <span class="token function">area</span><span class="token punctuation">(</span>circle<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> A<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"Area: ~f~n"</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>A<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><code>use_module/1</code> 找到 <code>geometry.pl</code>，加载它，把导出的谓词引入当前模块的命名空间。</p>
+<blockquote>
+<p>Prolog 时刻：<code>use_module/1</code> 也是 directive，编译时执行。这意味着如果你写错了模块名，在加载时就报错，不会等到运行时才炸。</p>
+</blockquote>
+<h3 id="模块查找路径"><a name="模块查找路径" class="anchor-navigation-ex-anchor" href="#模块查找路径"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. 模块查找路径</h3>
+<p><code>use_module(geometry)</code> 去哪里找文件？默认搜索：</p>
+<ol>
+<li>当前目录</li>
+<li>SWI-Prolog library 路径</li>
+</ol>
+<p>可以手动注册路径：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> multifile user<span class="token operator">:</span><span class="token function">file_search_path/2</span><span class="token operator">.</span>
+user<span class="token operator">:</span><span class="token function">file_search_path</span><span class="token punctuation">(</span>my_lib<span class="token punctuation">,</span> <span class="token string">'/path/to/my/libs'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">my_lib</span><span class="token punctuation">(</span>geometry<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>或者直接给绝对路径：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token string">'/home/user/prolog/geometry.pl'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h2 id="可见性控制——给模块装个门"><a name="可见性控制——给模块装个门" class="anchor-navigation-ex-anchor" href="#可见性控制——给模块装个门"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. 可见性控制——给模块装个门</h2>
+<h3 id="借什么，借多少"><a name="借什么，借多少" class="anchor-navigation-ex-anchor" href="#借什么，借多少"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. 借什么，借多少</h3>
+<p><code>use_module/1</code> 默认导入全部导出。可以只借你要的：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span>geometry<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">area/3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>这样 <code>perimeter/3</code> 就不可见，想用必须显式加上。代码可读性更好——读者一看 <code>area/3</code> 就知道来自 <code>geometry</code>。</p>
+<h3 id="模块限定调用"><a name="模块限定调用" class="anchor-navigation-ex-anchor" href="#模块限定调用"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. 模块限定调用</h3>
+<p>即使不用 <code>use_module</code>，也能通过模块前缀直接调用：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> geometry<span class="token operator">:</span><span class="token function">area</span><span class="token punctuation">(</span>circle<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> A<span class="token punctuation">)</span><span class="token operator">.</span>
+A <span class="token operator">=</span> <span class="token number">28.274333882308138</span><span class="token operator">.</span>
+</code></pre>
+<p>调试时特别有用——临时拿来用，不用改代码。</p>
+<h3 id="运算符导出"><a name="运算符导出" class="anchor-navigation-ex-anchor" href="#运算符导出"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.3. 运算符导出</h3>
+<p>模块也能导出运算符：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">module</span><span class="token punctuation">(</span>arith<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">op</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">,</span> <span class="token builtin">yfx</span><span class="token punctuation">,</span> <span class="token operator">@</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token operator">@</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">op</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">,</span> <span class="token builtin">yfx</span><span class="token punctuation">,</span> <span class="token operator">@</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+X <span class="token operator">@</span> Y <span class="token operator">:-</span> Z <span class="token operator">is</span> X <span class="token operator">+</span> Y<span class="token operator">.</span>
+</code></pre>
+<p>加载后 <code>@</code> 就能当运算符用了。</p>
+<h2 id="创建一个可发布的-prolog-library"><a name="创建一个可发布的-prolog-library" class="anchor-navigation-ex-anchor" href="#创建一个可发布的-prolog-library"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. 创建一个可发布的 Prolog Library</h2>
+<p>写一个完整的 library 给别人用，怎么做？</p>
+<p><strong>1. 目录结构</strong></p>
+<pre class="language-"><code>my_lib/
+  pack.pl         % 包描述
+  logic.pl        % 核心模块
+  io.pl           % I/O 模块
+</code></pre><p><strong>2. pack.pl —— 身份信息</strong></p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">name</span><span class="token punctuation">(</span><span class="token string">'my_lib'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">version</span><span class="token punctuation">(</span><span class="token string">'1.0.0'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">title</span><span class="token punctuation">(</span><span class="token string">'My Prolog Library'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">author</span><span class="token punctuation">(</span><span class="token string">'Your Name'</span><span class="token punctuation">,</span> <span class="token string">'email@example.com'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">home</span><span class="token punctuation">(</span><span class="token string">'https://github.com/you/my_lib'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><strong>3. 模块之间互相引用</strong></p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">%% logic.pl</span>
+<span class="token operator">:-</span> <span class="token function">module</span><span class="token punctuation">(</span>logic<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">solve/2</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span>io<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">solve</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> Y<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">read_input</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">compute</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> Y<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">output</span><span class="token punctuation">(</span>Y<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><strong>4. 安装为 pack</strong></p>
+<p>本地安装：</p>
+<pre class="language-"><code class="lang-bash">$ swipl pack_install /path/to/my_lib
+</code></pre>
+<p>发布到 GitHub，别人就能：</p>
+<pre class="language-"><code class="lang-bash">$ swipl pack_install yourname/my_lib
+</code></pre>
+<blockquote>
+<p>跨语言类比：pack 系统 ≈ npm 或 pip，但更轻量——不需要 registry 账号，一个 GitHub 仓库就行。</p>
+</blockquote>
+<h2 id="模块的注意事项"><a name="模块的注意事项" class="anchor-navigation-ex-anchor" href="#模块的注意事项"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. 模块的注意事项</h2>
+<h3 id="动态谓词"><a name="动态谓词" class="anchor-navigation-ex-anchor" href="#动态谓词"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. 动态谓词</h3>
+<p>模块内用 <code>dynamic</code>，需要在模块作用域内声明：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">module</span><span class="token punctuation">(</span>db<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">add/1</span><span class="token punctuation">,</span> <span class="token function">list/1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> dynamic <span class="token function">entry/1</span><span class="token operator">.</span>
+
+<span class="token function">add</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token function">assert</span><span class="token punctuation">(</span><span class="token function">entry</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">list</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token function">entry</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h3 id="多文件模块"><a name="多文件模块" class="anchor-navigation-ex-anchor" href="#多文件模块"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. 多文件模块</h3>
+<p>一个模块可以跨多个文件：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">%% tools.pl</span>
+<span class="token operator">:-</span> <span class="token function">module</span><span class="token punctuation">(</span>tools<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">foo/1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> multifile tools<span class="token operator">:</span><span class="token function">bar/1</span><span class="token operator">.</span>
+
+<span class="token comment">%% tools_extra.pl</span>
+<span class="token operator">:-</span> <span class="token function">module</span><span class="token punctuation">(</span>tools_extra<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> multifile tools<span class="token operator">:</span><span class="token function">bar/1</span><span class="token operator">.</span>
+tools<span class="token operator">:</span><span class="token function">bar</span><span class="token punctuation">(</span>baz<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h3 id="模块与-meta-call"><a name="模块与-meta-call" class="anchor-navigation-ex-anchor" href="#模块与-meta-call"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.3. 模块与 meta-call</h3>
+<p>Meta-call 需要指定模块上下文：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">call_in_module</span><span class="token punctuation">(</span>Mod<span class="token punctuation">,</span> Goal<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    Mod<span class="token operator">:</span>Goal<span class="token operator">.</span>
+</code></pre>
+<p><code>maplist/2</code> 等高阶谓词会自动处理模块上下文，一般不用手动操心。</p>
+<h2 id="常见反模式"><a name="常见反模式" class="anchor-navigation-ex-anchor" href="#常见反模式"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. 常见反模式</h2>
+<p><strong>反模式 1：一个巨型文件装天下</strong></p>
+<p>全部代码写一个文件，靠空行分隔。命名冲突、难以测试、没人敢动。</p>
+<p><strong>反模式 2：过度模块化</strong></p>
+<p>每个谓词一个文件，<code>use_module</code> 列表比代码还长。依赖图绕成毛线球。</p>
+<p><strong>反模式 3：导出所有东西</strong></p>
+<p>把 <code>helper_1/2</code>、<code>internal_helper/3</code> 全导出。使用者面对一堆不相关的名字。</p>
+<p>建议：按功能域分组，一个文件 50-200 行。导出接口谓词，内部帮助谓词藏好。</p>
+<h2 id="总结"><a name="总结" class="anchor-navigation-ex-anchor" href="#总结"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. 总结</h2>
+<p>模块系统让 Prolog 项目从脚本集进化成真正的工程。</p>
+<table>
+<thead>
+<tr>
+<th>你要做的事</th>
+<th>用什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>声明模块+导出</td>
+<td><code>module/2</code></td>
+</tr>
+<tr>
+<td>加载依赖</td>
+<td><code>use_module/1</code></td>
+</tr>
+<tr>
+<td>选择性导入</td>
+<td><code>use_module(M, [P/N])</code></td>
+</tr>
+<tr>
+<td>临时调用</td>
+<td><code>Module:Goal</code></td>
+</tr>
+<tr>
+<td>库发布</td>
+<td>pack.pl + pack_install</td>
+</tr>
+</tbody>
+</table>
+<p>下章我们用这些模块知识搭一个真正的 web server。</p>
+<h2 id="参考"><a name="参考" class="anchor-navigation-ex-anchor" href="#参考"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. 参考</h2>
+<ul>
+<li><a href="https://www.metalevel.at/prolog/modules" target="_blank">The Power of Prolog — Modules</a></li>
+<li>SWI-Prolog manual: Module system</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright © zhzluke96 2020 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2026-06-30 15:36
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="c6.html" class="navigation navigation-prev " aria-label="Previous page: 优化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="c8.html" class="navigation navigation-next " aria-label="Next page: web server">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"模块化","level":"4.11","depth":1,"next":{"title":"web server","level":"4.12","depth":1,"path":"hello-pl/c8.md","ref":"hello-pl/c8.md","articles":[]},"previous":{"title":"优化","level":"4.10","depth":1,"path":"hello-pl/c6.md","ref":"hello-pl/c6.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","honkit-plugin-prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"honkit-plugin-prism":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":false,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"hello-pl/c7.md","mtime":"2026-06-30T15:36:35.937Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-06-30T15:36:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

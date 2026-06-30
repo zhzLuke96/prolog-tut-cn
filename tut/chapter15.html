@@ -1,0 +1,1249 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>流程控制 · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter16.html" />
+    
+    
+    <link rel="prev" href="chapter14.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="chapter0.0.html">
+            
+                <a href="chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter0.1.html">
+            
+                <a href="chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter0.2.html">
+            
+                <a href="chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="chapter8.html">
+            
+                <a href="chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="chapter9.html">
+            
+                <a href="chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="chapter11.html">
+            
+                <a href="chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="chapter12.html">
+            
+                <a href="chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="chapter13.html">
+            
+                <a href="chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="chapter14.html">
+            
+                <a href="chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.15" data-path="chapter15.html">
+            
+                <a href="chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="chapter16.html">
+            
+                <a href="chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="chapter17.html">
+            
+                <a href="chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../hello-pl/c0.1.html">
+            
+                <a href="../hello-pl/c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../hello-pl/c0.2.html">
+            
+                <a href="../hello-pl/c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../hello-pl/c1.html">
+            
+                <a href="../hello-pl/c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../hello-pl/c2.html">
+            
+                <a href="../hello-pl/c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../hello-pl/c3.html">
+            
+                <a href="../hello-pl/c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../hello-pl/c3b_lists_recursion.html">
+            
+                <a href="../hello-pl/c3b_lists_recursion.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    列表与递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../hello-pl/c3c_backtracking_control.html">
+            
+                <a href="../hello-pl/c3c_backtracking_control.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    回溯与控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../hello-pl/c4.html">
+            
+                <a href="../hello-pl/c4.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../hello-pl/c5.html">
+            
+                <a href="../hello-pl/c5.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../hello-pl/c6.html">
+            
+                <a href="../hello-pl/c6.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../hello-pl/c7.html">
+            
+                <a href="../hello-pl/c7.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../hello-pl/c8.html">
+            
+                <a href="../hello-pl/c8.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../hello-pl/c9a.html">
+            
+                <a href="../hello-pl/c9a.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    规则引擎与约束求解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../hello-pl/c9b.html">
+            
+                <a href="../hello-pl/c9b.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    搜索与自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../hello-pl/c10.html">
+            
+                <a href="../hello-pl/c10.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../hello-pl/c11.html">
+            
+                <a href="../hello-pl/c11.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../main/logic.html">
+            
+                <a href="../main/logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../main/turing.html">
+            
+                <a href="../main/turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../main/puzzles.html">
+            
+                <a href="../main/puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../main/AFTERME.html">
+            
+                <a href="../main/AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >流程控制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#流程控制"><b>1. </b>流程控制</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#递归循环"><b>2. </b>递归循环</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#尾递归"><b>3. </b>尾递归</a></li></ul></div><a href="#流程控制" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="流程控制"><a name="流程控制" class="anchor-navigation-ex-anchor" href="#流程控制"><i class="fa fa-link" aria-hidden="true"></i></a>1. 流程控制</h1>
+<p>在前面的章节中，我们了解了Prolog是如何解释目标的，并且通过实例说明了Prolog的运行流程。</p>
+<p>在这一章，继续探索Prolog的程序流程控制，我们将介绍和一般的程序设计语言相似的流程控制。</p>
+<p>前面我们使用谓词<code>fail</code>和<code>write/1</code>来列印出游戏中所有的物品。这种流程控制类似于一般语言中<code>“do，while”</code>语句。</p>
+<p>现在介绍另外一个使用失败来完成相同功能的内部谓词---<code>repeat/0</code>。它在第一次调用时永远成功，并且在回溯时也永远成功。换句话说，流程不可能回溯通过<code>repeat/0</code>。</p>
+<div align="center" style="align:center">
+    <img src="img/c16i1.png"></img>
+</div>
+
+
+
+<p>如果某个子句中有<code>repeat/0</code>，并且其后有<code>fail/0</code>谓词出现，那么将永远循环下去。使用这种方法可以编写死循环的Prolog程序。</p>
+<p>如果在<code>repeat/0</code>谓词后面加入几个中间目标，并且最后使用一个测试条件结束，那么程序将一直循环到条件满足为止。这相当于其它程序语言中的<code>“do until”</code>。在编写<code>“寻找Nani”</code>这个游戏时，我们正好需要这种流程来编写最高层的命令循环。</p>
+<p>我们先来看一个例子，它只是简单的读入命令并且在屏幕上回显出来，直到用户输入了<code>end</code>命令。内部谓词<code>read/1</code>可以从控制台对入一条Prolog字符串。此字符串必须使用<code>“.”</code>结束，就像所有的Prolog子句一样。</p>
+<pre class="language-"><code class="lang-prolog">command_loop<span class="token operator">:-</span> 
+    repeat<span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'Enter command (end to exit): '</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">read</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token punctuation">,</span>
+    X <span class="token operator">=</span> end<span class="token operator">.</span>
+</code></pre>
+<p>最后面的那个目标<code>x=end</code>只有在用户输入<code>end</code>时才会成功，而<code>repeat/0</code>在回溯时将永远成功，所以这种结构将使得中间的目标能够被重复执行。</p>
+<p>下面我们要做的事就是加入中间的命令执行部分，而不是简单的回显用户输入的命令。</p>
+<p>我们先来编写一个新的谓词<code>do/1</code>，它用来执行我们需要的谓词。在许多程序语言中，这种结构叫做<code>“do case”</code>，而在Prolog中我们使用多条子句来完成相同的功能。</p>
+<p>下面是<code>do/1</code>的程序，我们可以使用<code>do/1</code>来定义命令的同义词，例如玩家可以输入<code>goto(X)</code>或者<code>go(X)</code>，这都将运行<code>goto(X)</code>子句。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">do</span><span class="token punctuation">(</span><span class="token function">goto</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">goto</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span><span class="token function">go</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">goto</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>inventory<span class="token punctuation">)</span><span class="token operator">:-</span>
+    inventory<span class="token punctuation">,</span><span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>look<span class="token punctuation">)</span><span class="token operator">:-</span>
+    look<span class="token punctuation">,</span><span class="token operator">!.</span>
+</code></pre>
+<p>此处的<code>cut</code>有两个用途。第一，如果我们找到了一条该执行的do子句，就没有必要去寻找更多的do子句了；第二，它有效地防止了在回溯时又重新运行<code>read</code>目标。</p>
+<p>下面是另外的几条<code>do/1</code>的子句。如果没有<code>do(end)</code>子句，那么条件<code>X=end</code>就永远不会成立，所以<code>end</code>是结束游戏的命令。最后一个<code>do/1</code>子句考虑不合法的命令。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">do</span><span class="token punctuation">(</span><span class="token function">take</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">take</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>end<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'Invalid command'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>下面我们开始正式编写<code>command_loop/0</code>谓词，这里使用前面说编写的<code>puzzle/1</code>和本章介绍的<code>do/1</code>谓词来完成命令的解释工作。并且我们将考虑游戏结束的情况，游戏有两种结束方式，可以是玩家输入了<code>end</code>命令，或者玩家找到了<code>Nani</code>。我们将编写一个新的谓词<code>end_condition/1</code>来完成这个任务。</p>
+<pre class="language-"><code class="lang-prolog">command_loop<span class="token operator">:-</span> 
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'Welcome to Nani Search'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token punctuation">,</span>
+    repeat<span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'&gt;nani&gt; '</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">read</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">puzzle</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">do</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token punctuation">,</span>
+    <span class="token function">end_condition</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+    <span class="token function">end_condition</span><span class="token punctuation">(</span>end<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">end_condition</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">have</span><span class="token punctuation">(</span>nani<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'Congratulations'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h1 id="递归循环"><a name="递归循环" class="anchor-navigation-ex-anchor" href="#递归循环"><i class="fa fa-link" aria-hidden="true"></i></a>2. 递归循环</h1>
+<p>在Prolog程序中使用<code>assert</code>和<code>retract</code>谓词动态地改变数据库的方法，不是纯逻辑程序的设计方法。就像其他语言中的全局变量一样，使用这种谓词会产生一些不可预测的问题。由于使用了这种谓词，可是会导致程序中两个本来应该独立的部分互相影响。</p>
+<p>例如，<code>puzzle(goto(cellar))</code>的结果依赖于<code>turned_on(flashlight)</code>是否存在于数据库中，而<code>turned_on(flashlight)</code>是使用<code>turn_on</code>谓词动态地加入到数据库中的。所以如果<code>turn_on/1</code>中间有错误，它就会直接影响到<code>puzzle</code>，这中程序之间的隐形联系正是造成错误的罪魁祸首。</p>
+<p>我们可以重新改造程序，只使用参数传递信息，而不是全局数据。可以把这种情况想象成一系列的状态转换。</p>
+<p>在本游戏中，游戏的状态是使用<code>location/2</code>、<code>here/1</code>、<code>have/1</code>以及<code>turned_on/1(turned_off/1)</code>来定义的。我们首先使用这些谓词定义游戏的初始状态，其后玩家的操作将使用<code>assert</code>和<code>retract</code>动态地改变这些状态，直到最后达到了<code>have(nani)</code>。</p>
+<p>我们可以通过定义一个复杂的结构来储存游戏的状态来完成相同的功能，游戏的命令将把这个结构当作参数进行操作，而不是动态数据库。</p>
+<p>由于逻辑变量是不能通过赋值来改变它们的值的，所以所有的命令都必须有两个参数，一个是旧的状态，另一个实行的状态。使用前面的<code>repeat-fail</code>循环结构无法完成参数的传递过程，因此我们就使用递归程序把状态传给它自己，而边界条件则是到达了游戏的最终状态。下面的程序就是使用这种方法编制而成的。</p>
+<p>游戏的状态使用列表储存，列表的每个元素就是我们前面所定义的状态谓词，请看<code>initial_state/1</code>谓词。而每个命令都要对这个列表有不同的操作，谓词<code>get_state/3</code>,<code>add_state/4</code>, 和<code>del_state/4</code>就是完成这个任务的，它们提供了操作状态列表的方法。 </p>
+<p>这种Prolog程序就是纯逻辑的，它完全避免的使用全局数据的麻烦。但是它需要更复杂的谓词来操作参数中的状态。而列表操作与递归程序则是最难调试的了。至于使用哪种方法就要有你决定了。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">% a nonassertive version of nani search </span>
+nani <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'Welcome to Nani Search'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span>
+    <span class="token function">initial_state</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">control_loop</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">control_loop</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">end_condition</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">control_loop</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    repeat<span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'&gt; '</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">read</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">constraint</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">do</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> NewState<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">control_loop</span><span class="token punctuation">(</span>NewState<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% initial dynamic state </span>
+<span class="token function">initial_state</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token function">here</span><span class="token punctuation">(</span>kitchen<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">have</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">location</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+        kitchen<span class="token operator">/</span>apple<span class="token punctuation">,</span>
+        kitchen<span class="token operator">/</span>broccoli<span class="token punctuation">,</span>
+        office<span class="token operator">/</span>desk<span class="token punctuation">,</span>
+        office<span class="token operator">/</span>flashlight<span class="token punctuation">,</span>
+        cellar<span class="token operator">/</span>nani <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">status</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    flashlight<span class="token operator">/</span>off<span class="token punctuation">,</span>
+    game<span class="token operator">/</span>on<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% static state </span>
+<span class="token function">rooms</span><span class="token punctuation">(</span><span class="token punctuation">[</span>office<span class="token punctuation">,</span> kitchen<span class="token punctuation">,</span> cellar<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">doors</span><span class="token punctuation">(</span><span class="token punctuation">[</span>office<span class="token operator">/</span>kitchen<span class="token punctuation">,</span> cellar<span class="token operator">/</span>kitchen<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">connect</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span>Y<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">doors</span><span class="token punctuation">(</span>DoorList<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">member</span><span class="token punctuation">(</span>X<span class="token operator">/</span>Y<span class="token punctuation">,</span> DoorList<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">connect</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span>Y<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">doors</span><span class="token punctuation">(</span>DoorList<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">member</span><span class="token punctuation">(</span>Y<span class="token operator">/</span>X<span class="token punctuation">,</span> DoorList<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% list utilities </span>
+<span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>X<span class="token operator">|</span>Y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>Y<span class="token operator">|</span>Z<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span>Z<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">delete</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">delete</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token punctuation">[</span>X<span class="token operator">|</span>T<span class="token punctuation">]</span><span class="token punctuation">,</span> T<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">delete</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token punctuation">[</span>H<span class="token operator">|</span>T<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>H<span class="token operator">|</span>Z<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">delete</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> T<span class="token punctuation">,</span> Z<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% state manipulation utilities </span>
+<span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> here<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token function">here</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span> State<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> have<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token function">have</span><span class="token punctuation">(</span>Haves<span class="token punctuation">)</span><span class="token punctuation">,</span> State<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> Haves<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> location<span class="token punctuation">,</span> Loc<span class="token operator">/</span>X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token function">location</span><span class="token punctuation">(</span>Locs<span class="token punctuation">)</span><span class="token punctuation">,</span> State<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">member</span><span class="token punctuation">(</span>Loc<span class="token operator">/</span>X<span class="token punctuation">,</span> Locs<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> status<span class="token punctuation">,</span> Thing<span class="token operator">/</span>Stat<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">member</span><span class="token punctuation">(</span><span class="token function">status</span><span class="token punctuation">(</span>Stats<span class="token punctuation">)</span><span class="token punctuation">,</span> State<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">member</span><span class="token punctuation">(</span>Thing<span class="token operator">/</span>Stat<span class="token punctuation">,</span> Stats<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">del_state</span><span class="token punctuation">(</span>OldState<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">location</span><span class="token punctuation">(</span>NewLocs<span class="token punctuation">)</span> <span class="token operator">|</span> Temp<span class="token punctuation">]</span><span class="token punctuation">,</span> location<span class="token punctuation">,</span> Loc<span class="token operator">/</span>X<span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">delete</span><span class="token punctuation">(</span><span class="token function">location</span><span class="token punctuation">(</span>Locs<span class="token punctuation">)</span><span class="token punctuation">,</span> OldState<span class="token punctuation">,</span> Temp<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">delete</span><span class="token punctuation">(</span>Loc<span class="token operator">/</span>X<span class="token punctuation">,</span> Locs<span class="token punctuation">,</span> NewLocs<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">add_state</span><span class="token punctuation">(</span>OldState<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">here</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">|</span>Temp<span class="token punctuation">]</span><span class="token punctuation">,</span> here<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">delete</span><span class="token punctuation">(</span><span class="token function">here</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span><span class="token punctuation">,</span> OldState<span class="token punctuation">,</span> Temp<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">add_state</span><span class="token punctuation">(</span>OldState<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">have</span><span class="token punctuation">(</span><span class="token punctuation">[</span>X<span class="token operator">|</span>Haves<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">|</span>Temp<span class="token punctuation">]</span><span class="token punctuation">,</span> have<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">delete</span><span class="token punctuation">(</span><span class="token function">have</span><span class="token punctuation">(</span>Haves<span class="token punctuation">)</span><span class="token punctuation">,</span> OldState<span class="token punctuation">,</span> Temp<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">add_state</span><span class="token punctuation">(</span>OldState<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token punctuation">[</span>Thing<span class="token operator">/</span>Stat<span class="token operator">|</span>TempStats<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">|</span>Temp<span class="token punctuation">]</span><span class="token punctuation">,</span>
+    status<span class="token punctuation">,</span> Thing<span class="token operator">/</span>Stat<span class="token punctuation">)</span> <span class="token operator">:-</span>
+<span class="token function">delete</span><span class="token punctuation">(</span><span class="token function">status</span><span class="token punctuation">(</span>Stats<span class="token punctuation">)</span><span class="token punctuation">,</span> OldState<span class="token punctuation">,</span> Temp<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token function">delete</span><span class="token punctuation">(</span>Thing<span class="token operator">/</span>_<span class="token punctuation">,</span> Stats<span class="token punctuation">,</span> TempStats<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% end condition </span>
+<span class="token function">end_condition</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> have<span class="token punctuation">,</span> nani<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'You win'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">end_condition</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> status<span class="token punctuation">,</span> game<span class="token operator">/</span>off<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'quitter'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">% constraints and puzzles together </span>
+<span class="token function">constraint</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> <span class="token function">goto</span><span class="token punctuation">(</span>cellar<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token operator">!</span><span class="token punctuation">,</span> <span class="token function">can_go_cellar</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">constraint</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> <span class="token function">goto</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token operator">!</span><span class="token punctuation">,</span> <span class="token function">can_go</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">constraint</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> <span class="token function">take</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token operator">!</span><span class="token punctuation">,</span> <span class="token function">can_take</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">constraint</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> <span class="token function">turn_on</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token operator">!</span><span class="token punctuation">,</span> <span class="token function">can_turn_on</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">constraint</span><span class="token punctuation">(</span>_<span class="token punctuation">,</span> _<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">can_go</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span>X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> here<span class="token punctuation">,</span> H<span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+<span class="token function">connect</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span>H<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">can_go</span><span class="token punctuation">(</span>_<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'You can''t get there from here'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span> fail<span class="token operator">.</span>
+<span class="token function">can_go_cellar</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">can_go</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> cellar<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token operator">!</span><span class="token punctuation">,</span> <span class="token function">cellar_puzzle</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">cellar_puzzle</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> have<span class="token punctuation">,</span> flashlight<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> status<span class="token punctuation">,</span> flashlight<span class="token operator">/</span>on<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">cellar_puzzle</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'It''s dark in the cellar'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span> fail<span class="token operator">.</span>
+
+<span class="token function">can_take</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> here<span class="token punctuation">,</span> H<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> location<span class="token punctuation">,</span> H<span class="token operator">/</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">can_take</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'it is not here'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span> fail<span class="token operator">.</span>
+
+<span class="token function">can_turn_on</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> have<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">can_turn_on</span><span class="token punctuation">(</span>_<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'You don''t have it'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span> fail<span class="token operator">.</span>
+
+<span class="token comment">% commands </span>
+<span class="token function">do</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> <span class="token function">goto</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">goto</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> <span class="token function">take</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">take</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> <span class="token function">turn_on</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">turn_on</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> State<span class="token punctuation">,</span> look<span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">look</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> quit<span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">quit</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">do</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> State<span class="token punctuation">,</span> _<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'illegal command'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token operator">.</span>
+
+<span class="token function">look</span><span class="token punctuation">(</span>State<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> here<span class="token punctuation">,</span> H<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'You are in '</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span>H<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    nl<span class="token punctuation">,</span>
+    <span class="token function">list_things</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> H<span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token operator">.</span>
+
+<span class="token function">list_things</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> H<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>State<span class="token punctuation">,</span> location<span class="token punctuation">,</span> H<span class="token operator">/</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">tab</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    fail<span class="token operator">.</span>
+<span class="token function">list_things</span><span class="token punctuation">(</span>_<span class="token punctuation">,</span> _<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">goto</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">add_state</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> here<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">look</span><span class="token punctuation">(</span>New<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">take</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get_state</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> here<span class="token punctuation">,</span> H<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">del_state</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> Temp<span class="token punctuation">,</span> location<span class="token punctuation">,</span> H<span class="token operator">/</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">add_state</span><span class="token punctuation">(</span>Temp<span class="token punctuation">,</span> New<span class="token punctuation">,</span> have<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">turn_on</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> X<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">add_state</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> status<span class="token punctuation">,</span> X<span class="token operator">/</span>on<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">quit</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">add_state</span><span class="token punctuation">(</span>Old<span class="token punctuation">,</span> New<span class="token punctuation">,</span> status<span class="token punctuation">,</span> game<span class="token operator">/</span>off<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>使用这种递归的方法来完成任务，还有一个问题需要考虑。Prolog需要使用堆栈来储存递归的一些中间信息，当递归深入下去时，堆栈会越来越大。在本游戏中，由于参数较为复杂，堆栈是很容易溢出的。</p>
+<p>幸运的是，Prolog对于这种类型的递归有优化的方法。</p>
+<h1 id="尾递归"><a name="尾递归" class="anchor-navigation-ex-anchor" href="#尾递归"><i class="fa fa-link" aria-hidden="true"></i></a>3. 尾递归</h1>
+<p>递归有两种类型。在真正的递归程序中，每一层必须使用下一层调用返回的信息。这意味着Prolog必须建立堆栈来储存每一层的信息。</p>
+<p>这与重复操作是不同的，在通常的语言中，我们一般使用的是重复操作。重复操作只需要把信息传递下去就行了，而不需要保存每一次调用的信息。我们可以使用递归来实现重复，这种递归就叫做尾递归。它的通常的形式是递归语句在最后，每一层的计算不需要使用下一层的返回信息，所以在这种情况下，好的Prolog解释器不需要使用堆栈。</p>
+<p>计算阶乘就属于尾递归类型。首先我们使用通常的递归形式。注意从下一层返回的变量FF的值被使用到了上一层。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">factorial_1</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">factorial_1</span><span class="token punctuation">(</span>N<span class="token punctuation">,</span>F<span class="token punctuation">)</span><span class="token operator">:-</span>
+    N <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    NN <span class="token operator">is</span> N <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token function">factorial_1</span><span class="token punctuation">(</span>NN<span class="token punctuation">,</span>FF<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    F <span class="token operator">is</span> N <span class="token operator">*</span> FF<span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">factorial_1</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token number">120</span>
+</code></pre>
+<p>如果引入一个新的变量来储存前面调用的结果，我们就可以把<code>factorial/3</code>写成尾递归的形式。新的参数的初始值为1。每次递归调用将计算第二个参数的值，当到达了边界条件，第三个参数就绑定为第二个参数。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">factorial_2</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span>F<span class="token punctuation">,</span>F<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">factorial_2</span><span class="token punctuation">(</span>N<span class="token punctuation">,</span>T<span class="token punctuation">,</span>F<span class="token punctuation">)</span><span class="token operator">:-</span>
+    N <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    TT <span class="token operator">is</span> N <span class="token operator">*</span> T<span class="token punctuation">,</span>
+    NN <span class="token operator">is</span> N <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token function">factorial_2</span><span class="token punctuation">(</span>NN<span class="token punctuation">,</span>TT<span class="token punctuation">,</span>F<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">factorial_2</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token number">120</span>
+</code></pre>
+<p>它的结果和前面的相同，不过由于使用了尾递归，就不需要使用堆栈来储存中间的信息了。</p>
+<p>把列表的元素顺序倒过来的谓词也可以使用尾递归来完成。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">naive_reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">naive_reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span>H<span class="token operator">|</span>T<span class="token punctuation">]</span><span class="token punctuation">,</span>Rev<span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">naive_reverse</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span>TR<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">append</span><span class="token punctuation">(</span>TR<span class="token punctuation">,</span><span class="token punctuation">[</span>H<span class="token punctuation">]</span><span class="token punctuation">,</span>Rev<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">naive_reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span>ants<span class="token punctuation">,</span> mice<span class="token punctuation">,</span> zebras<span class="token punctuation">]</span><span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>zebras<span class="token punctuation">,</span> mice<span class="token punctuation">,</span> ants<span class="token punctuation">]</span>
+</code></pre>
+<p>这个谓词在逻辑上是完全正确的，不过它的运行效率非常低。所以我们把它叫做<code>原始(naive)</code>的递归。</p>
+<p>当引入一个用来储存部分运算结果的新的参数后，我们就可以使用尾递归来重写这个谓词。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> Rev<span class="token punctuation">,</span> Rev<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span>H<span class="token operator">|</span>T<span class="token punctuation">]</span><span class="token punctuation">,</span> Temp<span class="token punctuation">,</span> Rev<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">reverse</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span> <span class="token punctuation">[</span>H<span class="token operator">|</span>Temp<span class="token punctuation">]</span><span class="token punctuation">,</span> Rev<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">[</span>ants<span class="token punctuation">,</span> mice<span class="token punctuation">,</span> zebras<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>zebras<span class="token punctuation">,</span> mice<span class="token punctuation">,</span> ants<span class="token punctuation">]</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright © zhzluke96 2020 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2026-06-30 15:36
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter14.html" class="navigation navigation-prev " aria-label="Previous page: 截断！">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter16.html" class="navigation navigation-next " aria-label="Next page: 自然语言">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"流程控制","level":"3.15","depth":1,"next":{"title":"自然语言","level":"3.16","depth":1,"path":"tut/chapter16.md","ref":"tut/chapter16.md","articles":[]},"previous":{"title":"截断！","level":"3.14","depth":1,"path":"tut/chapter14.md","ref":"tut/chapter14.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","honkit-plugin-prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"honkit-plugin-prism":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":false,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"tut/chapter15.md","mtime":"2026-06-30T15:36:35.939Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-06-30T15:36:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1191 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>数理逻辑 · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="turing.html" />
+    
+    
+    <link rel="prev" href="../codeseen/cs2.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../tut/chapter0.0.html">
+            
+                <a href="../tut/chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../tut/chapter0.1.html">
+            
+                <a href="../tut/chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../tut/chapter0.2.html">
+            
+                <a href="../tut/chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../tut/chapter1.html">
+            
+                <a href="../tut/chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../tut/chapter2.html">
+            
+                <a href="../tut/chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../tut/chapter3.html">
+            
+                <a href="../tut/chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../tut/chapter4.html">
+            
+                <a href="../tut/chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../tut/chapter5.html">
+            
+                <a href="../tut/chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../tut/chapter6.html">
+            
+                <a href="../tut/chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../tut/chapter7.html">
+            
+                <a href="../tut/chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../tut/chapter8.html">
+            
+                <a href="../tut/chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../tut/chapter9.html">
+            
+                <a href="../tut/chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../tut/chapter10.html">
+            
+                <a href="../tut/chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../tut/chapter11.html">
+            
+                <a href="../tut/chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../tut/chapter12.html">
+            
+                <a href="../tut/chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../tut/chapter13.html">
+            
+                <a href="../tut/chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../tut/chapter14.html">
+            
+                <a href="../tut/chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="../tut/chapter15.html">
+            
+                <a href="../tut/chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="../tut/chapter16.html">
+            
+                <a href="../tut/chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="../tut/chapter17.html">
+            
+                <a href="../tut/chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../hello-pl/c0.1.html">
+            
+                <a href="../hello-pl/c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../hello-pl/c0.2.html">
+            
+                <a href="../hello-pl/c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../hello-pl/c1.html">
+            
+                <a href="../hello-pl/c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../hello-pl/c2.html">
+            
+                <a href="../hello-pl/c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../hello-pl/c3.html">
+            
+                <a href="../hello-pl/c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../hello-pl/c3b_lists_recursion.html">
+            
+                <a href="../hello-pl/c3b_lists_recursion.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    列表与递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../hello-pl/c3c_backtracking_control.html">
+            
+                <a href="../hello-pl/c3c_backtracking_control.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    回溯与控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../hello-pl/c4.html">
+            
+                <a href="../hello-pl/c4.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../hello-pl/c5.html">
+            
+                <a href="../hello-pl/c5.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../hello-pl/c6.html">
+            
+                <a href="../hello-pl/c6.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../hello-pl/c7.html">
+            
+                <a href="../hello-pl/c7.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../hello-pl/c8.html">
+            
+                <a href="../hello-pl/c8.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../hello-pl/c9a.html">
+            
+                <a href="../hello-pl/c9a.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    规则引擎与约束求解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../hello-pl/c9b.html">
+            
+                <a href="../hello-pl/c9b.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    搜索与自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../hello-pl/c10.html">
+            
+                <a href="../hello-pl/c10.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../hello-pl/c11.html">
+            
+                <a href="../hello-pl/c11.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="6.1" data-path="logic.html">
+            
+                <a href="logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="turing.html">
+            
+                <a href="turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="puzzles.html">
+            
+                <a href="puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="AFTERME.html">
+            
+                <a href="AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >数理逻辑</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#数理逻辑"><b>1. </b>数理逻辑</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#为什么要有逻辑"><b>1.1. </b>为什么要有逻辑</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#命题逻辑"><b>1.2. </b>命题逻辑</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#命题逻辑-→-谓词逻辑"><b>1.3. </b>命题逻辑 → 谓词逻辑</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#合取范式与-horn-子句"><b>1.4. </b>合取范式与 Horn 子句</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#sld-resolution"><b>1.5. </b>SLD Resolution</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#现实化（grounding）"><b>1.6. </b>现实化（grounding）</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#等价转换"><b>1.7. </b>等价转换</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#蕴含与逆否"><b>1.8. </b>蕴含与逆否</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#negation-as-failure"><b>1.9. </b>Negation as Failure</a></li></ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#prolog-的计算模型正是基于-horn-子句逻辑——sld-resolution-构成了-prolog-的执行引擎。"><b>2. </b>&gt; Prolog 的计算模型正是基于 Horn 子句逻辑——SLD Resolution 构成了 Prolog 的执行引擎。</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#集合论浅谈"><b>3. </b>集合论浅谈</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#回到-prolog"><b>3.1. </b>回到 Prolog</a></li></ul></ul></div><a href="#数理逻辑" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="数理逻辑"><a name="数理逻辑" class="anchor-navigation-ex-anchor" href="#数理逻辑"><i class="fa fa-link" aria-hidden="true"></i></a>1. 数理逻辑</h1>
+<blockquote>
+<p>前置：<a href="../hello-pl/c0.2.html">语法</a> | 难度：★★★ | 后续：—</p>
+</blockquote>
+<p>既然是基于逻辑的语言怎么能不谈谈逻辑呢？</p>
+<blockquote>
+<p>可能要打肿脸充胖子了...说实话我初中的时候是没学懂什么叫做蕴含的...</p>
+</blockquote>
+<p>不过没关系，初中的理解不了，现在总该能理解了。毕竟手上有了 Prolog，逻辑不再只是纸上的符号——能跑。</p>
+<hr></hr>
+<h2 id="为什么要有逻辑"><a name="为什么要有逻辑" class="anchor-navigation-ex-anchor" href="#为什么要有逻辑"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 为什么要有逻辑</h2>
+<p>程序 = 数据结构 + 算法，这句话到了 Prolog 得改成：</p>
+<p><strong>程序 = 事实 + 规则 + 查询</strong></p>
+<p>事实和规则描述"世界是什么样"，查询问"这个世界是否满足某个条件"。这不就是逻辑学做的事吗？</p>
+<p>实际上，Horn 子句逻辑构成了 Prolog 的底层基础。学点数理逻辑不是为了装逼，是让你理解这些词：</p>
+<ul>
+<li>为什么 <code>:-</code> 是"如果...则..."而不是赋值</li>
+<li>为什么 Prolog 搜索失败就回溯，不抛异常</li>
+<li>为什么 <code>not</code> 在 Prolog 里行为和直觉不同</li>
+</ul>
+<h2 id="命题逻辑"><a name="命题逻辑" class="anchor-navigation-ex-anchor" href="#命题逻辑"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. 命题逻辑</h2>
+<p>最简单的逻辑系统。命题（proposition）是一个可以判断真假的陈述句。</p>
+<pre class="language-"><code>P = "今天下雨"
+Q = "我带伞"
+</code></pre><p>命题连接词（connective）：</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+<th>Prolog 对应</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>¬P</td>
+<td>非 P</td>
+<td><code>\+ P</code></td>
+</tr>
+<tr>
+<td>P ∧ Q</td>
+<td>P 且 Q</td>
+<td><code>P, Q</code></td>
+</tr>
+<tr>
+<td>P ∨ Q</td>
+<td>P 或 Q</td>
+<td><code>P; Q</code></td>
+</tr>
+<tr>
+<td>P → Q</td>
+<td>P 蕴含 Q</td>
+<td><code>P -&gt; Q</code>（控制流）</td>
+</tr>
+<tr>
+<td>P ↔ Q</td>
+<td>P 当且仅当 Q</td>
+<td><code>P =:= Q</code>（CLP 域）</td>
+</tr>
+</tbody>
+</table>
+<p>教科书上管这叫"真值函项连接词"——它们的真值只取决于子命题的真值。</p>
+<p>Prolog 的 <code>,</code>（逗号）就是逻辑与。<code>;</code>（分号）就是逻辑或。这不是巧合，这是直接把命题逻辑做到语法层。</p>
+<p>看一个简单推理：</p>
+<pre class="language-"><code>P = "苏格拉底是人"
+Q = "人都会死"
+R = "苏格拉底会死"
+
+如果 P 且 Q，那么 R
+</code></pre><p>Prolog 版本：</p>
+<pre class="language-"><code class="lang-prolog">凡人_必死 <span class="token operator">:=</span> mortal<span class="token operator">.</span>
+<span class="token function">human</span><span class="token punctuation">(</span>socrates<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">mortal</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token function">human</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>当然，Prolog 里没有 "必然推出" 符号，只有 <code>:-</code>。它就是逻辑蕴含的"可计算版本"。</p>
+<h2 id="命题逻辑-→-谓词逻辑"><a name="命题逻辑-→-谓词逻辑" class="anchor-navigation-ex-anchor" href="#命题逻辑-→-谓词逻辑"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. 命题逻辑 → 谓词逻辑</h2>
+<p>命题逻辑的缺陷很明显：表达力有限。</p>
+<pre class="language-"><code>"所有人都会死"
+</code></pre><p>这不是一个命题——它谈论的是"所有"这个东西。命题逻辑没法处理量词。</p>
+<p>一阶谓词逻辑（first-order predicate logic）在命题逻辑之上加了两样东西：</p>
+<ol>
+<li><strong>谓词（predicate）</strong>：描述对象之间的关系，如 <code>human(socrates)</code>、<code>mortal(X)</code></li>
+<li><strong>量词（quantifier）</strong>：∀（全称量词，for all）和 ∃（存在量词，there exists）</li>
+</ol>
+<pre class="language-"><code>∀X (human(X) → mortal(X))
+∃X (human(X) ∧ wise(X))
+</code></pre><p>∀ 对应 Prolog 的变量（大写字母开头），∃ 对应 Prolog 的未实例化变量在查询中的行为。</p>
+<p>不过 Prolog 有本质简化：<strong>不直接支持 ∀ 和 ∃</strong>。Prolog 的变量默认是全称量化的：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">mortal</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token function">human</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>这里的 <code>X</code> 是 <code>∀X (human(X) → mortal(X))</code>。查询 <code>?- mortal(socrates).</code> 是在问 <code>∃</code> 但 Prolog 是通过找实例化来证明存在性。</p>
+<h2 id="合取范式与-horn-子句"><a name="合取范式与-horn-子句" class="anchor-navigation-ex-anchor" href="#合取范式与-horn-子句"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. 合取范式与 Horn 子句</h2>
+<p>想把任意逻辑公式用 Prolog 表达，得先转换成合取范式（CNF）：</p>
+<pre class="language-"><code>(¬P ∨ Q) ∧ (P ∨ ¬Q) ∧ ...
+</code></pre><p>CNF 中特别重要的一种形式是 <strong>Horn 子句</strong>——每个子句里最多只有一个肯定文字（positive literal）。</p>
+<pre class="language-"><code>A ← B1 ∧ B2 ∧ ... ∧ Bn
+</code></pre><p>这就是 Prolog 规则：</p>
+<pre class="language-"><code class="lang-prolog">A <span class="token operator">:-</span> B1<span class="token punctuation">,</span> B2<span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">,</span> Bn<span class="token operator">.</span>
+</code></pre>
+<p>如果 n=0（没有条件），就是事实：</p>
+<pre class="language-"><code class="lang-prolog">a<span class="token operator">.</span>
+</code></pre>
+<blockquote>
+<p>类比 | SQL: DDL CHECK 约束 / WHERE 条件 — Horn 子句是逻辑约束的原子单位，和 CHECK (condition) 本质相同。</p>
+</blockquote>
+<p>这里插一句：为什么叫 Horn？因为逻辑学家 Alfred Horn 发现了这种子句的特殊性质——Horn 子句集合要么有唯一极小模型，要么无解。对应的计算性质：Horn 子句的归约（SLD resolution）是高效的，甚至可以在多项式时间内判定。</p>
+<p>非 Horn 子句的例子：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token punctuation">(</span>P ∨ Q<span class="token punctuation">)</span>
+</code></pre>
+<p>两个都是肯定文字。无法写成 <code>:-</code> 形式。Prolog 处理不了这种情况——你得用 <code>;</code> 在查询里手动处理或：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> p <span class="token operator">;</span> q<span class="token operator">.</span>
+</code></pre>
+<p>但规则层没法表达"要么 P 要么 Q 为真"这种不确定事实。</p>
+<h2 id="sld-resolution"><a name="sld-resolution" class="anchor-navigation-ex-anchor" href="#sld-resolution"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. SLD Resolution</h2>
+<p>Resolution 是 Robinson 在 1965 年提出的定理证明方法——对 Prolog 而言就是执行引擎。</p>
+<p>SLD = Selective Linear Definite-clause resolution。</p>
+<p>名字拆开：</p>
+<ul>
+<li><strong>Selective</strong>：每次选一个子目标</li>
+<li><strong>Linear</strong>：目标列表线性推导</li>
+<li><strong>Definite-clause</strong>：用的全是 Horn 子句</li>
+</ul>
+<p>过程：</p>
+<ol>
+<li>从查询开始（比如 <code>?- mortal(socrates).</code>）</li>
+<li>找规则头匹配的规则（<code>mortal(X) :- human(X).</code>）</li>
+<li>联合（unification）：<code>X = socrates</code></li>
+<li>把规则体替换成新目标（<code>human(socrates)</code>）</li>
+<li>重复直到目标为空</li>
+</ol>
+<p>如果有多个规则匹配，Prolog 会选第一条，并在后续失败时回溯到分支点尝试下一条。</p>
+<p>这就是你在 Prolog 中看到的搜索行为。没有魔法，只是逻辑。</p>
+<blockquote>
+<p>类比 | SQL: 查询规划器枚举 join 策略 — SLD 深度优先搜索所有可能的推导路径，和数据库选择执行计划类似。</p>
+</blockquote>
+<p>更形式化的描述：</p>
+<pre class="language-"><code>给定目标 G 和规则 H :- B1, B2, ..., Bn
+如果 G 和 H 能联合（θ = mgu(G, H)），
+那么新目标是 (B1, B2, ..., Bn)θ
+</code></pre><p>mgu = most general unifier（最一般合一子）。</p>
+<h2 id="现实化（grounding）"><a name="现实化（grounding）" class="anchor-navigation-ex-anchor" href="#现实化（grounding）"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. 现实化（grounding）</h2>
+<p>逻辑推理要接触地面——变量必须被实例化成具体的项。</p>
+<p>Prolog 中，查询时的输入和规则的应用自动做现实化。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">mortal</span><span class="token punctuation">(</span>socrates<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>这个查询传入了一个具体值 <code>socrates</code>。规则 <code>mortal(X) :- human(X)</code> 中 <code>X</code> 被绑定为 <code>socrates</code>，然后检查 <code>human(socrates)</code>。</p>
+<p>反过来，查询中用变量：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">mortal</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>这不是问"是否存在一个 X 使得 mortal(X) 成立"吗？是的。Prolog 会现实化出所有可能的 X。</p>
+<h2 id="等价转换"><a name="等价转换" class="anchor-navigation-ex-anchor" href="#等价转换"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. 等价转换</h2>
+<p>逻辑等价式（logical equivalence）是 Prolog 代码优化的理论基础。</p>
+<pre class="language-"><code>P ∨ Q  ≡  Q ∨ P                             交换律
+(P ∨ Q) ∨ R  ≡  P ∨ (Q ∨ R)                 结合律
+¬(P ∨ Q)  ≡  ¬P ∧ ¬Q                        德摩根律
+P → Q  ≡  ¬P ∨ Q                             蕴含消去
+</code></pre><p>在 Prolog 中，优化规则顺序就是利用交换律——规则顺序影响搜索效率但不影响语义正确性。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">% 两条规则顺序交换 —— 逻辑语义不变但搜索顺序不同</span>
+<span class="token function">parent</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> Y<span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token function">father</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> Y<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">parent</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> Y<span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token function">mother</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> Y<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>上面两个版本在逻辑上完全等价，但 Prolog 执行时会按字句顺序从上到下搜索，搜索顺序不同。这就是等价转换在 Prolog 中的实际意义。</p>
+<h2 id="蕴含与逆否"><a name="蕴含与逆否" class="anchor-navigation-ex-anchor" href="#蕴含与逆否"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. 蕴含与逆否</h2>
+<p>蕴含 <code>P → Q</code> 等价于其逆否（contrapositive）<code>¬Q → ¬P</code>。</p>
+<pre class="language-"><code>"如果下雨(P)则地湿(Q)"
+等价于
+"如果地不湿(¬Q)则没下雨(¬P)"
+</code></pre><p>Prolog 的 <code>:-</code> 方向性——<code>Q :- P</code> 表示"如果 P 则 Q"，但你只能从 Q 出发去证明 P。你不能直接问"如果 Q 为假那么 P 为假吗？"——但 <code>\+</code> 加上规则可以模拟：</p>
+<pre class="language-"><code class="lang-prolog">wet_ground <span class="token operator">:-</span> rained<span class="token operator">.</span>
+dry_ground <span class="token operator">:-</span> <span class="token operator">\+</span> wet_ground<span class="token operator">.</span>
+</code></pre>
+<p>如果 <code>dry_ground</code> 成立，那 <code>wet_ground</code> 必然不成立（假设我们知道要么湿要么干）。但 Prolog 的否定（<code>\+</code>）是 negation as failure（失败即否定）——不是经典逻辑中的强否定。</p>
+<h2 id="negation-as-failure"><a name="negation-as-failure" class="anchor-navigation-ex-anchor" href="#negation-as-failure"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. Negation as Failure</h2>
+<p>这是 Prolog 和经典逻辑最大的分歧点。</p>
+<p>经典逻辑：<code>¬P</code> 为真当且仅当 <code>P</code> 为假。
+Prolog：<code>\+ P</code> 成功当且仅当 <code>P</code> 在有限步内推理失败。</p>
+<p>区别：</p>
+<ul>
+<li>经典否定需要"知道世界是完整的"</li>
+<li>Prolog 的否定只是"穷尽搜索没找到"</li>
+</ul>
+<blockquote>
+<p>类比 | SQL: NOT EXISTS / NOT IN — Prolog 的 +/1 假设"无法证明即为假"，对应 SQL 的 negation。但 SQL 的三值逻辑（NULL）引入了 Prolog 没有的复杂性。</p>
+</blockquote>
+<p>这被称为封闭世界假设（Closed World Assumption）：</p>
+<blockquote>
+<p>任何无法被证明为真的事实，都被假定为假。</p>
+<p>类比 | SQL: 数据库假定未存储的事实不成立 — 和 Prolog 的 CWA 完全一致。</p>
+</blockquote>
+<p>这就是为什么 Prolog 知识库中没有 <code>fly(tom)</code> 这个事实，查询 <code>?- fly(tom).</code> 会失败——不是因为 tom 不能飞，而是因为知识库没这么说。</p>
+<h1 id="prolog-的计算模型正是基于-horn-子句逻辑——sld-resolution-构成了-prolog-的执行引擎。"><a name="prolog-的计算模型正是基于-horn-子句逻辑——sld-resolution-构成了-prolog-的执行引擎。" class="anchor-navigation-ex-anchor" href="#prolog-的计算模型正是基于-horn-子句逻辑——sld-resolution-构成了-prolog-的执行引擎。"><i class="fa fa-link" aria-hidden="true"></i></a>2. &gt; Prolog 的计算模型正是基于 Horn 子句逻辑——SLD Resolution 构成了 Prolog 的执行引擎。</h1>
+<blockquote>
+<p>Prolog 的表达能力上限（图灵完备性）见 <a href="turing.html">turing 篇</a>。</p>
+</blockquote>
+<h1 id="集合论浅谈"><a name="集合论浅谈" class="anchor-navigation-ex-anchor" href="#集合论浅谈"><i class="fa fa-link" aria-hidden="true"></i></a>3. 集合论浅谈</h1>
+<p>逻辑和集合论是同一个硬币的两面。</p>
+<ul>
+<li>谓词 → 集合的特征函数</li>
+<li>关系 → 笛卡尔积的子集</li>
+<li>规则 → 包含关系</li>
+</ul>
+<pre class="language-"><code class="lang-prolog"><span class="token function">human</span><span class="token punctuation">(</span>socrates<span class="token punctuation">)</span><span class="token operator">.</span>         <span class="token comment">% socrates ∈ Human</span>
+<span class="token function">mortal</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token function">human</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">.</span>  <span class="token comment">% Human ⊆ Mortal</span>
+</code></pre>
+<p>用 Prolog 的 <code>findall/3</code> 可以显式构造集合：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">findall</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token function">human</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span> Humans<span class="token punctuation">)</span><span class="token operator">.</span>
+Humans <span class="token operator">=</span> <span class="token punctuation">[</span>socrates<span class="token punctuation">]</span><span class="token operator">.</span>
+</code></pre>
+<blockquote>
+<p>类比 | SQL: findall≈SELECT, setof≈SELECT DISTINCT, bagof≈SELECT GROUP BY</p>
+</blockquote>
+<p><code>findall/3</code> 实际上做了"把所有满足条件的 X 收集成列表"的工作——这是从谓词到集合的显式转换。</p>
+<h2 id="回到-prolog"><a name="回到-prolog" class="anchor-navigation-ex-anchor" href="#回到-prolog"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. 回到 Prolog</h2>
+<p>学完这些再回头看 Prolog 的 <code>:-</code>：</p>
+<pre class="language-"><code>mortal(X) :- human(X).
+</code></pre><p>不再只是"如果 human(X) 则 mortal(X)"——它是一个 <strong>Horn 子句</strong>、一个 <strong>SLD resolution 的候选规则</strong>、一个 <strong>定义在集合上的蕴含关系</strong>。</p>
+<p>Prolog 不是"像逻辑"，Prolog <strong>就是逻辑</strong>——用可计算的方式表达。</p>
+<blockquote>
+<p>建议参考《A Mathematical Introduction to Logic》（Enderton）和《面向计算机科学的数理逻辑》（陆钟万）。
+前者理论扎实，后者偏向计算机应用。 </p>
+</blockquote>
+<footer class="page-footer"><span class="copyright">Copyright © zhzluke96 2020 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2026-06-30 15:36
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../codeseen/cs2.html" class="navigation navigation-prev " aria-label="Previous page: lisprolog">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="turing.html" class="navigation navigation-next " aria-label="Next page: 图灵完备">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数理逻辑","level":"6.1","depth":1,"next":{"title":"图灵完备","level":"6.2","depth":1,"path":"main/turing.md","ref":"main/turing.md","articles":[]},"previous":{"title":"lisprolog","level":"5.3","depth":1,"path":"codeseen/cs2.md","ref":"codeseen/cs2.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","honkit-plugin-prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"honkit-plugin-prism":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":false,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"main/logic.md","mtime":"2026-06-30T15:36:35.938Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-06-30T15:36:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

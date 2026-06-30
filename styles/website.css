@@ -1,0 +1,21 @@
+.page-inner {
+    padding-left: 3rem !important;
+}
+
+pre {
+    text-shadow: none !important;
+}
+
+.token.operator {
+    background: transparent !important;
+}
+
+.copy-code-button {
+    font-weight: bold;
+    opacity: .3;
+    transition: all .3s;
+}
+
+.copy-code-button:hover {
+    opacity: .9;
+}

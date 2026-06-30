@@ -1,0 +1,1357 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>web server · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="c9a.html" />
+    
+    
+    <link rel="prev" href="c7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../tut/chapter0.0.html">
+            
+                <a href="../tut/chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../tut/chapter0.1.html">
+            
+                <a href="../tut/chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../tut/chapter0.2.html">
+            
+                <a href="../tut/chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../tut/chapter1.html">
+            
+                <a href="../tut/chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../tut/chapter2.html">
+            
+                <a href="../tut/chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../tut/chapter3.html">
+            
+                <a href="../tut/chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../tut/chapter4.html">
+            
+                <a href="../tut/chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../tut/chapter5.html">
+            
+                <a href="../tut/chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../tut/chapter6.html">
+            
+                <a href="../tut/chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../tut/chapter7.html">
+            
+                <a href="../tut/chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../tut/chapter8.html">
+            
+                <a href="../tut/chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../tut/chapter9.html">
+            
+                <a href="../tut/chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../tut/chapter10.html">
+            
+                <a href="../tut/chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../tut/chapter11.html">
+            
+                <a href="../tut/chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../tut/chapter12.html">
+            
+                <a href="../tut/chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../tut/chapter13.html">
+            
+                <a href="../tut/chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../tut/chapter14.html">
+            
+                <a href="../tut/chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="../tut/chapter15.html">
+            
+                <a href="../tut/chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="../tut/chapter16.html">
+            
+                <a href="../tut/chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="../tut/chapter17.html">
+            
+                <a href="../tut/chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="c0.1.html">
+            
+                <a href="c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="c0.2.html">
+            
+                <a href="c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="c1.html">
+            
+                <a href="c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="c2.html">
+            
+                <a href="c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="c3.html">
+            
+                <a href="c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="c3b_lists_recursion.html">
+            
+                <a href="c3b_lists_recursion.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    列表与递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="c3c_backtracking_control.html">
+            
+                <a href="c3c_backtracking_control.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    回溯与控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="c4.html">
+            
+                <a href="c4.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="c5.html">
+            
+                <a href="c5.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="c6.html">
+            
+                <a href="c6.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="c7.html">
+            
+                <a href="c7.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.12" data-path="c8.html">
+            
+                <a href="c8.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="c9a.html">
+            
+                <a href="c9a.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    规则引擎与约束求解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="c9b.html">
+            
+                <a href="c9b.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    搜索与自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="c10.html">
+            
+                <a href="c10.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="c11.html">
+            
+                <a href="c11.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../main/logic.html">
+            
+                <a href="../main/logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../main/turing.html">
+            
+                <a href="../main/turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../main/puzzles.html">
+            
+                <a href="../main/puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../main/AFTERME.html">
+            
+                <a href="../main/AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >web server</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#web-server"><b>1. </b>Web Server</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#hello-web-——-三行代码起服务"><b>1.1. </b>Hello Web —— 三行代码起服务</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#httphandler-和-httpserver-——-核心搭档"><b>1.2. </b>http_handler 和 http_server —— 核心搭档</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#httpserver2-——-启动服务器"><b>1.2.1. </b>http_server/2 —— 启动服务器</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#httphandler3-——-注册路由"><b>1.2.2. </b>http_handler/3 —— 注册路由</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#request-对象"><b>1.2.3. </b>Request 对象</a></li></ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#实战：json-rest-api"><b>1.3. </b>实战：JSON REST API</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#文件服务——一行搞定"><b>1.4. </b>文件服务——一行搞定</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#middleware-模式"><b>1.5. </b>Middleware 模式</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#logger-middleware"><b>1.5.1. </b>logger middleware</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#auth-middleware"><b>1.5.2. </b>auth middleware</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#ratelimit-middleware"><b>1.5.3. </b>rate_limit middleware</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#组合-middleware"><b>1.5.4. </b>组合 middleware</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#局限"><b>1.5.5. </b>局限</a></li></ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#数据库操作（sqlite）"><b>1.6. </b>数据库操作（SQLite）</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#连接与建表"><b>1.6.1. </b>连接与建表</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#crud-操作"><b>1.6.2. </b>CRUD 操作</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#集成到-web-服务器"><b>1.6.3. </b>集成到 Web 服务器</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#注意"><b>1.6.4. </b>注意</a></li></ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#生产考量"><b>1.7. </b>生产考量</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#cors-设置"><b>1.7.1. </b>CORS 设置</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#session-管理"><b>1.7.2. </b>Session 管理</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#request-size-limit"><b>1.7.3. </b>Request size limit</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#并发安全"><b>1.7.4. </b>并发安全</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#部署建议"><b>1.7.5. </b>部署建议</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#其他推荐"><b>1.7.6. </b>其他推荐</a></li></ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#总结"><b>1.8. </b>总结</a></li></ul></ul></div><a href="#web-server" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="web-server"><a name="web-server" class="anchor-navigation-ex-anchor" href="#web-server"><i class="fa fa-link" aria-hidden="true"></i></a>1. Web Server</h1>
+<blockquote>
+<p>学完这章，你能用 Prolog 搭建一个带数据库的 REST API，甚至可以部署到生产环境。
+前置：<a href="c7.html">模块化</a> | 难度：★★ | 后续：—</p>
+</blockquote>
+<p>Prolog 还能写 web server？我第一次听说时也是这个反应。但你想想——Prolog 能做逻辑推理、能查数据库、能解析 JSON，凭什么不能处理 HTTP 请求？</p>
+<p>SWI-Prolog 内置了一套完整的 HTTP 库（<code>library(http/*)</code>），支持路由、JSON、Session、WebSocket。对内部工具或原型开发，比另起一个 Node.js 或 Flask 还省事——数据库、业务逻辑、HTTP 全在一个语言里，不用在项目之间切上下文。</p>
+<p>学完这章，你能用 Prolog 写一个带 JSON API 和 SQLite 数据库的 Web 服务，部署到服务器上跑起来。</p>
+<h2 id="hello-web-——-三行代码起服务"><a name="hello-web-——-三行代码起服务" class="anchor-navigation-ex-anchor" href="#hello-web-——-三行代码起服务"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Hello Web —— 三行代码起服务</h2>
+<p>先来看最简版本。创建一个 <code>websev.pl</code>：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>thread_httpd<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_dispatch<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_unix_daemon<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token operator">/</span><span class="token punctuation">,</span> handle_request<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">handle_request</span><span class="token punctuation">(</span>_Request<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"Content-type: text/plain~n~n"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"Hello!"</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>启动它：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">http_server</span><span class="token punctuation">(</span>handle_request<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">port</span><span class="token punctuation">(</span><span class="token number">8080</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token comment">% HTTP server started on port 8080</span>
+</code></pre>
+<p>打开浏览器访问 <code>http://localhost:8080/</code>——看到 <code>Hello!</code> 了吧。</p>
+<p>是不是比想象中简单？三个 <code>use_module</code> 加载 HTTP 库，一个 <code>http_handler</code> 注册路由，一个 <code>handle_request</code> 处理请求。没了。</p>
+<h2 id="httphandler-和-httpserver-——-核心搭档"><a name="httphandler-和-httpserver-——-核心搭档" class="anchor-navigation-ex-anchor" href="#httphandler-和-httpserver-——-核心搭档"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. http_handler 和 http_server —— 核心搭档</h2>
+<h3 id="httpserver2-——-启动服务器"><a name="httpserver2-——-启动服务器" class="anchor-navigation-ex-anchor" href="#httpserver2-——-启动服务器"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. http_server/2 —— 启动服务器</h3>
+<pre class="language-"><code class="lang-prolog"><span class="token function">http_server</span><span class="token punctuation">(</span><span class="token operator">:</span>Handle<span class="token punctuation">,</span> <span class="token operator">+</span>Options<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>它把 Prolog 进程变成一个 HTTP 服务器。Handle 通常是 <code>http_dispatch</code>（让 <code>http_handler</code> 自动分发），Options 最常用：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>作用</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>port(Port)</code></td>
+<td>端口号</td>
+<td>4000</td>
+</tr>
+<tr>
+<td><code>workers(N)</code></td>
+<td>工作线程数</td>
+<td>4</td>
+</tr>
+<tr>
+<td><code>timeout(Secs)</code></td>
+<td>连接超时</td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+<h3 id="httphandler3-——-注册路由"><a name="httphandler3-——-注册路由" class="anchor-navigation-ex-anchor" href="#httphandler3-——-注册路由"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. http_handler/3 —— 注册路由</h3>
+<pre class="language-"><code class="lang-prolog"><span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token operator">+</span>Path<span class="token punctuation">,</span> <span class="token operator">:</span>Handle<span class="token punctuation">,</span> <span class="token operator">+</span>Options<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>路由规则很直观：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token operator">/</span><span class="token punctuation">,</span>          root_handler<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token operator">/</span>api<span class="token operator">/</span>users<span class="token punctuation">,</span> users_handler<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token operator">/</span>files<span class="token operator">/</span><span class="token punctuation">,</span>    file_handler<span class="token punctuation">,</span> <span class="token punctuation">[</span>prefix<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><code>[prefix]</code> 表示前缀匹配——<code>/files/foo.txt</code> 也会路由到 <code>file_handler</code>。</p>
+<h3 id="request-对象"><a name="request-对象" class="anchor-navigation-ex-anchor" href="#request-对象"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. Request 对象</h3>
+<p>Handler 收到的 <code>Request</code> 是一个 Prolog 列表，包含请求的所有信息：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token punctuation">[</span> <span class="token function">method</span><span class="token punctuation">(</span>Method<span class="token punctuation">)</span>
+<span class="token punctuation">,</span> <span class="token function">path</span><span class="token punctuation">(</span>Path<span class="token punctuation">)</span>
+<span class="token punctuation">,</span> <span class="token function">search_params</span><span class="token punctuation">(</span>Params<span class="token punctuation">)</span>
+<span class="token punctuation">,</span> <span class="token operator">...</span>
+<span class="token punctuation">]</span>
+</code></pre>
+<p>提取参数用 <code>http_parameters/2</code>：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">handle_request</span><span class="token punctuation">(</span>Request<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">http_parameters</span><span class="token punctuation">(</span>Request<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">name</span><span class="token punctuation">(</span>Name<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">age</span><span class="token punctuation">(</span>Age<span class="token punctuation">,</span> <span class="token punctuation">[</span>number<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"Name=~w, Age=~d~n"</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>Name<span class="token punctuation">,</span> Age<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<blockquote>
+<p>跨语言类比：<code>http_parameters/2</code> 就像 Express 的 <code>req.query</code> 或 Flask 的 <code>request.args</code>。但 Prolog 的版本自带类型标注（比如 <code>[number]</code>）。</p>
+</blockquote>
+<h2 id="实战：json-rest-api"><a name="实战：json-rest-api" class="anchor-navigation-ex-anchor" href="#实战：json-rest-api"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. 实战：JSON REST API</h2>
+<p>来写个真正的 API——一个支持 GET/POST 的小服务。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>thread_httpd<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_dispatch<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_json<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>json<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token operator">/</span><span class="token punctuation">,</span>          root<span class="token punctuation">,</span>         <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token operator">/</span>api<span class="token operator">/</span>echo<span class="token punctuation">,</span>  echo_handler<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token operator">/</span>api<span class="token operator">/</span>data<span class="token punctuation">,</span>  data_handler<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+server <span class="token operator">:-</span>
+    <span class="token function">http_server</span><span class="token punctuation">(</span>http_dispatch<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">port</span><span class="token punctuation">(</span><span class="token number">8080</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% 根路由：HTML 欢迎页</span>
+<span class="token function">root</span><span class="token punctuation">(</span>_Request<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">reply_html_page</span><span class="token punctuation">(</span><span class="token function">title</span><span class="token punctuation">(</span><span class="token string">"Prolog Web"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">p</span><span class="token punctuation">(</span><span class="token string">"Prolog Web Server Running!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% POST /api/echo — 接收 JSON，原样返回</span>
+<span class="token function">echo_handler</span><span class="token punctuation">(</span>Request<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">http_read_json_dict</span><span class="token punctuation">(</span>Request<span class="token punctuation">,</span> Dict<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    Reply <span class="token operator">=</span> _<span class="token punctuation">{</span> status<span class="token operator">:</span> ok<span class="token punctuation">,</span> echo<span class="token operator">:</span> Dict<span class="token operator">.</span><span class="token function">get</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">reply_json_dict</span><span class="token punctuation">(</span>Reply<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% GET /api/data — 返回结构化 JSON</span>
+<span class="token function">data_handler</span><span class="token punctuation">(</span>_Request<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    Data <span class="token operator">=</span> _<span class="token punctuation">{</span> items<span class="token operator">:</span> <span class="token punctuation">[</span>_<span class="token punctuation">{</span>id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">"foo"</span><span class="token punctuation">}</span><span class="token punctuation">,</span> _<span class="token punctuation">{</span>id<span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> name<span class="token operator">:</span> <span class="token string">"bar"</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+            <span class="token punctuation">,</span> total<span class="token operator">:</span> <span class="token number">2</span>
+            <span class="token punctuation">,</span> timestamp<span class="token operator">:</span> <span class="token number">1</span>_700_000_000
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">reply_json_dict</span><span class="token punctuation">(</span>Data<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">initialization</span><span class="token punctuation">(</span>server<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>保存为 <code>webserver.pl</code>，运行：</p>
+<pre class="language-"><code class="lang-bash">$ swipl <span class="token parameter variable">-q</span> webserver.pl
+</code></pre>
+<p>测试：</p>
+<pre class="language-"><code class="lang-bash">$ <span class="token function">curl</span> http://localhost:8080/
+$ <span class="token function">curl</span> http://localhost:8080/api/data
+$ <span class="token function">curl</span> <span class="token parameter variable">-X</span> POST <span class="token parameter variable">-H</span> <span class="token string">"Content-Type: application/json"</span> <span class="token punctuation">\</span>
+       <span class="token parameter variable">-d</span> <span class="token string">'{"data":"hello"}'</span> http://localhost:8080/api/echo
+</code></pre>
+<p>看到返回的 JSON 了吧。<code>reply_json_dict/1</code> 自动设置 <code>Content-Type: application/json</code>，<code>http_read_json_dict/2</code> 自动解析请求体。来回都是 Prolog dict，比在其他语言里手动序列化省事多了。</p>
+<blockquote>
+<p>Prolog 时刻：<code>reply_json_dict/1</code> 接受的 <code>_{...}</code> 语法是 SWI-Prolog 的 dict 字面量。它和 JSON 几乎一一对应——这意味着你在 Prolog 里操作 JSON，本质上操作的就是 Prolog 数据结构，不需要额外的 ORM 或序列化层。</p>
+</blockquote>
+<h2 id="文件服务——一行搞定"><a name="文件服务——一行搞定" class="anchor-navigation-ex-anchor" href="#文件服务——一行搞定"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. 文件服务——一行搞定</h2>
+<p>要托管静态文件？最推荐的方式——一行：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_server_files<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token string">'/static/'</span><span class="token punctuation">,</span> <span class="token function">http_reply_from_dir</span><span class="token punctuation">(</span><span class="token string">'static'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>prefix<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><code>http_reply_from_dir/2</code> 自动处理 MIME 类型、缓存头、目录遍历防护。比自己手写 <code>http_reply_file</code> 安全得多。</p>
+<h2 id="middleware-模式"><a name="middleware-模式" class="anchor-navigation-ex-anchor" href="#middleware-模式"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Middleware 模式</h2>
+<blockquote>
+<p>进阶内容，可跳过</p>
+</blockquote>
+<p>我们有了路由、JSON、文件服务。但还缺什么？日志、认证、限流——这些横切关注点不该写在每个 handler 里。</p>
+<p>Middleware 模式就是一层层包装 handler：每个 middleware 接收一个 handler，返回加了料的 handler。</p>
+<h3 id="logger-middleware"><a name="logger-middleware" class="anchor-navigation-ex-anchor" href="#logger-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.1. logger middleware</h3>
+<pre class="language-"><code class="lang-prolog"><span class="token function">middleware_logger</span><span class="token punctuation">(</span>Handler<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    Handler<span class="token operator">.</span>
+
+<span class="token comment">%% 完整实现需要 hook 请求生命周期，这里只是示意</span>
+</code></pre>
+<h3 id="auth-middleware"><a name="auth-middleware" class="anchor-navigation-ex-anchor" href="#auth-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.2. auth middleware</h3>
+<p>检查 Authorization header 里的 bearer token：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_header<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">middleware_auth</span><span class="token punctuation">(</span>Handler<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    Handler<span class="token operator">.</span>
+
+<span class="token comment">%% 实际检查：</span>
+<span class="token comment">%% auth_wrapper(Request, Handler) :-</span>
+<span class="token comment">%%     (  http_header(Authorization, Bearer Token, Request)</span>
+<span class="token comment">%%     -&gt; Handler(Request)</span>
+<span class="token comment">%%     ;  reply_json_dict(_{error: unauthorized}, [status(401)])</span>
+<span class="token comment">%%     ).</span>
+</code></pre>
+<h3 id="ratelimit-middleware"><a name="ratelimit-middleware" class="anchor-navigation-ex-anchor" href="#ratelimit-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.3. rate_limit middleware</h3>
+<p>用 <code>nb_setval/2</code> 做简单计数器：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">middleware_rate_limit</span><span class="token punctuation">(</span>Handler<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    Handler<span class="token operator">.</span>
+
+<span class="token comment">%% 示例：</span>
+<span class="token comment">%% rate_limit_check :-</span>
+<span class="token comment">%%     (  nb_current(request_count, Count)</span>
+<span class="token comment">%%     -&gt; NewCount is Count + 1</span>
+<span class="token comment">%%     ;  NewCount = 1</span>
+<span class="token comment">%%     ),</span>
+<span class="token comment">%%     nb_setval(request_count, NewCount),</span>
+<span class="token comment">%%     (  NewCount &gt; 100</span>
+<span class="token comment">%%     -&gt; reply_json_dict(_{error: rate_limit_exceeded}, [status(429)])</span>
+<span class="token comment">%%     ;  true</span>
+<span class="token comment">%%     ).</span>
+</code></pre>
+<h3 id="组合-middleware"><a name="组合-middleware" class="anchor-navigation-ex-anchor" href="#组合-middleware"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.4. 组合 middleware</h3>
+<p>通过嵌套组合：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">compose_middleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> Handler<span class="token punctuation">)</span> <span class="token operator">:-</span> Handler<span class="token operator">.</span>
+<span class="token function">compose_middleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span>MW<span class="token operator">|</span>Rest<span class="token punctuation">]</span><span class="token punctuation">,</span> Handler<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">compose_middleware</span><span class="token punctuation">(</span>Rest<span class="token punctuation">,</span> Inner<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">call</span><span class="token punctuation">(</span>MW<span class="token punctuation">,</span> Inner<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% 使用</span>
+<span class="token operator">:-</span> <span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token operator">/</span><span class="token punctuation">,</span> <span class="token function">compose_middleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span>middleware_logger<span class="token punctuation">,</span> middleware_auth<span class="token punctuation">,</span> middleware_rate_limit<span class="token punctuation">]</span><span class="token punctuation">,</span> handle_request<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h3 id="局限"><a name="局限" class="anchor-navigation-ex-anchor" href="#局限"><i class="fa fa-link" aria-hidden="true"></i></a>1.5.5. 局限</h3>
+<p>Prolog 没有函数式语言的 middleware 链天然表达力，上述是概念演示。生产环境建议用 <code>library(http/http_hook)</code> 或 thread-local 变量。</p>
+<hr></hr>
+<h2 id="数据库操作（sqlite）"><a name="数据库操作（sqlite）" class="anchor-navigation-ex-anchor" href="#数据库操作（sqlite）"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. 数据库操作（SQLite）</h2>
+<blockquote>
+<p>进阶内容，可跳过</p>
+</blockquote>
+<p>API 有了，数据放哪？SWI-Prolog 通过 <code>library(sqlite)</code> 提供 SQLite 绑定。</p>
+<h3 id="连接与建表"><a name="连接与建表" class="anchor-navigation-ex-anchor" href="#连接与建表"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. 连接与建表</h3>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>sqlite<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+setup_db <span class="token operator">:-</span>
+    <span class="token function">sqlite_open</span><span class="token punctuation">(</span><span class="token string">'todos.db'</span><span class="token punctuation">,</span> DB<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">sqlite_exec</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> 'CREATE TABLE IF NOT EXISTS todos <span class="token punctuation">(</span>
+        id    INTEGER PRIMARY KEY AUTOINCREMENT<span class="token punctuation">,</span>
+        task  TEXT NOT NULL<span class="token punctuation">,</span>
+        done  INTEGER DEFAULT <span class="token number">0</span>
+    <span class="token punctuation">)</span>'<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">sqlite_close</span><span class="token punctuation">(</span>DB<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h3 id="crud-操作"><a name="crud-操作" class="anchor-navigation-ex-anchor" href="#crud-操作"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. CRUD 操作</h3>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">%% 创建 TODO</span>
+<span class="token function">add_todo</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> Task<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">sqlite_exec</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> <span class="token string">'INSERT INTO todos (task) VALUES (?)'</span><span class="token punctuation">,</span> Task<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% 查询所有 TODO</span>
+<span class="token function">list_todos</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> Todos<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">findall</span><span class="token punctuation">(</span>todo<span class="token punctuation">{</span>id<span class="token operator">:</span>Id<span class="token punctuation">,</span> task<span class="token operator">:</span>Task<span class="token punctuation">,</span> done<span class="token operator">:</span>Done<span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">(</span>  <span class="token function">sqlite_query</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> <span class="token string">'SELECT id, task, done FROM todos'</span><span class="token punctuation">,</span> <span class="token function">row</span><span class="token punctuation">(</span>Id<span class="token punctuation">,</span> Task<span class="token punctuation">,</span> Done<span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">)</span><span class="token punctuation">,</span> Todos<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% 标记完成</span>
+<span class="token function">toggle_todo</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> Id<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">sqlite_exec</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> <span class="token string">'UPDATE todos SET done = CASE WHEN done THEN 0 ELSE 1 END WHERE id = ?'</span><span class="token punctuation">,</span> Id<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% 删除 TODO</span>
+<span class="token function">delete_todo</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> Id<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">sqlite_exec</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> <span class="token string">'DELETE FROM todos WHERE id = ?'</span><span class="token punctuation">,</span> Id<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h3 id="集成到-web-服务器"><a name="集成到-web-服务器" class="anchor-navigation-ex-anchor" href="#集成到-web-服务器"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.3. 集成到 Web 服务器</h3>
+<p>把 SQLite 和 HTTP 连起来——一个 Todo API：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>thread_httpd<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_dispatch<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_json<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>sqlite<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_header<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">sqlite_open</span><span class="token punctuation">(</span><span class="token string">'todos.db'</span><span class="token punctuation">,</span> DB<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">http_handler</span><span class="token punctuation">(</span><span class="token operator">/</span>api<span class="token operator">/</span>todos<span class="token punctuation">,</span> todos_handler<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">todos_handler</span><span class="token punctuation">(</span>Request<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">http_parameters</span><span class="token punctuation">(</span>Request<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">method</span><span class="token punctuation">(</span>M<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span>  M <span class="token operator">=</span> get
+    <span class="token operator">-&gt;</span> <span class="token function">list_todos</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> Todos<span class="token punctuation">)</span><span class="token punctuation">,</span>
+       <span class="token function">reply_json_dict</span><span class="token punctuation">(</span>_<span class="token punctuation">{</span>todos<span class="token operator">:</span> Todos<span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token operator">;</span>  <span class="token function">http_read_json_dict</span><span class="token punctuation">(</span>Request<span class="token punctuation">,</span> Body<span class="token punctuation">)</span><span class="token punctuation">,</span>
+       <span class="token function">add_todo</span><span class="token punctuation">(</span>DB<span class="token punctuation">,</span> Body<span class="token operator">.</span>task<span class="token punctuation">)</span><span class="token punctuation">,</span>
+       <span class="token function">reply_json_dict</span><span class="token punctuation">(</span>_<span class="token punctuation">{</span>status<span class="token operator">:</span> ok<span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<blockquote>
+<p>Prolog 时刻：注意 <code>add_todo(DB, Task)</code> 里的 <code>?</code> 占位符——<code>sqlite_exec/3</code> 自动处理参数化查询，防 SQL 注入。Prolog 的变量绑定天然适合做 prepared statement。</p>
+</blockquote>
+<h3 id="注意"><a name="注意" class="anchor-navigation-ex-anchor" href="#注意"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.4. 注意</h3>
+<ul>
+<li><code>sqlite_exec/3</code> 参数化查询用 <code>?</code> 占位</li>
+<li><code>sqlite_query/3</code> 返回 <code>row(...)</code>；用 <code>findall/3</code> + dict 方便 JSON 序列化</li>
+<li>生产环境要管理连接池或每次请求独立连接</li>
+</ul>
+<hr></hr>
+<h2 id="生产考量"><a name="生产考量" class="anchor-navigation-ex-anchor" href="#生产考量"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. 生产考量</h2>
+<blockquote>
+<p>进阶内容，可跳过</p>
+</blockquote>
+<p>开发环境跑通了，上线呢？</p>
+<h3 id="cors-设置"><a name="cors-设置" class="anchor-navigation-ex-anchor" href="#cors-设置"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.1. CORS 设置</h3>
+<p>浏览器跨域请求需要返回 CORS headers：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_header<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">cors_handler</span><span class="token punctuation">(</span>Handler<span class="token punctuation">)</span> <span class="token operator">:-</span> Handler<span class="token operator">.</span>
+
+<span class="token comment">%% cors_set_headers :-</span>
+<span class="token comment">%%     http_set_response_header(access_control_allow_origin, '*'),</span>
+<span class="token comment">%%     http_set_response_header(access_control_allow_methods, 'GET, POST, PUT, DELETE, OPTIONS'),</span>
+<span class="token comment">%%     http_set_response_header(access_control_allow_headers, 'Content-Type, Authorization').</span>
+</code></pre>
+<h3 id="session-管理"><a name="session-管理" class="anchor-navigation-ex-anchor" href="#session-管理"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.2. Session 管理</h3>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>session_manager<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% 配置 session</span>
+<span class="token operator">:-</span> <span class="token function">initialization</span><span class="token punctuation">(</span><span class="token function">http_session_manager</span><span class="token punctuation">(</span><span class="token function">expire</span><span class="token punctuation">(</span><span class="token number">3600</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token comment">%% 在 handler 中使用</span>
+<span class="token function">session_handler</span><span class="token punctuation">(</span>Request<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">http_open_session</span><span class="token punctuation">(</span>Request<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">http_session_data</span><span class="token punctuation">(</span><span class="token function">user</span><span class="token punctuation">(</span>User<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span>  <span class="token function">var</span><span class="token punctuation">(</span>User<span class="token punctuation">)</span>
+    <span class="token operator">-&gt;</span> <span class="token function">http_session_assert</span><span class="token punctuation">(</span><span class="token function">user</span><span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token operator">;</span>  true
+    <span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h3 id="request-size-limit"><a name="request-size-limit" class="anchor-navigation-ex-anchor" href="#request-size-limit"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.3. Request size limit</h3>
+<pre class="language-"><code class="lang-prolog"><span class="token function">http_server</span><span class="token punctuation">(</span>http_dispatch<span class="token punctuation">,</span>
+    <span class="token punctuation">[</span> <span class="token function">port</span><span class="token punctuation">(</span><span class="token number">8080</span><span class="token punctuation">)</span>
+    <span class="token punctuation">,</span> <span class="token function">limit</span><span class="token punctuation">(</span><span class="token number">10</span>_000_000<span class="token punctuation">)</span>  <span class="token comment">%% 请求体上限 10MB</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h3 id="并发安全"><a name="并发安全" class="anchor-navigation-ex-anchor" href="#并发安全"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.4. 并发安全</h3>
+<p>SWI-Prolog HTTP 服务器基于多线程（<code>workers(N)</code> 控制线程数）。注意：</p>
+<ul>
+<li><code>nb_setval/2</code> 非线程安全</li>
+<li>线程间共享数据用 <code>thread_local</code> + <code>with_mutex/2</code></li>
+<li><code>library(sqlite)</code> 实例默认线程安全，但多线程写需同步</li>
+</ul>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> thread_local <span class="token function">request_counter/1</span><span class="token operator">.</span>
+
+increment_counter <span class="token operator">:-</span>
+    <span class="token function">with_mutex</span><span class="token punctuation">(</span>counter<span class="token punctuation">,</span>
+        <span class="token punctuation">(</span>  <span class="token function">request_counter</span><span class="token punctuation">(</span>C<span class="token punctuation">)</span><span class="token punctuation">,</span>
+           <span class="token function">retractall</span><span class="token punctuation">(</span><span class="token function">request_counter</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+           NC <span class="token operator">is</span> C <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span>
+           <span class="token function">asserta</span><span class="token punctuation">(</span><span class="token function">request_counter</span><span class="token punctuation">(</span>NC<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token operator">;</span>  <span class="token function">asserta</span><span class="token punctuation">(</span><span class="token function">request_counter</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h3 id="部署建议"><a name="部署建议" class="anchor-navigation-ex-anchor" href="#部署建议"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.5. 部署建议</h3>
+<p><strong>方式一：daemon 模式</strong></p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>http<span class="token operator">/</span>http_unix_daemon<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token operator">:-</span> <span class="token function">initialization</span><span class="token punctuation">(</span>http_daemon<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><code>http_daemon</code> 自动 fork 到后台、写 PID 文件、处理日志。</p>
+<p><strong>方式二：nginx 反向代理</strong></p>
+<pre class="language-"><code># nginx 配置片段
+upstream prolog_backend {
+    server 127.0.0.1:8080;
+}
+server {
+    listen 80;
+    location / {
+        proxy_pass http://prolog_backend;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+</code></pre><p>nginx 处理 TLS、静态文件、负载均衡，Prolog 专心做业务逻辑。</p>
+<h3 id="其他推荐"><a name="其他推荐" class="anchor-navigation-ex-anchor" href="#其他推荐"><i class="fa fa-link" aria-hidden="true"></i></a>1.7.6. 其他推荐</h3>
+<ul>
+<li><code>library(http/http_log)</code> 记录访问日志</li>
+<li><code>library(http/http_error)</code> 自定义错误页面</li>
+<li><code>library(http/http_monitor)</code> 监控</li>
+</ul>
+<h2 id="总结"><a name="总结" class="anchor-navigation-ex-anchor" href="#总结"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. 总结</h2>
+<p>SWI-Prolog 的 HTTP 库比你想的成熟得多。一个 <code>.pl</code> 文件就能搞定全套——路由、JSON、数据库、HTTPS、daemon。</p>
+<table>
+<thead>
+<tr>
+<th>你要做的事</th>
+<th>用什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>启动服务器</td>
+<td><code>http_server/2</code></td>
+</tr>
+<tr>
+<td>注册路由</td>
+<td><code>http_handler/3</code></td>
+</tr>
+<tr>
+<td>返回 JSON</td>
+<td><code>reply_json_dict/1</code></td>
+</tr>
+<tr>
+<td>解析请求 JSON</td>
+<td><code>http_read_json_dict/2</code></td>
+</tr>
+<tr>
+<td>静态文件</td>
+<td><code>http_reply_from_dir/2</code></td>
+</tr>
+<tr>
+<td>数据库</td>
+<td><code>library(sqlite)</code></td>
+</tr>
+<tr>
+<td>后台运行</td>
+<td><code>http_daemon</code></td>
+</tr>
+</tbody>
+</table>
+<p>最适合的场景：内部 API、原型、小工具。下次想快速搭一个 API，试试 Prolog——你可能会有惊喜。</p>
+<blockquote>
+<p>参考：<a href="https://www.metalevel.at/prolog/web" target="_blank">The Power of Prolog - Web Applications</a> — SWI-Prolog Web 库官方示例。 | <a href="https://www.swi-prolog.org/pldoc/man?section=sqlite" target="_blank">library(sqlite)</a></p>
+</blockquote>
+<footer class="page-footer"><span class="copyright">Copyright © zhzluke96 2020 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2026-06-30 15:36
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="c7.html" class="navigation navigation-prev " aria-label="Previous page: 模块化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="c9a.html" class="navigation navigation-next " aria-label="Next page: 规则引擎与约束求解">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"web server","level":"4.12","depth":1,"next":{"title":"规则引擎与约束求解","level":"4.13","depth":1,"path":"hello-pl/c9a.md","ref":"hello-pl/c9a.md","articles":[]},"previous":{"title":"模块化","level":"4.11","depth":1,"path":"hello-pl/c7.md","ref":"hello-pl/c7.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","honkit-plugin-prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"honkit-plugin-prism":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":false,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"hello-pl/c8.md","mtime":"2026-06-30T15:36:35.937Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-06-30T15:36:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

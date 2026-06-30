@@ -1,0 +1,1201 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>列表与递归 · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="c3c_backtracking_control.html" />
+    
+    
+    <link rel="prev" href="c3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../tut/chapter0.0.html">
+            
+                <a href="../tut/chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../tut/chapter0.1.html">
+            
+                <a href="../tut/chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../tut/chapter0.2.html">
+            
+                <a href="../tut/chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../tut/chapter1.html">
+            
+                <a href="../tut/chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../tut/chapter2.html">
+            
+                <a href="../tut/chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../tut/chapter3.html">
+            
+                <a href="../tut/chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../tut/chapter4.html">
+            
+                <a href="../tut/chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../tut/chapter5.html">
+            
+                <a href="../tut/chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../tut/chapter6.html">
+            
+                <a href="../tut/chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../tut/chapter7.html">
+            
+                <a href="../tut/chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../tut/chapter8.html">
+            
+                <a href="../tut/chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../tut/chapter9.html">
+            
+                <a href="../tut/chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../tut/chapter10.html">
+            
+                <a href="../tut/chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../tut/chapter11.html">
+            
+                <a href="../tut/chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../tut/chapter12.html">
+            
+                <a href="../tut/chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../tut/chapter13.html">
+            
+                <a href="../tut/chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../tut/chapter14.html">
+            
+                <a href="../tut/chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="../tut/chapter15.html">
+            
+                <a href="../tut/chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="../tut/chapter16.html">
+            
+                <a href="../tut/chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="../tut/chapter17.html">
+            
+                <a href="../tut/chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="c0.1.html">
+            
+                <a href="c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="c0.2.html">
+            
+                <a href="c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="c1.html">
+            
+                <a href="c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="c2.html">
+            
+                <a href="c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="c3.html">
+            
+                <a href="c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.6" data-path="c3b_lists_recursion.html">
+            
+                <a href="c3b_lists_recursion.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    列表与递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="c3c_backtracking_control.html">
+            
+                <a href="c3c_backtracking_control.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    回溯与控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="c4.html">
+            
+                <a href="c4.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="c5.html">
+            
+                <a href="c5.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="c6.html">
+            
+                <a href="c6.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="c7.html">
+            
+                <a href="c7.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="c8.html">
+            
+                <a href="c8.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="c9a.html">
+            
+                <a href="c9a.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    规则引擎与约束求解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="c9b.html">
+            
+                <a href="c9b.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    搜索与自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="c10.html">
+            
+                <a href="c10.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="c11.html">
+            
+                <a href="c11.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../main/logic.html">
+            
+                <a href="../main/logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../main/turing.html">
+            
+                <a href="../main/turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../main/puzzles.html">
+            
+                <a href="../main/puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../main/AFTERME.html">
+            
+                <a href="../main/AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >列表与递归</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#列表与递归"><b>1. </b>列表与递归</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#列表表示法"><b>1.1. </b>列表表示法</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#member2-—-元素与列表的关系"><b>1.2. </b>member/2 — 元素与列表的关系</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#member2----遍历列表"><b>1.3. </b>member/2 -- 遍历列表</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#append3----拼接列表"><b>1.4. </b>append/3 -- 拼接列表</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#递归模式"><b>1.5. </b>递归模式</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#累加器模式"><b>1.6. </b>累加器模式</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#累加器版-factorial"><b>1.6.1. </b>累加器版 factorial</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#累加器版-reverse"><b>1.6.2. </b>累加器版 reverse</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#对比总结"><b>1.6.3. </b>对比总结</a></li></ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#总结"><b>1.7. </b>总结</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#参考"><b>1.8. </b>参考</a></li></ul></ul></div><a href="#列表与递归" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="列表与递归"><a name="列表与递归" class="anchor-navigation-ex-anchor" href="#列表与递归"><i class="fa fa-link" aria-hidden="true"></i></a>1. 列表与递归</h1>
+<blockquote>
+<p>列表是 [H|T]，递归是处理列表的唯一方式。</p>
+<p>前置：<a href="c2.html">递归基础</a> | 难度：★★ | 后续：<a href="c3c_backtracking_control.html">回溯与控制流</a></p>
+</blockquote>
+<h2 id="列表表示法"><a name="列表表示法" class="anchor-navigation-ex-anchor" href="#列表表示法"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 列表表示法</h2>
+<p>列表在 Prolog 里是递归结构。写成 <code>[H|T]</code>，H 是 head（第一个元素），T 是 tail（剩余列表）。空表是 <code>[]</code>。</p>
+<blockquote>
+<p>类比 | JS: <code>const [H, ...T] = arr</code> | Python: <code>H, *T = arr</code></p>
+</blockquote>
+<p>对比其他语言：你熟悉的数组（C/Java）是连续内存块，支持随机访问；链表（Lisp/Scheme）本质和 Prolog 列表一样——每个节点分两半：数据和下一个节点。Prolog 列表就是伪装成美观语法的链表。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token punctuation">[</span>H<span class="token operator">|</span>T<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>apple<span class="token punctuation">,</span> broccoli<span class="token punctuation">,</span> crackers<span class="token punctuation">]</span><span class="token operator">.</span>
+H <span class="token operator">=</span> apple<span class="token punctuation">,</span>
+T <span class="token operator">=</span> <span class="token punctuation">[</span>broccoli<span class="token punctuation">,</span> crackers<span class="token punctuation">]</span><span class="token operator">.</span>
+</code></pre>
+<p>空表不能拆：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token punctuation">[</span>H<span class="token operator">|</span>T<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">.</span>
+false<span class="token operator">.</span>
+</code></pre>
+<p>列表本质上是一个嵌套的 dot 结构——SWI-Prolog 里用 <code>.</code> 做函子。<code>write_term/3</code> 加 <code>[dot(true)]</code> 选项能露出现形：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">write_term</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token function">dot</span><span class="token punctuation">(</span>true<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token operator">.</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token operator">.</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span><span class="token operator">.</span><span class="token punctuation">(</span>c<span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+true<span class="token operator">.</span>
+</code></pre>
+<p>也可以用 <code>=..</code>（univ）拆开列表的顶层结构：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span> <span class="token operator">=..</span> X<span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'.'</span><span class="token punctuation">,</span> a<span class="token punctuation">,</span> <span class="token punctuation">[</span>b<span class="token punctuation">,</span> c<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">.</span>
+</code></pre>
+<p>第一个参数是 <code>.</code>（列表函子），第二个是 head <code>a</code>，第三个是 tail <code>[b, c]</code>。</p>
+<p>记住：<code>[a,b,c]</code> 只是 <code>.(a, .(b, .(c, [])))</code> 的语法糖。处理列表就是处理这棵右倾二叉树。</p>
+<h2 id="member2-—-元素与列表的关系"><a name="member2-—-元素与列表的关系" class="anchor-navigation-ex-anchor" href="#member2-—-元素与列表的关系"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. member/2 — 元素与列表的关系</h2>
+<p>member/2 定义的是<strong>元素和列表之间的关系</strong>：当 X 是列表 L 的一个元素时，关系成立。这不是"检查函数"，而是双向关系。</p>
+<p>最一般的查询：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> a <span class="token operator">;</span>
+X <span class="token operator">=</span> b <span class="token operator">;</span>
+X <span class="token operator">=</span> c <span class="token operator">.</span>
+</code></pre>
+<h2 id="member2----遍历列表"><a name="member2----遍历列表" class="anchor-navigation-ex-anchor" href="#member2----遍历列表"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. member/2 -- 遍历列表</h2>
+<p>最基础的列表谓词，定义只有两行：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token punctuation">[</span>X<span class="token operator">|</span>_<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>          <span class="token comment">% 找到了！head 就是要找的元素</span>
+<span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token punctuation">[</span>_<span class="token operator">|</span>T<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>        <span class="token comment">% 当前 head 不是，去 tail 找</span>
+    <span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> T<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>边界条件：X 就是 head。递归条件：跳过 head，从 tail 继续找。</p>
+<blockquote>
+<p>类比 | JS: <code>arr.includes(x)</code> / <code>arr.some()</code> | Python: <code>x in list</code> / <code>any()</code></p>
+<p><strong>Prolog 时刻</strong> — member/2 既是检查器又是生成器。同一份代码两种用法。</p>
+</blockquote>
+<p>查询模式 1--检查元素是否在列表中：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">member</span><span class="token punctuation">(</span>c<span class="token punctuation">,</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+true <span class="token operator">.</span>
+
+<span class="token operator">?-</span> <span class="token function">member</span><span class="token punctuation">(</span>z<span class="token punctuation">,</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+false<span class="token operator">.</span>
+</code></pre>
+<p>查询模式 2--生成列表的所有元素（回溯驱动）：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> a <span class="token operator">;</span>
+X <span class="token operator">=</span> b <span class="token operator">;</span>
+X <span class="token operator">=</span> c <span class="token operator">.</span>
+</code></pre>
+<p>拿分号回溯时，Prolog 放弃第一个子句（head 匹配），进入第二个子句递归到 tail。整个过程就是深度优先遍历列表。</p>
+<p>如果你只需要"在不在"，不要写 <code>member(X, List), X = a</code> 这种绕弯写法--直接 <code>member(a, List)</code>。</p>
+<p>member/2 也能检查多个条件：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">member</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> X <span class="token operator">&gt;</span> <span class="token number">2.</span>
+X <span class="token operator">=</span> <span class="token number">3</span> <span class="token operator">;</span>
+X <span class="token operator">=</span> <span class="token number">4</span> <span class="token operator">.</span>
+</code></pre>
+<p>先回溯生成值，再筛选--顺序决定了结果。</p>
+<h2 id="append3----拼接列表"><a name="append3----拼接列表" class="anchor-navigation-ex-anchor" href="#append3----拼接列表"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. append/3 -- 拼接列表</h2>
+<p>append/3 把两个列表拼成一个：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">append</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> X<span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>                 <span class="token comment">% 空表 + X = X</span>
+<span class="token function">append</span><span class="token punctuation">(</span><span class="token punctuation">[</span>H<span class="token operator">|</span>T1<span class="token punctuation">]</span><span class="token punctuation">,</span> X<span class="token punctuation">,</span> <span class="token punctuation">[</span>H<span class="token operator">|</span>T2<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>      <span class="token comment">% 把 H 放到结果 head，递归拼 tail</span>
+    <span class="token function">append</span><span class="token punctuation">(</span>T1<span class="token punctuation">,</span> X<span class="token punctuation">,</span> T2<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<blockquote>
+<p>类比 | JS: <code>arr1.concat(arr2)</code> / <code>[...a, ...b]</code> | Python: <code>list1 + list2</code></p>
+</blockquote>
+<p>正向用--拼接：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">append</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>c<span class="token punctuation">,</span>d<span class="token punctuation">]</span><span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">,</span> d<span class="token punctuation">]</span><span class="token operator">.</span>
+</code></pre>
+<p>反向用--枚举所有拆分方式：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">append</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> Y<span class="token punctuation">,</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+Y <span class="token operator">=</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">]</span> <span class="token operator">;</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">,</span>
+Y <span class="token operator">=</span> <span class="token punctuation">[</span>b<span class="token punctuation">,</span> c<span class="token punctuation">]</span> <span class="token operator">;</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">]</span><span class="token punctuation">,</span>
+Y <span class="token operator">=</span> <span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">;</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">]</span><span class="token punctuation">,</span>
+Y <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">;</span>
+false<span class="token operator">.</span>
+</code></pre>
+<p>这是 append/3 最惊人的特性：同一份代码，能算拼合也能算拆分。背后是 Prolog 的联合机制--第三个参数已知时，第一个参数的 head 和 tail 被逐步展开，直到第一个参数缩减为 <code>[]</code>。</p>
+<p>性能：append/3 是 O(n)，n 是第一个参数的长度。<strong>第一个参数短，append 就快。</strong> 如果反复往列表末尾加元素，考虑用差量列表（DCG）或先构建再翻转。</p>
+<p>append/3 也能拼三个以上的列表--嵌套调用：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">append</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>b<span class="token punctuation">]</span><span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">append</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> <span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token punctuation">,</span> Y<span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">]</span><span class="token punctuation">,</span>
+Y <span class="token operator">=</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">]</span><span class="token operator">.</span>
+</code></pre>
+<h2 id="递归模式"><a name="递归模式" class="anchor-navigation-ex-anchor" href="#递归模式"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. 递归模式</h2>
+<p>处理 Prolog 列表的标准三步：</p>
+<ol>
+<li><strong>处理 head</strong> -- 对当前第一个元素做点什么</li>
+<li><strong>递归 tail</strong> -- 剩下的交给递归</li>
+<li><strong>合并结果</strong> -- 把第一步和第二步组合起来</li>
+</ol>
+<p>示例：list_length/2</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">list_length</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">.</span>                 <span class="token comment">% 空表长度 = 0</span>
+<span class="token function">list_length</span><span class="token punctuation">(</span><span class="token punctuation">[</span>_<span class="token operator">|</span>T<span class="token punctuation">]</span><span class="token punctuation">,</span> N<span class="token punctuation">)</span> <span class="token operator">:-</span>            <span class="token comment">% 不管 head 是什么</span>
+    <span class="token function">list_length</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span> N1<span class="token punctuation">)</span><span class="token punctuation">,</span>             <span class="token comment">% 先算 tail 长度</span>
+    N <span class="token operator">is</span> N1 <span class="token operator">+</span> <span class="token number">1.</span>                    <span class="token comment">% 合并：+1</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">list_length</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span><span class="token punctuation">,</span> N<span class="token punctuation">)</span><span class="token operator">.</span>
+N <span class="token operator">=</span> <span class="token number">3.</span>
+</code></pre>
+<p>示例：sum_list/2</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">sum_list</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">sum_list</span><span class="token punctuation">(</span><span class="token punctuation">[</span>H<span class="token operator">|</span>T<span class="token punctuation">]</span><span class="token punctuation">,</span> S<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">sum_list</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span> S1<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    S <span class="token operator">is</span> H <span class="token operator">+</span> S1<span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">sum_list</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> S<span class="token punctuation">)</span><span class="token operator">.</span>
+S <span class="token operator">=</span> <span class="token number">10.</span>
+</code></pre>
+<p>两个谓词走的是同一个模式：边界条件处理空表，递归步拆 head/tail，最后用 <code>is/2</code> 合并结果。</p>
+<h2 id="累加器模式"><a name="累加器模式" class="anchor-navigation-ex-anchor" href="#累加器模式"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. 累加器模式</h2>
+<p>前面的递归模式有一个问题：每层递归都要等下一层返回结果才能计算。这意味着 Prolog 必须保留每个栈帧--栈空间 O(n)。如果列表很长（数万元素），栈溢出。</p>
+<p>解决方案：引入累加器（accumulator）参数，把计算结果"向下传递"，而不是"向上返回"。</p>
+<p>这称为<strong>尾递归</strong>（tail recursion）--递归调用出现在子句最后一步（尾位置），且当前层不再需要对返回值做额外操作。</p>
+<blockquote>
+<p>类比 | JS: <code>reduce()</code> | Python: <code>functools.reduce()</code></p>
+</blockquote>
+<h3 id="累加器版-factorial"><a name="累加器版-factorial" class="anchor-navigation-ex-anchor" href="#累加器版-factorial"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.1. 累加器版 factorial</h3>
+<p>先看非尾递归版：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">fact1</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">fact1</span><span class="token punctuation">(</span>N<span class="token punctuation">,</span> F<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    N <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    N1 <span class="token operator">is</span> N <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token function">fact1</span><span class="token punctuation">(</span>N1<span class="token punctuation">,</span> F1<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    F <span class="token operator">is</span> N <span class="token operator">*</span> F1<span class="token operator">.</span>
+</code></pre>
+<p>尾递归版--引入累加器参数：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">fact2</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> Acc<span class="token punctuation">,</span> Acc<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">fact2</span><span class="token punctuation">(</span>N<span class="token punctuation">,</span> Acc<span class="token punctuation">,</span> F<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    N <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    N1 <span class="token operator">is</span> N <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    Acc1 <span class="token operator">is</span> N <span class="token operator">*</span> Acc<span class="token punctuation">,</span>
+    <span class="token function">fact2</span><span class="token punctuation">(</span>N1<span class="token punctuation">,</span> Acc1<span class="token punctuation">,</span> F<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">fact2</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> F<span class="token punctuation">)</span><span class="token operator">.</span>
+F <span class="token operator">=</span> <span class="token number">120.</span>
+</code></pre>
+<p>初始累加器是 <code>1</code>（乘法的单位元）。每层递归做 <code>N * Acc</code> 并传给下一层。到达边界时直接返回累加器。</p>
+<h3 id="累加器版-reverse"><a name="累加器版-reverse" class="anchor-navigation-ex-anchor" href="#累加器版-reverse"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.2. 累加器版 reverse</h3>
+<p>非尾递归版--需要在递归返回后 append：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">naive_rev</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">naive_rev</span><span class="token punctuation">(</span><span class="token punctuation">[</span>H<span class="token operator">|</span>T<span class="token punctuation">]</span><span class="token punctuation">,</span> R<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">naive_rev</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span> R1<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">append</span><span class="token punctuation">(</span>R1<span class="token punctuation">,</span> <span class="token punctuation">[</span>H<span class="token punctuation">]</span><span class="token punctuation">,</span> R<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">naive_rev</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span><span class="token punctuation">,</span> R<span class="token punctuation">)</span><span class="token operator">.</span>
+R <span class="token operator">=</span> <span class="token punctuation">[</span>c<span class="token punctuation">,</span> b<span class="token punctuation">,</span> a<span class="token punctuation">]</span><span class="token operator">.</span>
+</code></pre>
+<p>性能问题：每层递归都调用 append/3，复杂度 O(n^2)。</p>
+<p>尾递归版--用累加器构建反向列表：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">rev_acc</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> Acc<span class="token punctuation">,</span> Acc<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">rev_acc</span><span class="token punctuation">(</span><span class="token punctuation">[</span>H<span class="token operator">|</span>T<span class="token punctuation">]</span><span class="token punctuation">,</span> Acc<span class="token punctuation">,</span> R<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">rev_acc</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span> <span class="token punctuation">[</span>H<span class="token operator">|</span>Acc<span class="token punctuation">]</span><span class="token punctuation">,</span> R<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">rev_acc</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> R<span class="token punctuation">)</span><span class="token operator">.</span>
+R <span class="token operator">=</span> <span class="token punctuation">[</span>c<span class="token punctuation">,</span> b<span class="token punctuation">,</span> a<span class="token punctuation">]</span><span class="token operator">.</span>
+</code></pre>
+<p>初始累加器是 <code>[]</code>。遍历原列表时，把每个 head 塞到累加器前面。第一个元素到累加器时在最底，最后一个元素在最顶--刚好翻转。</p>
+<p>复杂度 O(n)，常数栈空间。</p>
+<h3 id="对比总结"><a name="对比总结" class="anchor-navigation-ex-anchor" href="#对比总结"><i class="fa fa-link" aria-hidden="true"></i></a>1.6.3. 对比总结</h3>
+<table>
+<thead>
+<tr>
+<th>特性</th>
+<th>非尾递归</th>
+<th>尾递归（累加器）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>空间复杂度</td>
+<td>O(n) 栈</td>
+<td>O(1) 栈</td>
+</tr>
+<tr>
+<td>递归位置</td>
+<td>不在尾位置</td>
+<td>尾位置</td>
+</tr>
+<tr>
+<td>需要等返回值</td>
+<td>是</td>
+<td>否</td>
+</tr>
+<tr>
+<td>累加器参数</td>
+<td>无</td>
+<td>有</td>
+</tr>
+<tr>
+<td>适合场景</td>
+<td>小列表、树结构</td>
+<td>大列表、线性遍历</td>
+</tr>
+</tbody>
+</table>
+<p>如果 Prolog 实现支持 TRO（Tail Recursion Optimization，SWI-Prolog 默认启用），尾递归栈空间常量。否则递归多了一样栈溢出。</p>
+<p>经验法则：需要遍历整个列表生成一个值--用累加器。需要构建或遍历树形结构--非尾递归更自然。</p>
+<h2 id="总结"><a name="总结" class="anchor-navigation-ex-anchor" href="#总结"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. 总结</h2>
+<ul>
+<li>列表是 <code>[H|T]</code> 结构，本质是嵌套 dot/2 函子</li>
+<li>member/2 遍历列表：head 匹配或递归 tail</li>
+<li>append/3 正向拼合、反向拆分，Prolog 联合的双向性体现</li>
+<li>递归三步：处理 head、递归 tail、合并结果</li>
+<li>累加器模式把"向上返回"变"向下传递"，达到尾递归 TRO</li>
+</ul>
+<p>当你想"对一个列表每个元素做 X"，先想清楚是遍历、过滤、转换还是累积。每类操作都有对应模式--member、append、累加器，再加后面会学的 maplist 和 fold。</p>
+<h2 id="参考"><a name="参考" class="anchor-navigation-ex-anchor" href="#参考"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. 参考</h2>
+<ul>
+<li>「从零开始」chapter12（列表基础）、chapter9（递归）、chapter15（流程控制与尾递归）</li>
+<li>The Power of Prolog -- Lists (<a href="https://www.metalevel.at/prolog/lists" target="_blank">https://www.metalevel.at/prolog/lists</a>)</li>
+<li>SWI-Prolog 手册 -- Section 4.2 (Lists)</li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright © zhzluke96 2020 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2026-06-30 15:36
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="c3.html" class="navigation navigation-prev " aria-label="Previous page: 高阶谓语">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="c3c_backtracking_control.html" class="navigation navigation-next " aria-label="Next page: 回溯与控制流">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"列表与递归","level":"4.6","depth":1,"next":{"title":"回溯与控制流","level":"4.7","depth":1,"path":"hello-pl/c3c_backtracking_control.md","ref":"hello-pl/c3c_backtracking_control.md","articles":[]},"previous":{"title":"高阶谓语","level":"4.5","depth":1,"path":"hello-pl/c3.md","ref":"hello-pl/c3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","honkit-plugin-prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"honkit-plugin-prism":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":false,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"hello-pl/c3b_lists_recursion.md","mtime":"2026-06-30T15:36:35.937Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-06-30T15:36:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

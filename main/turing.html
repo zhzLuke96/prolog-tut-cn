@@ -1,0 +1,1156 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>图灵完备 · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="puzzles.html" />
+    
+    
+    <link rel="prev" href="logic.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../tut/chapter0.0.html">
+            
+                <a href="../tut/chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../tut/chapter0.1.html">
+            
+                <a href="../tut/chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../tut/chapter0.2.html">
+            
+                <a href="../tut/chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../tut/chapter1.html">
+            
+                <a href="../tut/chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../tut/chapter2.html">
+            
+                <a href="../tut/chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../tut/chapter3.html">
+            
+                <a href="../tut/chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../tut/chapter4.html">
+            
+                <a href="../tut/chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../tut/chapter5.html">
+            
+                <a href="../tut/chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../tut/chapter6.html">
+            
+                <a href="../tut/chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../tut/chapter7.html">
+            
+                <a href="../tut/chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../tut/chapter8.html">
+            
+                <a href="../tut/chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../tut/chapter9.html">
+            
+                <a href="../tut/chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../tut/chapter10.html">
+            
+                <a href="../tut/chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../tut/chapter11.html">
+            
+                <a href="../tut/chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../tut/chapter12.html">
+            
+                <a href="../tut/chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../tut/chapter13.html">
+            
+                <a href="../tut/chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../tut/chapter14.html">
+            
+                <a href="../tut/chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="../tut/chapter15.html">
+            
+                <a href="../tut/chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="../tut/chapter16.html">
+            
+                <a href="../tut/chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="../tut/chapter17.html">
+            
+                <a href="../tut/chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../hello-pl/c0.1.html">
+            
+                <a href="../hello-pl/c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../hello-pl/c0.2.html">
+            
+                <a href="../hello-pl/c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../hello-pl/c1.html">
+            
+                <a href="../hello-pl/c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../hello-pl/c2.html">
+            
+                <a href="../hello-pl/c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../hello-pl/c3.html">
+            
+                <a href="../hello-pl/c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../hello-pl/c3b_lists_recursion.html">
+            
+                <a href="../hello-pl/c3b_lists_recursion.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    列表与递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../hello-pl/c3c_backtracking_control.html">
+            
+                <a href="../hello-pl/c3c_backtracking_control.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    回溯与控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../hello-pl/c4.html">
+            
+                <a href="../hello-pl/c4.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../hello-pl/c5.html">
+            
+                <a href="../hello-pl/c5.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../hello-pl/c6.html">
+            
+                <a href="../hello-pl/c6.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../hello-pl/c7.html">
+            
+                <a href="../hello-pl/c7.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../hello-pl/c8.html">
+            
+                <a href="../hello-pl/c8.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../hello-pl/c9a.html">
+            
+                <a href="../hello-pl/c9a.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    规则引擎与约束求解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../hello-pl/c9b.html">
+            
+                <a href="../hello-pl/c9b.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    搜索与自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../hello-pl/c10.html">
+            
+                <a href="../hello-pl/c10.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../hello-pl/c11.html">
+            
+                <a href="../hello-pl/c11.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="logic.html">
+            
+                <a href="logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.2" data-path="turing.html">
+            
+                <a href="turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="puzzles.html">
+            
+                <a href="puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="AFTERME.html">
+            
+                <a href="AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >图灵完备</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#图灵完备"><b>1. </b>图灵完备</a></li><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#代码结构"><b>1.1. </b>代码结构</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#纸带表示"><b>1.2. </b>纸带表示</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#转移规则"><b>1.3. </b>转移规则</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#执行引擎"><b>1.4. </b>执行引擎</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#step-细节"><b>1.5. </b>Step 细节</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#例子：递增二进制数"><b>1.6. </b>例子：递增二进制数</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#证明图灵完备"><b>1.7. </b>证明图灵完备</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#实际限制"><b>1.8. </b>实际限制</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#意义"><b>1.9. </b>意义</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#参考"><b>1.10. </b>参考</a></li></ul></ul></div><a href="#图灵完备" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="图灵完备"><a name="图灵完备" class="anchor-navigation-ex-anchor" href="#图灵完备"><i class="fa fa-link" aria-hidden="true"></i></a>1. 图灵完备</h1>
+<blockquote>
+<p>前置：<a href="../hello-pl/c3b_lists_recursion.html">列表与递归</a>, <a href="../hello-pl/c5.html">元编译器</a> | 难度：★★★ | 后续：—</p>
+</blockquote>
+<p>如何证明一个语言是否图灵完备？用这个语言实现一个图灵机模拟器，应该是最直接的方法了。</p>
+<blockquote>
+<p>Prolog 是图灵完备的吗？是的。
+但它的控制结构（回溯、联合、未实例化变量）和传统命令式语言完全不同——证明它图灵完备有助于理解 Prolog 的计算能力边界。</p>
+</blockquote>
+<p>参考 Markus Triska 的实现：</p>
+<p><a href="https://www.metalevel.at/prolog/showcases/turing.pl" target="_blank">https://www.metalevel.at/prolog/showcases/turing.pl</a></p>
+<hr></hr>
+<h2 id="代码结构"><a name="代码结构" class="anchor-navigation-ex-anchor" href="#代码结构"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 代码结构</h2>
+<p>Triska 的图灵机模拟器核心代码约 50 行，结构清晰：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">:-</span> <span class="token function">use_module</span><span class="token punctuation">(</span><span class="token function">library</span><span class="token punctuation">(</span>clpfd<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">turing</span><span class="token punctuation">(</span>Tape<span class="token punctuation">,</span> Initial<span class="token punctuation">,</span> Rules<span class="token punctuation">,</span> Final<span class="token punctuation">,</span> FinalTape<span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token operator">...</span>
+</code></pre>
+<p>参数：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Tape</code></td>
+<td>初始纸带（列表）</td>
+</tr>
+<tr>
+<td><code>Initial</code></td>
+<td>初始状态</td>
+</tr>
+<tr>
+<td><code>Rules</code></td>
+<td>转移规则列表</td>
+</tr>
+<tr>
+<td><code>Final</code></td>
+<td>终止状态</td>
+</tr>
+<tr>
+<td><code>FinalTape</code></td>
+<td>最终纸带</td>
+</tr>
+</tbody>
+</table>
+<p>五参入口覆盖了图灵机的全部要素：纸带、状态、规则、终止条件、输出。</p>
+<h2 id="纸带表示"><a name="纸带表示" class="anchor-navigation-ex-anchor" href="#纸带表示"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. 纸带表示</h2>
+<p>图灵机的纸带是无限长的。我们没法在 Prolog 中表示无限长列表。</p>
+<p>解决方案：<strong>用差异表（difference list）表示纸带的左右两部分</strong>。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">tape</span><span class="token punctuation">(</span>Left<span class="token punctuation">,</span> Right<span class="token punctuation">,</span> Blank<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<ul>
+<li><code>Left</code>：读写头左边的部分（逆序存储，方便在头部插入）</li>
+<li><code>Right</code>：读写头当前位置及右边的部分</li>
+<li><code>Blank</code>：空白符号</li>
+</ul>
+<p>差异表的关键优势：向纸带两端延伸时，不需要预先分配空间。空白部分"虚拟存在"——当需要延伸到空白区域时，才生成一个空白符号。</p>
+<p>例如，纸带 <code>[a,b,c]</code> 读写头在 <code>b</code>：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">tape</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>b<span class="token punctuation">,</span> c<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token operator">\</span>'_<span class="token operator">\</span>'<span class="token punctuation">)</span>
+</code></pre>
+<p><code>Left = [a]</code> 是左边的部分逆序（实际上顺序是从左到右读——<code>[a]</code> 是逆序存储所以左边只有一个元素 <code>a</code>），<code>Right = [b,c]</code> 是当前位置及右边的部分。</p>
+<p>向左移动时，从 Left 头取一个符号放到 Right 头部：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">left</span><span class="token punctuation">(</span><span class="token function">tape</span><span class="token punctuation">(</span><span class="token punctuation">[</span>L<span class="token operator">|</span>Ls<span class="token punctuation">]</span><span class="token punctuation">,</span> Rs<span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">tape</span><span class="token punctuation">(</span>Ls<span class="token punctuation">,</span> <span class="token punctuation">[</span>L<span class="token operator">|</span>Rs<span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>向右移动时，从 Right 头取一个符号放到 Left 头部：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">right</span><span class="token punctuation">(</span><span class="token function">tape</span><span class="token punctuation">(</span>Ls<span class="token punctuation">,</span> <span class="token punctuation">[</span>R<span class="token operator">|</span>Rs<span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">tape</span><span class="token punctuation">(</span><span class="token punctuation">[</span>R<span class="token operator">|</span>Ls<span class="token punctuation">]</span><span class="token punctuation">,</span> Rs<span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>边界情况——如果需要延伸到空白区域，<code>Right = []</code> 时用 <code>[B]</code> 代替：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">right</span><span class="token punctuation">(</span><span class="token function">tape</span><span class="token punctuation">(</span>Ls<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">tape</span><span class="token punctuation">(</span>Ls<span class="token punctuation">,</span> <span class="token punctuation">[</span>B<span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">right</span><span class="token punctuation">(</span><span class="token function">tape</span><span class="token punctuation">(</span>Ls<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">tape</span><span class="token punctuation">(</span><span class="token punctuation">[</span>B<span class="token operator">|</span>Ls<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h2 id="转移规则"><a name="转移规则" class="anchor-navigation-ex-anchor" href="#转移规则"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. 转移规则</h2>
+<pre class="language-"><code class="lang-prolog"><span class="token function">rule</span><span class="token punctuation">(</span>Q0<span class="token punctuation">,</span> S0<span class="token punctuation">,</span> Q1<span class="token punctuation">,</span> S1<span class="token punctuation">,</span> D<span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li><code>Q0</code>：当前状态</li>
+<li><code>S0</code>：当前符号</li>
+<li><code>Q1</code>：下一个状态</li>
+<li><code>S1</code>：写入的符号</li>
+<li><code>D</code>：移动方向（<code>left</code> / <code>right</code>）</li>
+</ul>
+<p>示例规则（从初态 <code>q0</code> 读取 <code>0</code>，向左移动并保持）：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">rule</span><span class="token punctuation">(</span>q0<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> q0<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> left<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h2 id="执行引擎"><a name="执行引擎" class="anchor-navigation-ex-anchor" href="#执行引擎"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. 执行引擎</h2>
+<p>核心循环：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">turing</span><span class="token punctuation">(</span><span class="token function">tape</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token punctuation">[</span>S<span class="token operator">|</span>Rs<span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">,</span> Q0<span class="token punctuation">,</span> Rules<span class="token punctuation">,</span> Final<span class="token punctuation">,</span> Tape<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token punctuation">(</span>   Q0 <span class="token operator">==</span> Final
+    <span class="token operator">-&gt;</span>  Tape <span class="token operator">=</span> <span class="token function">tape</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token punctuation">[</span>S<span class="token operator">|</span>Rs<span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span>
+    <span class="token operator">;</span>   <span class="token function">member</span><span class="token punctuation">(</span><span class="token function">rule</span><span class="token punctuation">(</span>Q0<span class="token punctuation">,</span> S<span class="token punctuation">,</span> Q1<span class="token punctuation">,</span> S1<span class="token punctuation">,</span> D<span class="token punctuation">)</span><span class="token punctuation">,</span> Rules<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">symbol</span><span class="token punctuation">(</span>S1<span class="token punctuation">,</span> <span class="token function">tape</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token punctuation">[</span>S1<span class="token operator">|</span>Rs<span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">,</span> Tape1<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">move</span><span class="token punctuation">(</span>D<span class="token punctuation">,</span> Tape1<span class="token punctuation">,</span> Tape2<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token function">turing</span><span class="token punctuation">(</span>Tape2<span class="token punctuation">,</span> Q1<span class="token punctuation">,</span> Rules<span class="token punctuation">,</span> Final<span class="token punctuation">,</span> Tape<span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>这是一个递归谓词：</p>
+<ol>
+<li>检查当前状态是否等于终止状态。是则返回结果。</li>
+<li>否则在规则列表中找一条匹配 <code>(Q0, S)</code> 的规则。</li>
+<li>写入新符号 <code>S1</code>。</li>
+<li>执行移动（左/右）。</li>
+<li>递归进入下一个状态。</li>
+</ol>
+<p><code>member/2</code> 搜索规则列表，实现非确定性——如果有多个规则匹配同一个 (Q0, S)，Prolog 的回溯会尝试所有可能的路径。这意味着这个模拟器本身就是一个非确定性图灵机（NDTM）。</p>
+<h2 id="step-细节"><a name="step-细节" class="anchor-navigation-ex-anchor" href="#step-细节"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. Step 细节</h2>
+<pre class="language-"><code class="lang-prolog"><span class="token function">symbol</span><span class="token punctuation">(</span>S<span class="token punctuation">,</span> <span class="token function">tape</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token punctuation">[</span>_<span class="token operator">|</span>Rs<span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">tape</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> <span class="token punctuation">[</span>S<span class="token operator">|</span>Rs<span class="token punctuation">]</span><span class="token punctuation">,</span> B<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">move</span><span class="token punctuation">(</span>D<span class="token punctuation">,</span> Tape<span class="token punctuation">,</span> NewTape<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token punctuation">(</span>   D <span class="token operator">==</span> left  <span class="token operator">-&gt;</span> <span class="token function">left</span><span class="token punctuation">(</span>Tape<span class="token punctuation">,</span> NewTape<span class="token punctuation">)</span>
+    <span class="token operator">;</span>   D <span class="token operator">==</span> right <span class="token operator">-&gt;</span> <span class="token function">right</span><span class="token punctuation">(</span>Tape<span class="token punctuation">,</span> NewTape<span class="token punctuation">)</span>
+    <span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><code>symbol/3</code> 用 <code>[_|Rs]</code> 丢弃当前符号，并将 <code>S</code> 写入对应位置。</p>
+<p><code>move/3</code> 根据 <code>D</code> 选择左/右移动。这是显式的条件分支，没有使用回溯。</p>
+<h2 id="例子：递增二进制数"><a name="例子：递增二进制数" class="anchor-navigation-ex-anchor" href="#例子：递增二进制数"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. 例子：递增二进制数</h2>
+<p>Triska 给的例子：递增一个二进制数。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">inc</span><span class="token punctuation">(</span>L0<span class="token punctuation">,</span> L<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    Rules <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token function">rule</span><span class="token punctuation">(</span>q0<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> q0<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> right<span class="token punctuation">)</span><span class="token punctuation">,</span>
+             <span class="token function">rule</span><span class="token punctuation">(</span>q0<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> q0<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> right<span class="token punctuation">)</span><span class="token punctuation">,</span>
+             <span class="token function">rule</span><span class="token punctuation">(</span>q0<span class="token punctuation">,</span> b<span class="token punctuation">,</span> q1<span class="token punctuation">,</span> b<span class="token punctuation">,</span> left<span class="token punctuation">)</span><span class="token punctuation">,</span>
+             <span class="token function">rule</span><span class="token punctuation">(</span>q1<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> q1<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> left<span class="token punctuation">)</span><span class="token punctuation">,</span>
+             <span class="token function">rule</span><span class="token punctuation">(</span>q1<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> q1<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> left<span class="token punctuation">)</span><span class="token punctuation">,</span>
+             <span class="token function">rule</span><span class="token punctuation">(</span>q1<span class="token punctuation">,</span> b<span class="token punctuation">,</span> q2<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> right<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token function">turing</span><span class="token punctuation">(</span><span class="token function">tape</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> L0<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">,</span> q0<span class="token punctuation">,</span> Rules<span class="token punctuation">,</span> q2<span class="token punctuation">,</span> Tape<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">tape</span><span class="token punctuation">(</span>_<span class="token punctuation">,</span> L<span class="token punctuation">,</span> _<span class="token punctuation">)</span> <span class="token operator">=</span> Tape<span class="token operator">.</span>
+</code></pre>
+<p>逻辑：</p>
+<ol>
+<li>右移到最右端（<code>q0</code> 状态）</li>
+<li>左移回来（<code>q1</code> 状态）</li>
+<li>遇到 0 变 1 进位停止，遇到 1 变 0 继续左移</li>
+<li>碰到空格在最前面加 1</li>
+</ol>
+<p>执行：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">inc</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> L<span class="token punctuation">)</span><span class="token operator">.</span>
+L <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">.</span>
+</code></pre>
+<p>像 Prolog 常见的做法，<code>inc/2</code> 是一个封装谓词，隐藏了图灵机状态的管理。调用者只需提供和接收纸带列表，不接触图灵机内部细节。</p>
+<h2 id="证明图灵完备"><a name="证明图灵完备" class="anchor-navigation-ex-anchor" href="#证明图灵完备"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. 证明图灵完备</h2>
+<p>要证明 Prolog 图灵完备，需要展示：</p>
+<ol>
+<li><p><strong>Prolog 可以实现任意图灵机</strong>：上面的模拟器证明了这一点——任何图灵机的规则都能用 <code>rule/5</code> 表示，并驱动 <code>turing/5</code> 执行。</p>
+</li>
+<li><p><strong>Prolog 可以模拟任意图灵机计算</strong>：因为 <code>turing/5</code> 是一个递归谓词，递归深度不限（实际上受栈限制，但理论上无上限），纸带可以无限延伸（差异表惰性生成空白），所以任何计算都可以模拟。</p>
+</li>
+<li><p><strong>Prolog 有无限存储</strong>：列表可以包含任意多项，差异表使纸带可以向两端无限延伸。</p>
+</li>
+</ol>
+<p>反过来，图灵机也可以模拟 Prolog——所有图灵完备的语言在计算能力上等价（Church-Turing 论题）。</p>
+<h2 id="实际限制"><a name="实际限制" class="anchor-navigation-ex-anchor" href="#实际限制"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. 实际限制</h2>
+<p>理论上图灵完备，但实际中要承认几个约束：</p>
+<ul>
+<li><strong>递归深度</strong>：SWI-Prolog 默认局部栈约 128MB，可调整</li>
+<li><strong>有限内存</strong>：纸带差异表惰性扩展但终究受物理内存限制</li>
+<li><strong>全局变量不在回溯中重置</strong>：<code>nb_setval/2</code> 等破坏性赋值打破了声明式语义</li>
+<li><strong>Term 大小限制</strong>：SWI-Prolog 有最大项大小限制（<code>max_arity</code>）</li>
+</ul>
+<p>但这些是工程实现限制，不影响理论图灵完备性。</p>
+<blockquote>
+<p>本节内容基于 <a href="https://www.metalevel.at/prolog/showcases/turing.pl" target="_blank">The Power of Prolog - Turing Machines</a> 的分析与扩展。</p>
+</blockquote>
+<h2 id="意义"><a name="意义" class="anchor-navigation-ex-anchor" href="#意义"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. 意义</h2>
+<p>学这个的意义不在于你真的会用图灵机做实际开发——你不会的。</p>
+<p>意义在于：</p>
+<ol>
+<li><p><strong>理解 Prolog 的计算模型</strong>：Prolog 不只是一个规则匹配器，它是一个通用计算系统。能模拟图灵机说明它的计算能力和 C、Java、Python 一样强。</p>
+</li>
+<li><p><strong>理解声明式语言中的控制流</strong>：<code>turing/5</code> 的核心是递归 + member 搜索规则——不是循环 + switch。这种控制流是 Prolog 式的。</p>
+</li>
+<li><p><strong>理解差异表的实际应用</strong>：纸带的左右分片是差异表在"无限"数据上的应用。对比其他语言中为了无限纸带做的复杂抽象，Prolog 的差异表方案几乎是零样板代码。</p>
+</li>
+<li><p><strong>元编程练习</strong>：<code>turing/5</code> 是一个图灵机解释器——它把用规则描述的程序（图灵机指令）执行在 Prolog 运行时上。这和 lisprolog（cs2）的 eval 是同类东西。</p>
+</li>
+</ol>
+<blockquote>
+<p>把 <a href="https://www.metalevel.at/prolog/showcases/turing.pl" target="_blank">https://www.metalevel.at/prolog/showcases/turing.pl</a> 贴进 SWI-Prolog 跑一下。
+改几条规则，看看能不能实现一个加法图灵机。</p>
+</blockquote>
+<h2 id="参考"><a name="参考" class="anchor-navigation-ex-anchor" href="#参考"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. 参考</h2>
+<ul>
+<li><a href="https://www.metalevel.at/acomip/" target="_blank">The Power of Prolog — Meta-interpreters</a></li>
+<li>SWI-Prolog manual: Clause creation and destruction </li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright © zhzluke96 2020 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2026-06-30 15:36
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="logic.html" class="navigation navigation-prev " aria-label="Previous page: 数理逻辑">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="puzzles.html" class="navigation navigation-next " aria-label="Next page: pl和逻辑难题">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"图灵完备","level":"6.2","depth":1,"next":{"title":"pl和逻辑难题","level":"6.3","depth":1,"path":"main/puzzles.md","ref":"main/puzzles.md","articles":[]},"previous":{"title":"数理逻辑","level":"6.1","depth":1,"path":"main/logic.md","ref":"main/logic.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","honkit-plugin-prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"honkit-plugin-prism":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":false,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"main/turing.md","mtime":"2026-06-30T15:36:35.938Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-06-30T15:36:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

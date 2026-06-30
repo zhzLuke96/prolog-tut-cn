@@ -1,0 +1,1316 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>自然语言 · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter17.html" />
+    
+    
+    <link rel="prev" href="chapter15.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="chapter0.0.html">
+            
+                <a href="chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter0.1.html">
+            
+                <a href="chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter0.2.html">
+            
+                <a href="chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="chapter8.html">
+            
+                <a href="chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="chapter9.html">
+            
+                <a href="chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="chapter11.html">
+            
+                <a href="chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="chapter12.html">
+            
+                <a href="chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="chapter13.html">
+            
+                <a href="chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="chapter14.html">
+            
+                <a href="chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="chapter15.html">
+            
+                <a href="chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.16" data-path="chapter16.html">
+            
+                <a href="chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="chapter17.html">
+            
+                <a href="chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../hello-pl/c0.1.html">
+            
+                <a href="../hello-pl/c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../hello-pl/c0.2.html">
+            
+                <a href="../hello-pl/c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../hello-pl/c1.html">
+            
+                <a href="../hello-pl/c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../hello-pl/c2.html">
+            
+                <a href="../hello-pl/c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../hello-pl/c3.html">
+            
+                <a href="../hello-pl/c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../hello-pl/c3b_lists_recursion.html">
+            
+                <a href="../hello-pl/c3b_lists_recursion.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    列表与递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../hello-pl/c3c_backtracking_control.html">
+            
+                <a href="../hello-pl/c3c_backtracking_control.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    回溯与控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../hello-pl/c4.html">
+            
+                <a href="../hello-pl/c4.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../hello-pl/c5.html">
+            
+                <a href="../hello-pl/c5.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../hello-pl/c6.html">
+            
+                <a href="../hello-pl/c6.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../hello-pl/c7.html">
+            
+                <a href="../hello-pl/c7.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../hello-pl/c8.html">
+            
+                <a href="../hello-pl/c8.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../hello-pl/c9a.html">
+            
+                <a href="../hello-pl/c9a.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    规则引擎与约束求解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../hello-pl/c9b.html">
+            
+                <a href="../hello-pl/c9b.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    搜索与自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../hello-pl/c10.html">
+            
+                <a href="../hello-pl/c10.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../hello-pl/c11.html">
+            
+                <a href="../hello-pl/c11.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../main/logic.html">
+            
+                <a href="../main/logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../main/turing.html">
+            
+                <a href="../main/turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../main/puzzles.html">
+            
+                <a href="../main/puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../main/AFTERME.html">
+            
+                <a href="../main/AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >自然语言</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#自然语言"><b>1. </b>自然语言</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#差异表"><b>2. </b>差异表</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#寻找nani"><b>3. </b>寻找nani</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#definite-clasue-grammardcg"><b>4. </b>Definite Clasue Grammar(DCG)</a></li><li><span class="title-icon fa fa-hand-o-right"></span><a href="#读入句子"><b>5. </b>读入句子</a></li></ul></div><a href="#自然语言" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="自然语言"><a name="自然语言" class="anchor-navigation-ex-anchor" href="#自然语言"><i class="fa fa-link" aria-hidden="true"></i></a>1. 自然语言</h1>
+<p>Prolog特别适合开发自然语言的应用系统。在这一章，我们将为寻找Nani游戏添加自然语言理解的部分。（由于Prolog谓词是使用的英文符号，所以这里的自然语言理解只能局限在英文中）`</p>
+<p>在着手于编制寻找Nani之前， 我们先来开发一个能够分析简单英语句子的模块。把这种方法掌握之后，编制寻找Nani的自然语言部分就不在话下了。</p>
+<p>下面是两个简单的英语句子：</p>
+<pre class="language-"><code class="lang-prolog">The dog ate the bone<span class="token operator">.</span>
+The big brown mouse chases a lazy cat<span class="token operator">.</span>
+</code></pre>
+<p>我们可以使用下面的语法规则来描述这种句子。</p>
+<pre class="language-"><code class="lang-prolog">sentence <span class="token operator">:</span> <span class="token punctuation">(</span>句子）
+    nounphrase<span class="token punctuation">,</span> verbphrase<span class="token operator">.</span> 
+
+nounphrase <span class="token operator">:</span> （名词短语）
+    determiner<span class="token punctuation">,</span> nounexpression<span class="token operator">.</span> 
+nounphrase <span class="token operator">:</span> （名词短语）
+    nounexpression<span class="token operator">.</span> 
+
+nounexpression <span class="token operator">:</span> 
+    noun<span class="token operator">.</span> 
+nounexpression <span class="token operator">:</span> 
+    adjective（形容词）<span class="token punctuation">,</span> nounexpression<span class="token operator">.</span> 
+
+verbphrase <span class="token operator">:</span> （动词短语）
+    verb<span class="token punctuation">,</span> nounphrase<span class="token operator">.</span> 
+
+determiner <span class="token operator">:</span> （限定词）
+    the <span class="token operator">|</span> a<span class="token operator">.</span> 
+
+noun <span class="token operator">:</span> （名词）
+    dog <span class="token operator">|</span> bone <span class="token operator">|</span> mouse <span class="token operator">|</span> cat<span class="token operator">.</span> 
+
+verb <span class="token operator">:</span> （动词）
+    ate <span class="token operator">|</span> chases<span class="token operator">.</span> 
+
+adjective <span class="token operator">:</span> 
+    big <span class="token operator">|</span> brown <span class="token operator">|</span> lazy<span class="token operator">.</span>
+</code></pre>
+<p>稍微解释一下：第一条规则说明一个句子有一个名词短语和一个动词短语构成。最后的一个规则定义了单词big、brown和lazy是形容词，中间的“|”表示或者的意思。</p>
+<p>首先，来判断某个句子是否是合法的句子。我们编写了<code>sentence/1</code>谓词，它可以判断它的参数是否是一个句子。</p>
+<p>句子必须用Prolog的一种数据结构来表达，这里使用列表。例如，前面的两个句子的Prolog表达形式如下：</p>
+<pre class="language-"><code class="lang-prolog"> <span class="token punctuation">[</span>the<span class="token punctuation">,</span>dog<span class="token punctuation">,</span>ate<span class="token punctuation">,</span>the<span class="token punctuation">,</span>bone<span class="token punctuation">]</span>
+ <span class="token punctuation">[</span>the<span class="token punctuation">,</span>big<span class="token punctuation">,</span>brown<span class="token punctuation">,</span>mouse<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>a<span class="token punctuation">,</span>lazy<span class="token punctuation">,</span>cat<span class="token punctuation">]</span>
+</code></pre>
+<p>分析句子的方法有两种。第一种是选择并校样的方法（见后面的人工智能实例部分），使用这种方法，首先把句子的可能分解情况找出来，再来测试被分解的每一个部分是否合法。我们前面已经介绍过使用<code>append/3</code>谓词能够把列表分成两个部分。使用这种方法，顶层的规则可以是如下的形式：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">sentence</span><span class="token punctuation">(</span>L<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">append</span><span class="token punctuation">(</span>NP<span class="token punctuation">,</span> VP<span class="token punctuation">,</span> L<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">nounphrase</span><span class="token punctuation">(</span>NP<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">verbphrase</span><span class="token punctuation">(</span>VP<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><code>append/3</code>谓词可以把<code>列表L</code>的所有可能的分解情况穷举出来，分解后的两个部分为<code>NP</code>和<code>VP</code>，其后的两个目标则分别测试<code>NP</code>和<code>VP</code>是否是合法的，如果不是则会产生回溯，从而测试其他的分解情况。</p>
+<p>谓词<code>nounphrase/1</code>和<code>verbphrase/1</code>的编写方法与<code>sentence/1</code>基本相同，它们调用其他的谓词来判断句子中的更小的部分是否合法，只到调用到定义单词的谓词，例如：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">verb</span><span class="token punctuation">(</span><span class="token punctuation">[</span>ate<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span><span class="token punctuation">[</span>chases<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>mouse<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h1 id="差异表"><a name="差异表" class="anchor-navigation-ex-anchor" href="#差异表"><i class="fa fa-link" aria-hidden="true"></i></a>2. 差异表</h1>
+<p>前面的这种方法效率是非常低的，这是因为选择并校验的方法需要穷举所有的情况，更何况在每一层的目标之中都要进行这种测试。</p>
+<p>更有效的方法就是跳过选择的步骤，而直接把整个列表传到下一级的谓词中，每个谓词把自己所要寻找的语法元素找出来，并返回剩下的列表。</p>
+<p>为了能够达到这个目标，我们需要介绍一种新的数据结构：差异表。它由两个相关的表构成，第一个表称为全表，而第二个表称为余表。这两个表可以作为谓词的两个参数，不过我们通常使用<code>‘-’</code>连接这两个表，这样易于阅读。它的形式是<code>X-Y</code>。</p>
+<p>我们使用差异表改写了第一条语法规则。如果能够从<code>列表S</code>的头开始，提取出一个名词短语，其余部分<code>S1</code>,并且能够从<code>S1</code>的头开始，提取出一个动词短语，并且其余部分为空表，那么列表<code>S</code>是一个句子。（这句话要细心理解，差异表所表示的表是全表和余表之间的差异。）</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">sentence</span><span class="token punctuation">(</span>S<span class="token punctuation">)</span> <span class="token operator">:-</span>
+<span class="token function">nounphrase</span><span class="token punctuation">(</span>S<span class="token operator">-</span>S1<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token function">verbphrase</span><span class="token punctuation">(</span>S1<span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>我们先跳过谓词<code>nounphrase/1</code>和<code>verbphrase/1</code>的编写，而来看看是如何定义真正的单词的。这些单词也必须书写成差异表的形式，这个很容易做到：如果列表的第一个元素是所需的单词，那么余表就是除去第一个单词的表。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cat<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>mouse<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span><span class="token punctuation">[</span>ate<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span><span class="token punctuation">[</span>chases<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">adjective</span><span class="token punctuation">(</span><span class="token punctuation">[</span>big<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">adjective</span><span class="token punctuation">(</span><span class="token punctuation">[</span>brown<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">adjective</span><span class="token punctuation">(</span><span class="token punctuation">[</span>lazy<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">determiner</span><span class="token punctuation">(</span><span class="token punctuation">[</span>the<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">determiner</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>下面是两个简单的测试，</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>ate<span class="token punctuation">,</span>the<span class="token punctuation">,</span>bone<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>第一个单词<code>dog</code>是名词，于是成功，并且余表是后面的元素组成的表。</p>
+<pre class="language-"><code class="lang-prolog">X <span class="token operator">=</span> <span class="token punctuation">[</span>ate<span class="token punctuation">,</span>the<span class="token punctuation">,</span>bone<span class="token punctuation">]</span> 
+<span class="token operator">?-</span> <span class="token function">verb</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>ate<span class="token punctuation">,</span>the<span class="token punctuation">,</span>bone<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+no
+</code></pre>
+<p>我们把剩下的一些语法规则写完：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">nounphrase</span><span class="token punctuation">(</span>NP<span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">determiner</span><span class="token punctuation">(</span>NP<span class="token operator">-</span>S1<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">nounexpression</span><span class="token punctuation">(</span>S1<span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">nounphrase</span><span class="token punctuation">(</span>NP<span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">nounexpression</span><span class="token punctuation">(</span>NP<span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">nounexpression</span><span class="token punctuation">(</span>NE<span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">noun</span><span class="token punctuation">(</span>NE<span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">nounexpression</span><span class="token punctuation">(</span>NE<span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">adjective</span><span class="token punctuation">(</span>NE<span class="token operator">-</span>S1<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">nounexpression</span><span class="token punctuation">(</span>S1<span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">verbphrase</span><span class="token punctuation">(</span>VP<span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">verb</span><span class="token punctuation">(</span>VP<span class="token operator">-</span>S1<span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+<span class="token function">nounphrase</span><span class="token punctuation">(</span>S1<span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>注意谓词<code>nounexpression/1</code>的递归定义，这样就可以处理名词前面有任意多个形容词的情况。</p>
+<p>我们来用几个句子测试一下：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">sentence</span><span class="token punctuation">(</span><span class="token punctuation">[</span>the<span class="token punctuation">,</span>lazy<span class="token punctuation">,</span>mouse<span class="token punctuation">,</span>ate<span class="token punctuation">,</span>a<span class="token punctuation">,</span>dog<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+yes
+<span class="token operator">?-</span> <span class="token function">sentence</span><span class="token punctuation">(</span><span class="token punctuation">[</span>the<span class="token punctuation">,</span>dog<span class="token punctuation">,</span>ate<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+no
+<span class="token operator">?-</span> <span class="token function">sentence</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token punctuation">,</span>big<span class="token punctuation">,</span>brown<span class="token punctuation">,</span>cat<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>a<span class="token punctuation">,</span>lazy<span class="token punctuation">,</span>brown<span class="token punctuation">,</span>dog<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+yes
+<span class="token operator">?-</span> <span class="token function">sentence</span><span class="token punctuation">(</span><span class="token punctuation">[</span>the<span class="token punctuation">,</span>cat<span class="token punctuation">,</span>jumps<span class="token punctuation">,</span>the<span class="token punctuation">,</span>mouse<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+no
+</code></pre>
+<p>下面是单步跟踪某个句子的情况：</p>
+<p>询问是 </p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">sentence</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token number">1</span><span class="token operator">-</span><span class="token number">1</span> CALL <span class="token function">sentence</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">2</span><span class="token operator">-</span><span class="token number">1</span> CALL <span class="token function">nounphrase</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span>_0<span class="token punctuation">)</span>
+<span class="token number">3</span><span class="token operator">-</span><span class="token number">1</span> CALL <span class="token function">determiner</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span>_0<span class="token punctuation">)</span>
+<span class="token number">3</span><span class="token operator">-</span><span class="token number">1</span> FAIL <span class="token function">determiner</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span>_0<span class="token punctuation">)</span>
+<span class="token number">2</span><span class="token operator">-</span><span class="token number">1</span> REDO <span class="token function">nounphrase</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span>_0<span class="token punctuation">)</span>
+<span class="token number">3</span><span class="token operator">-</span><span class="token number">1</span> CALL <span class="token function">nounexpression</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span> _0<span class="token punctuation">)</span>
+<span class="token number">4</span><span class="token operator">-</span><span class="token number">1</span> CALL <span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span>_0<span class="token punctuation">)</span>
+<span class="token number">4</span><span class="token operator">-</span><span class="token number">1</span> EXIT <span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span> 
+ <span class="token punctuation">[</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p>注意，表示余表的变量的绑定操作是直到延伸至最底层时才进行的，每一层把它的余表和上一层的绑定。这样，当到达了词汇层时，绑定的值将通过嵌套的调用返回。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token number">3</span><span class="token operator">-</span><span class="token number">1</span> EXIT <span class="token function">nounexpression</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span>
+ <span class="token punctuation">[</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">2</span><span class="token operator">-</span><span class="token number">1</span> EXIT <span class="token function">nounphrase</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span>
+ <span class="token punctuation">[</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p>现在已经找出了名词短语，下面来测试余表是否为动词短语。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token number">2</span><span class="token operator">-</span><span class="token number">2</span> CALL <span class="token function">verbphrase</span><span class="token punctuation">(</span><span class="token punctuation">[</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">3</span><span class="token operator">-</span><span class="token number">1</span> CALL <span class="token function">verb</span><span class="token punctuation">(</span><span class="token punctuation">[</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span>_4<span class="token punctuation">)</span>
+<span class="token number">3</span><span class="token operator">-</span><span class="token number">1</span> EXIT <span class="token function">verb</span><span class="token punctuation">(</span><span class="token punctuation">[</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span>cat<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p>很容易地就找出了动词，下面寻找最后的动词短语。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token number">3</span><span class="token operator">-</span><span class="token number">2</span> CALL <span class="token function">nounphrase</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">4</span><span class="token operator">-</span><span class="token number">1</span> CALL <span class="token function">determiner</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">4</span><span class="token operator">-</span><span class="token number">1</span> FAIL <span class="token function">determiner</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">3</span><span class="token operator">-</span><span class="token number">2</span> REDO <span class="token function">nounphrase</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">4</span><span class="token operator">-</span><span class="token number">1</span> CALL <span class="token function">nounexpression</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">5</span><span class="token operator">-</span><span class="token number">1</span> CALL <span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">5</span><span class="token operator">-</span><span class="token number">1</span> EXIT <span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">4</span><span class="token operator">-</span><span class="token number">1</span> EXIT <span class="token function">nounexpression</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">3</span><span class="token operator">-</span><span class="token number">2</span> EXIT <span class="token function">nounphrase</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">2</span><span class="token operator">-</span><span class="token number">2</span> EXIT <span class="token function">verbphrase</span><span class="token punctuation">(</span><span class="token punctuation">[</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token number">1</span><span class="token operator">-</span><span class="token number">1</span> EXIT <span class="token function">sentence</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token punctuation">)</span>
+yes
+</code></pre>
+<h1 id="寻找nani"><a name="寻找nani" class="anchor-navigation-ex-anchor" href="#寻找nani"><i class="fa fa-link" aria-hidden="true"></i></a>3. 寻找nani</h1>
+<p>现在将使用这种分析句法结构的技术，来完成寻找Nani。</p>
+<p>我们首先假设已经完成以下的两个任务。第一，已经完成了把用户的输入转换成列表的工作。第二，我们可是使用列表的形式来表示命令，例如，<code>goto(office)</code>表示成为<code>[goto,office]</code>，而<code>look</code>表示成为<code>[look]</code>。</p>
+<p>有了这两个假设，现在的任务就是把用户的自然语言转换成为程序能够理解的命令列表。例如，我们希望程序能够把<code>[go,to,the,office]</code>转换成为<code>[goto,office]</code>。</p>
+<p>最高层的谓词叫做<code>command/2</code>，它的形式如下：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">command</span><span class="token punctuation">(</span>OutputList<span class="token punctuation">,</span> InputList<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>最简单的命令就是只有一个动词的命令，例如<code>look</code>、<code>list_possessions</code>和<code>end</code>。我们可以使用下面的子句来识别这种命令：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">command</span><span class="token punctuation">(</span><span class="token punctuation">[</span>V<span class="token punctuation">]</span><span class="token punctuation">,</span> InList<span class="token punctuation">)</span><span class="token operator">:-</span> <span class="token function">verb</span><span class="token punctuation">(</span>V<span class="token punctuation">,</span> InList<span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>我们使用前面介绍过的方法来定义动词，不过这次将多加入一个参数，这个参数用来构造返回的标准命令列表。为了使这个程序看上去更有趣，我们让它能够识别命令多种表达形式。例如结束游戏可以输入：<code>end</code>、<code>quit</code>和<code>good</code> <code>bye</code>。</p>
+<p>下面是几个简单的测试：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>look<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>look<span class="token punctuation">]</span>
+<span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>look<span class="token punctuation">,</span>around<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>look<span class="token punctuation">]</span>
+<span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>inventory<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>list_possessions<span class="token punctuation">]</span>
+<span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>good<span class="token punctuation">,</span>bye<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>end<span class="token punctuation">]</span>
+</code></pre>
+<p>下面的任务要复杂一些，我们将考虑动宾结构的命令。使用前面介绍过的知识，可以很容易地完成这个任务。不过此处，还希望除了语法以外还能够识别语义。</p>
+<p>例如，<code>goto</code>动词后面所跟随的物体必须是一个地方，而其他的谓词后面的宾语则是个物体。为了完成这个任务，我们引入了另一个参数。</p>
+<p>下面是主子句，我们可以看出新的参数是如何工作的。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">command</span><span class="token punctuation">(</span><span class="token punctuation">[</span>V<span class="token punctuation">,</span>O<span class="token punctuation">]</span><span class="token punctuation">,</span> InList<span class="token punctuation">)</span> <span class="token operator">:-</span>
+<span class="token function">verb</span><span class="token punctuation">(</span>Object_Type<span class="token punctuation">,</span> V<span class="token punctuation">,</span> InList<span class="token operator">-</span>S1<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token function">object</span><span class="token punctuation">(</span>Object_Type<span class="token punctuation">,</span> O<span class="token punctuation">,</span> S1<span class="token operator">-</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>还必须用事实来定义一些新的动词：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">verb</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span> goto<span class="token punctuation">,</span> <span class="token punctuation">[</span>go<span class="token punctuation">,</span>to<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span> goto<span class="token punctuation">,</span> <span class="token punctuation">[</span>go<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span> goto<span class="token punctuation">,</span> <span class="token punctuation">[</span>move<span class="token punctuation">,</span>to<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>我们甚至可以识别<code>goto</code>动词被隐含的情况，即如果玩家仅仅输入某个房间的名称，而没有前面的谓词。这种情况下列表及其余表相同。而<code>room/1</code>谓词则用来检测列表的元素是否为一个房间，除了房间的名字是两个单词的情况。</p>
+<p>下面这条规则的意思是：如果我们从列表的头开始寻找某个动词，而列表的头确是一个房间的名称，那么就认为找到了动词<code>goto</code>，并且返回完成的列表，好让后面的操作找到 <code>goto</code>动词的宾语。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">verb</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span> goto<span class="token punctuation">,</span> <span class="token punctuation">[</span>X<span class="token operator">|</span>Y<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span>X<span class="token operator">|</span>Y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">room</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span> goto<span class="token punctuation">,</span> <span class="token punctuation">[</span>dining<span class="token punctuation">,</span>room<span class="token operator">|</span>Y<span class="token punctuation">]</span><span class="token operator">-</span><span class="token punctuation">[</span>dining<span class="token punctuation">,</span>room<span class="token operator">|</span>Y<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>下面是关于物品的谓词：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">verb</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span> take<span class="token punctuation">,</span> <span class="token punctuation">[</span>take<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span> drop<span class="token punctuation">,</span> <span class="token punctuation">[</span>drop<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span> drop<span class="token punctuation">,</span> <span class="token punctuation">[</span>put<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span> turn_on<span class="token punctuation">,</span> <span class="token punctuation">[</span>turn<span class="token punctuation">,</span>on<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>有时候，物品前面可能有限定词，下面的两个子句考虑的有无限定词的两种情况：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">object</span><span class="token punctuation">(</span>Type<span class="token punctuation">,</span> N<span class="token punctuation">,</span> S1<span class="token operator">-</span>S3<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">det</span><span class="token punctuation">(</span>S1<span class="token operator">-</span>S2<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">noun</span><span class="token punctuation">(</span>Type<span class="token punctuation">,</span> N<span class="token punctuation">,</span> S2<span class="token operator">-</span>S3<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">object</span><span class="token punctuation">(</span>Type<span class="token punctuation">,</span> N<span class="token punctuation">,</span> S1<span class="token operator">-</span>S2<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">noun</span><span class="token punctuation">(</span>Type<span class="token punctuation">,</span> N<span class="token punctuation">,</span> S1<span class="token operator">-</span>S2<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>由于我们处理句子时只需要去掉限定词，所以就不需要额外的参数。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">det</span><span class="token punctuation">(</span><span class="token punctuation">[</span>the<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">det</span><span class="token punctuation">(</span><span class="token punctuation">[</span>a<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">det</span><span class="token punctuation">(</span><span class="token punctuation">[</span>an<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>定义名词的方法与动词相似，不过大部分可以使用原来的定义方法，而只有那些两个单词以上的名词才需要特殊的定义方法。位置名词使用<code>room</code>谓词定义。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">noun</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span> R<span class="token punctuation">,</span> <span class="token punctuation">[</span>R<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">room</span><span class="token punctuation">(</span>R<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">noun</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span> <span class="token string">'dining room'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>dining<span class="token punctuation">,</span>room<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p><code>location</code>谓词和<code>have</code>谓词所定义的东西是物品，这里我们又必须把两个单词的物品单独定义。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">noun</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span> T<span class="token punctuation">,</span> <span class="token punctuation">[</span>T<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">:-</span> 
+    <span class="token function">location</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span>_<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">noun</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span> T<span class="token punctuation">,</span> <span class="token punctuation">[</span>T<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">:-</span> 
+    <span class="token function">have</span><span class="token punctuation">(</span>T<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">noun</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span> <span class="token string">'washing machine'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>washing<span class="token punctuation">,</span>machine<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token operator">-</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>我们可以把对游戏当前状态的识别也做到语法中去。例如，我们想做一个可以开关灯的命令，这个命令是<code>turn_on(light)</code>，和<code>turn_on(flashlight)</code>相对应。如果玩家输入<code>turn on the light</code>，我们必须决定这个<code>light</code>是指房间里的灯还是<code>flashlight</code>。</p>
+<p>在这个游戏中，房间的灯是永远也打不开的，因为玩家所扮演的角色是一个<code>3</code>岁的小孩，不过她可以打开手电筒。下面的程序把<code>turn on the light</code>翻译成<code>turn on light</code>或者<code>turn on flashlight</code>，这样就能让后面的程序来进行判断了。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">noun</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span> flashlight<span class="token punctuation">,</span> <span class="token punctuation">[</span>light<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">:-</span> <span class="token function">have</span><span class="token punctuation">(</span>flashlight<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">noun</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span> light<span class="token punctuation">,</span> <span class="token punctuation">[</span>light<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>下面来全面的测试一下：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>go<span class="token punctuation">,</span>to<span class="token punctuation">,</span>the<span class="token punctuation">,</span>office<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>goto<span class="token punctuation">,</span> office<span class="token punctuation">]</span>
+<span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>go<span class="token punctuation">,</span>dining<span class="token punctuation">,</span>room<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>goto<span class="token punctuation">,</span> <span class="token string">'dining room'</span><span class="token punctuation">]</span>
+<span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>kitchen<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>goto<span class="token punctuation">,</span> kitchen<span class="token punctuation">]</span>
+<span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>take<span class="token punctuation">,</span>the<span class="token punctuation">,</span>apple<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>take<span class="token punctuation">,</span> apple<span class="token punctuation">]</span>
+<span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>turn<span class="token punctuation">,</span>on<span class="token punctuation">,</span>the<span class="token punctuation">,</span>light<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>turn_on<span class="token punctuation">,</span> light<span class="token punctuation">]</span>
+<span class="token operator">?-</span> <span class="token function">asserta</span><span class="token punctuation">(</span><span class="token function">have</span><span class="token punctuation">(</span>flashlight<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>turn<span class="token punctuation">,</span>on<span class="token punctuation">,</span>the<span class="token punctuation">,</span>light<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>turn_on<span class="token punctuation">,</span> flashlight<span class="token punctuation">]</span>
+</code></pre>
+<p>下面的几个句子不合法：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>go<span class="token punctuation">,</span>to<span class="token punctuation">,</span>the<span class="token punctuation">,</span>desk<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+no
+<span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>go<span class="token punctuation">,</span>attic<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+no
+<span class="token operator">?-</span> <span class="token function">command</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span><span class="token punctuation">[</span>drop<span class="token punctuation">,</span>an<span class="token punctuation">,</span>office<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+no
+</code></pre>
+<h1 id="definite-clasue-grammardcg"><a name="definite-clasue-grammardcg" class="anchor-navigation-ex-anchor" href="#definite-clasue-grammardcg"><i class="fa fa-link" aria-hidden="true"></i></a>4. Definite Clasue Grammar(DCG)</h1>
+<p>在<code>Prolog</code>中经常用到差异表，因此许多<code>Prolog</code>版本都对差异表有很好的支持，这样就可以隐去差异表的一些繁琐复杂之处。这种语法称为<code>Definite Clasue Grammer(DCG)</code>，它看上去和一般的<code>Prolog</code>子句非常相似，只不过把连接符<code>:-</code>替换成为<code>--&gt;</code>，这种表达形式由<code>Prolog</code>翻译成为普通的差异表形式。</p>
+<p>使用<code>DCG</code>，原来的句子谓词将写为：</p>
+<pre class="language-"><code class="lang-prolog">sentence <span class="token operator">--&gt;</span> nounphrase<span class="token punctuation">,</span> verbphrase<span class="token operator">.</span>
+</code></pre>
+<p>这个句子将被翻译成一般的使用差异表的Prolog子句，但是这里不再用<code>“-”</code>隔开，而是变成了两个参数，上面的这个句子与下面的Prolog子句等价。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">sentence</span><span class="token punctuation">(</span>S1<span class="token punctuation">,</span> S2<span class="token punctuation">)</span><span class="token operator">:-</span>
+    <span class="token function">nounphrase</span><span class="token punctuation">(</span>S1<span class="token punctuation">,</span> S3<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">verbphrase</span><span class="token punctuation">(</span>S3<span class="token punctuation">,</span> S2<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>因此，既是使用<code>DCG</code>形式定义<code>sentence谓词</code>，我们在调用时仍然需要两个参数。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">sentence</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token punctuation">,</span>chases<span class="token punctuation">,</span>cat<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>用DCG来表示词汇只需要使用一个列表：</p>
+<pre class="language-"><code class="lang-prolog">noun <span class="token operator">--&gt;</span> <span class="token punctuation">[</span>dog<span class="token punctuation">]</span><span class="token operator">.</span>
+verb <span class="token operator">--&gt;</span> <span class="token punctuation">[</span>chases<span class="token punctuation">]</span><span class="token operator">.</span>
+</code></pre>
+<p>这两个句子被翻译成：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">noun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>dog<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span><span class="token punctuation">[</span>chases<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token punctuation">,</span> X<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>就象在本游戏中所需要的那样，有时需要额外的参数来返回语法信息。这个参数只需要简单地加入就行了，而句中纯Prolog则使用<code>{}</code>括起来，这样<code>DCG分析器</code>就不会翻译它。游戏中的复杂的规则将写成如下的形式：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">command</span><span class="token punctuation">(</span><span class="token punctuation">[</span>V<span class="token punctuation">,</span>O<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">--&gt;</span> 
+    <span class="token function">verb</span><span class="token punctuation">(</span>Object_Type<span class="token punctuation">,</span> V<span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token function">object</span><span class="token punctuation">(</span>Object_Type<span class="token punctuation">,</span> O<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">verb</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span> goto<span class="token punctuation">)</span> <span class="token operator">--&gt;</span>
+    <span class="token punctuation">[</span>go<span class="token punctuation">,</span> to<span class="token punctuation">]</span><span class="token operator">.</span>
+<span class="token function">verb</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span> take<span class="token punctuation">)</span> <span class="token operator">--&gt;</span> 
+    <span class="token punctuation">[</span>take<span class="token punctuation">]</span><span class="token operator">.</span>
+
+<span class="token function">object</span><span class="token punctuation">(</span>Type<span class="token punctuation">,</span> N<span class="token punctuation">)</span> <span class="token operator">--&gt;</span> 
+    det<span class="token punctuation">,</span> <span class="token function">noun</span><span class="token punctuation">(</span>Type<span class="token punctuation">,</span> N<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">object</span><span class="token punctuation">(</span>Type<span class="token punctuation">,</span> N<span class="token punctuation">)</span> <span class="token operator">--&gt;</span> 
+    <span class="token function">noun</span><span class="token punctuation">(</span>Type<span class="token punctuation">,</span> N<span class="token punctuation">)</span><span class="token operator">.</span>
+
+det <span class="token operator">--&gt;</span> <span class="token punctuation">[</span>the<span class="token punctuation">]</span><span class="token operator">.</span>
+det <span class="token operator">--&gt;</span> <span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token operator">.</span>
+
+<span class="token function">noun</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span>X<span class="token punctuation">)</span> <span class="token operator">--&gt;</span> 
+    <span class="token punctuation">[</span>X<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token function">room</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">.</span>
+<span class="token function">noun</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span><span class="token string">'dining room'</span><span class="token punctuation">)</span> <span class="token operator">--&gt;</span> 
+    <span class="token punctuation">[</span>dining<span class="token punctuation">,</span> room<span class="token punctuation">]</span><span class="token operator">.</span>
+<span class="token function">noun</span><span class="token punctuation">(</span>thing<span class="token punctuation">,</span>X<span class="token punctuation">)</span> <span class="token operator">--&gt;</span> 
+    <span class="token punctuation">[</span>X<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token function">location</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span>_<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">.</span>
+</code></pre>
+<p>由于DCG自动的取走第一个参数，如果只输房间名称，前面的子句就不能起作用，所以我们还要加上一条：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">command</span><span class="token punctuation">(</span><span class="token punctuation">[</span>goto<span class="token punctuation">,</span> Place<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">--&gt;</span> <span class="token function">noun</span><span class="token punctuation">(</span>place<span class="token punctuation">,</span> Place<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<h1 id="读入句子"><a name="读入句子" class="anchor-navigation-ex-anchor" href="#读入句子"><i class="fa fa-link" aria-hidden="true"></i></a>5. 读入句子</h1>
+<p>让我们来最后完工吧。最后的工作是把用户的输入变成一张表。下面的程序很够完成这个任务：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token comment">% read a line of words from the user</span>
+<span class="token function">read_list</span><span class="token punctuation">(</span>L<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'&gt; '</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">read_line</span><span class="token punctuation">(</span>CL<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">wordlist</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span>CL<span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">read_line</span><span class="token punctuation">(</span>L<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get0</span><span class="token punctuation">(</span>C<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">buildlist</span><span class="token punctuation">(</span>C<span class="token punctuation">,</span>L<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">buildlist</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span> <span class="token operator">!.</span>
+<span class="token function">buildlist</span><span class="token punctuation">(</span>C<span class="token punctuation">,</span><span class="token punctuation">[</span>C<span class="token operator">|</span>X<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">get0</span><span class="token punctuation">(</span>C2<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">buildlist</span><span class="token punctuation">(</span>C2<span class="token punctuation">,</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">wordlist</span><span class="token punctuation">(</span><span class="token punctuation">[</span>X<span class="token operator">|</span>Y<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">--&gt;</span> <span class="token function">word</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span> whitespace<span class="token punctuation">,</span> <span class="token function">wordlist</span><span class="token punctuation">(</span>Y<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">wordlist</span><span class="token punctuation">(</span><span class="token punctuation">[</span>X<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">--&gt;</span> whitespace<span class="token punctuation">,</span> <span class="token function">wordlist</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">wordlist</span><span class="token punctuation">(</span><span class="token punctuation">[</span>X<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">--&gt;</span> <span class="token function">word</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">wordlist</span><span class="token punctuation">(</span><span class="token punctuation">[</span>X<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">--&gt;</span> <span class="token function">word</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span> whitespace<span class="token operator">.</span>
+
+<span class="token function">word</span><span class="token punctuation">(</span>W<span class="token punctuation">)</span> <span class="token operator">--&gt;</span> <span class="token function">charlist</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token function">name</span><span class="token punctuation">(</span>W<span class="token punctuation">,</span>X<span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">.</span>
+
+<span class="token function">charlist</span><span class="token punctuation">(</span><span class="token punctuation">[</span>X<span class="token operator">|</span>Y<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">--&gt;</span> <span class="token function">chr</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">charlist</span><span class="token punctuation">(</span>Y<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">charlist</span><span class="token punctuation">(</span><span class="token punctuation">[</span>X<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">--&gt;</span> <span class="token function">chr</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">chr</span><span class="token punctuation">(</span>X<span class="token punctuation">)</span> <span class="token operator">--&gt;</span> <span class="token punctuation">[</span>X<span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">{</span>X<span class="token operator">&gt;=</span><span class="token number">48</span><span class="token punctuation">}</span><span class="token operator">.</span>
+
+whitespace <span class="token operator">--&gt;</span> whsp<span class="token punctuation">,</span> whitespace<span class="token operator">.</span>
+whitespace <span class="token operator">--&gt;</span> whsp<span class="token operator">.</span>
+whsp <span class="token operator">--&gt;</span> <span class="token punctuation">[</span>X<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>X48<span class="token punctuation">}</span><span class="token operator">.</span>
+</code></pre>
+<p>它包括两个部分：首先使用内部谓词<code>get0/1</code>读入单个的<code>ASCII</code>字符，<code>ASCII 13</code>代表句子结束。第二部分使用<code>DCG</code>分析字符列表，从而把它转化为单词列表，这里使用了另一个内部谓词<code>name/2</code>，它把有<code>ASCII</code>字符组成的列表转化为原子。</p>
+<p>另外一部分是把形如<code>[goto,office]</code>的命令，转化为<code>goto(office)</code>，我们使用称为<code>univ</code>的内部谓词完成这个工作，使用<code>"=.."</code>表示。它的作用如下，把一个谓词转化为了一个列表，或者反过来。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">pred</span><span class="token punctuation">(</span>arg1<span class="token punctuation">,</span>arg2<span class="token punctuation">)</span> <span class="token operator">=..</span> X<span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>pred<span class="token punctuation">,</span> arg1<span class="token punctuation">,</span> arg2<span class="token punctuation">]</span> 
+<span class="token operator">?-</span> pred <span class="token operator">=..</span> X<span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token punctuation">[</span>pred<span class="token punctuation">]</span> 
+<span class="token operator">?-</span> X <span class="token operator">=..</span> <span class="token punctuation">[</span>pred<span class="token punctuation">,</span>arg1<span class="token punctuation">,</span>arg1<span class="token punctuation">]</span><span class="token operator">.</span>
+X <span class="token operator">=</span> <span class="token function">pred</span><span class="token punctuation">(</span>arg1<span class="token punctuation">,</span> arg2<span class="token punctuation">)</span> 
+<span class="token operator">?-</span> X <span class="token operator">=..</span> <span class="token punctuation">[</span>pred<span class="token punctuation">]</span><span class="token operator">.</span>
+X <span class="token operator">=</span> pred
+</code></pre>
+<p>最后我们使用前面的两个部分做成一个命令循环：</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">get_command</span><span class="token punctuation">(</span>C<span class="token punctuation">)</span> <span class="token operator">:-</span>
+<span class="token function">read_list</span><span class="token punctuation">(</span>L<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token function">command</span><span class="token punctuation">(</span>CL<span class="token punctuation">,</span>L<span class="token punctuation">)</span><span class="token punctuation">,</span>
+C <span class="token operator">=..</span> CL<span class="token punctuation">,</span> <span class="token operator">!.</span>
+<span class="token function">get_command</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span> <span class="token operator">:-</span>
+<span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'I don''t understand'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token punctuation">,</span> fail<span class="token operator">.</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright © zhzluke96 2020 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2026-06-30 15:36
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter15.html" class="navigation navigation-prev " aria-label="Previous page: 流程控制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter17.html" class="navigation navigation-next " aria-label="Next page: 编者留">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"自然语言","level":"3.16","depth":1,"next":{"title":"编者留","level":"3.17","depth":1,"path":"tut/chapter17.md","ref":"tut/chapter17.md","articles":[]},"previous":{"title":"流程控制","level":"3.15","depth":1,"path":"tut/chapter15.md","ref":"tut/chapter15.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","honkit-plugin-prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"honkit-plugin-prism":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":false,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"tut/chapter16.md","mtime":"2026-06-30T15:36:35.939Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-06-30T15:36:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

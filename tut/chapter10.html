@@ -1,0 +1,1113 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>数据结构 · Prolog 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.2.2">
+        <meta name="author" content="zhzluke96">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/honkit-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter11.html" />
+    
+    
+    <link rel="prev" href="chapter9.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Quick Start</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="chapter0.0.html">
+            
+                <a href="chapter0.0.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    What is Prolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter0.1.html">
+            
+                <a href="chapter0.1.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter0.2.html">
+            
+                <a href="chapter0.2.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    动手试试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">从零开始</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter2.html">
+            
+                <a href="chapter2.html">
+            
+                    
+                        <b>3.2.</b>
+                    
+                    事实
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="chapter3.html">
+            
+                <a href="chapter3.html">
+            
+                    
+                        <b>3.3.</b>
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter4.html">
+            
+                <a href="chapter4.html">
+            
+                    
+                        <b>3.4.</b>
+                    
+                    混合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter5.html">
+            
+                <a href="chapter5.html">
+            
+                    
+                        <b>3.5.</b>
+                    
+                    规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="chapter6.html">
+            
+                <a href="chapter6.html">
+            
+                    
+                        <b>3.6.</b>
+                    
+                    小结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="chapter7.html">
+            
+                <a href="chapter7.html">
+            
+                    
+                        <b>3.7.</b>
+                    
+                    算术
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="chapter8.html">
+            
+                <a href="chapter8.html">
+            
+                    
+                        <b>3.8.</b>
+                    
+                    数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="chapter9.html">
+            
+                <a href="chapter9.html">
+            
+                    
+                        <b>3.9.</b>
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.10" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                        <b>3.10.</b>
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="chapter11.html">
+            
+                <a href="chapter11.html">
+            
+                    
+                        <b>3.11.</b>
+                    
+                    联合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="chapter12.html">
+            
+                <a href="chapter12.html">
+            
+                    
+                        <b>3.12.</b>
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="chapter13.html">
+            
+                <a href="chapter13.html">
+            
+                    
+                        <b>3.13.</b>
+                    
+                    操作符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="chapter14.html">
+            
+                <a href="chapter14.html">
+            
+                    
+                        <b>3.14.</b>
+                    
+                    截断！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="chapter15.html">
+            
+                <a href="chapter15.html">
+            
+                    
+                        <b>3.15.</b>
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="chapter16.html">
+            
+                <a href="chapter16.html">
+            
+                    
+                        <b>3.16.</b>
+                    
+                    自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="chapter17.html">
+            
+                <a href="chapter17.html">
+            
+                    
+                        <b>3.17.</b>
+                    
+                    编者留
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hello Prolog</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../hello-pl/c0.1.html">
+            
+                <a href="../hello-pl/c0.1.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    VScode环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../hello-pl/c0.2.html">
+            
+                <a href="../hello-pl/c0.2.html">
+            
+                    
+                        <b>4.2.</b>
+                    
+                    语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../hello-pl/c1.html">
+            
+                <a href="../hello-pl/c1.html">
+            
+                    
+                        <b>4.3.</b>
+                    
+                    Hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../hello-pl/c2.html">
+            
+                <a href="../hello-pl/c2.html">
+            
+                    
+                        <b>4.4.</b>
+                    
+                    递归和流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../hello-pl/c3.html">
+            
+                <a href="../hello-pl/c3.html">
+            
+                    
+                        <b>4.5.</b>
+                    
+                    高阶谓语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../hello-pl/c3b_lists_recursion.html">
+            
+                <a href="../hello-pl/c3b_lists_recursion.html">
+            
+                    
+                        <b>4.6.</b>
+                    
+                    列表与递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../hello-pl/c3c_backtracking_control.html">
+            
+                <a href="../hello-pl/c3c_backtracking_control.html">
+            
+                    
+                        <b>4.7.</b>
+                    
+                    回溯与控制流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../hello-pl/c4.html">
+            
+                <a href="../hello-pl/c4.html">
+            
+                    
+                        <b>4.8.</b>
+                    
+                    DCG
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../hello-pl/c5.html">
+            
+                <a href="../hello-pl/c5.html">
+            
+                    
+                        <b>4.9.</b>
+                    
+                    元编译器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../hello-pl/c6.html">
+            
+                <a href="../hello-pl/c6.html">
+            
+                    
+                        <b>4.10.</b>
+                    
+                    优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../hello-pl/c7.html">
+            
+                <a href="../hello-pl/c7.html">
+            
+                    
+                        <b>4.11.</b>
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../hello-pl/c8.html">
+            
+                <a href="../hello-pl/c8.html">
+            
+                    
+                        <b>4.12.</b>
+                    
+                    web server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../hello-pl/c9a.html">
+            
+                <a href="../hello-pl/c9a.html">
+            
+                    
+                        <b>4.13.</b>
+                    
+                    规则引擎与约束求解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../hello-pl/c9b.html">
+            
+                <a href="../hello-pl/c9b.html">
+            
+                    
+                        <b>4.14.</b>
+                    
+                    搜索与自然语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../hello-pl/c10.html">
+            
+                <a href="../hello-pl/c10.html">
+            
+                    
+                        <b>4.15.</b>
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../hello-pl/c11.html">
+            
+                <a href="../hello-pl/c11.html">
+            
+                    
+                        <b>4.16.</b>
+                    
+                    GUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">庖丁解牛</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../codeseen/">
+            
+                <a href="../codeseen/">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    庖丁解牛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../codeseen/cs1.html">
+            
+                <a href="../codeseen/cs1.html">
+            
+                    
+                        <b>5.2.</b>
+                    
+                    bencode
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../codeseen/cs2.html">
+            
+                <a href="../codeseen/cs2.html">
+            
+                    
+                        <b>5.3.</b>
+                    
+                    lisprolog
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../main/logic.html">
+            
+                <a href="../main/logic.html">
+            
+                    
+                        <b>6.1.</b>
+                    
+                    数理逻辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../main/turing.html">
+            
+                <a href="../main/turing.html">
+            
+                    
+                        <b>6.2.</b>
+                    
+                    图灵完备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../main/puzzles.html">
+            
+                <a href="../main/puzzles.html">
+            
+                    
+                        <b>6.3.</b>
+                    
+                    pl和逻辑难题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../main/AFTERME.html">
+            
+                <a href="../main/AFTERME.html">
+            
+                    
+                        <b>6.4.</b>
+                    
+                    后语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >数据结构</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon fa fa-hand-o-right"></span><a href="#数据结构"><b>1. </b>数据结构</a></li></ul></div><a href="#数据结构" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="数据结构"><a name="数据结构" class="anchor-navigation-ex-anchor" href="#数据结构"><i class="fa fa-link" aria-hidden="true"></i></a>1. 数据结构</h1>
+<p>到目前为止，所介绍的事实、查询以及规则都使用的是最简单的数据结构。谓词的参数都是原子或者整数，这些都是Prolog的基本组成元素。例如我们所使用过的原子有:</p>
+<pre class="language-"><code class="lang-prolog">office<span class="token punctuation">,</span> apple flashlight<span class="token punctuation">,</span> nani
+</code></pre>
+<p>通过把这些最简单的数据组合起来，可以生成复杂的数据类型，我们称之为<code>结构</code>。结构由<code>结构名</code>和<code>一定数量的参数组成</code>。这与以前所学过的目标和事实是一样的。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">functor</span><span class="token punctuation">(</span>arg1<span class="token punctuation">,</span>arg2<span class="token punctuation">,</span><span class="token operator">...</span><span class="token punctuation">)</span>
+</code></pre>
+<p>结构的参数可以是简单的数据类型或者是另一个结构。现在在游戏中的物品都是由原子表示的，例如，desk、apple。但是使用结构可以更好的表达这些东西。下面的结构描述了物品的颜色、大小以及重量。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">object</span><span class="token punctuation">(</span>candle<span class="token punctuation">,</span> red<span class="token punctuation">,</span> small<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">object</span><span class="token punctuation">(</span>apple<span class="token punctuation">,</span> red<span class="token punctuation">,</span> small<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">object</span><span class="token punctuation">(</span>apple<span class="token punctuation">,</span> green<span class="token punctuation">,</span> small<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">object</span><span class="token punctuation">(</span>table<span class="token punctuation">,</span> blue<span class="token punctuation">,</span> big<span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>这些结构可以直接取代原来的<code>location/2</code>中的参数。但是这里我们再定义一个谓词<code>location_s/2</code>。注意，虽然定义的结构较为复杂，但是它仍然是<code>location_s/2</code>的一个参数。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">location_s</span><span class="token punctuation">(</span><span class="token function">object</span><span class="token punctuation">(</span>candle<span class="token punctuation">,</span> red<span class="token punctuation">,</span> small<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> kitchen<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">location_s</span><span class="token punctuation">(</span><span class="token function">object</span><span class="token punctuation">(</span>apple<span class="token punctuation">,</span> red<span class="token punctuation">,</span> small<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> kitchen<span class="token punctuation">)</span><span class="token operator">.</span> 
+<span class="token function">location_s</span><span class="token punctuation">(</span><span class="token function">object</span><span class="token punctuation">(</span>apple<span class="token punctuation">,</span> green<span class="token punctuation">,</span> small<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> kitchen<span class="token punctuation">)</span><span class="token operator">.</span>
+<span class="token function">location_s</span><span class="token punctuation">(</span><span class="token function">object</span><span class="token punctuation">(</span>table<span class="token punctuation">,</span> blue<span class="token punctuation">,</span> big<span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span> kitchen<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>Prolog的变量是没有数据类型之分的，所以它可以很容易的绑定为结构，如同它绑定为原子一样。事实上，原子就是没有参数的最简单的结构。因此可以有如下的询问。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">location_s</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> kitchen<span class="token punctuation">)</span><span class="token operator">.</span> 
+X <span class="token operator">=</span> <span class="token function">object</span><span class="token punctuation">(</span>candle<span class="token punctuation">,</span> red<span class="token punctuation">,</span> small<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">;</span>
+X <span class="token operator">=</span> <span class="token function">object</span><span class="token punctuation">(</span>apple<span class="token punctuation">,</span> red<span class="token punctuation">,</span> small<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">;</span>
+X <span class="token operator">=</span> <span class="token function">object</span><span class="token punctuation">(</span>apple<span class="token punctuation">,</span> green<span class="token punctuation">,</span> small<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">;</span>
+X <span class="token operator">=</span> <span class="token function">object</span><span class="token punctuation">(</span>table<span class="token punctuation">,</span> blue<span class="token punctuation">,</span> big<span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span> <span class="token operator">;</span>
+no
+</code></pre>
+<p>我们还可以让变量绑定为结构中的某些参数，下面的询问可以找出厨房中所有红色的东西。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">location_s</span><span class="token punctuation">(</span><span class="token function">object</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> red<span class="token punctuation">,</span> S<span class="token punctuation">,</span> W<span class="token punctuation">)</span><span class="token punctuation">,</span> kitchen<span class="token punctuation">)</span><span class="token operator">.</span>
+X <span class="token operator">=</span> candle 
+S <span class="token operator">=</span> small
+W <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">;</span>
+X <span class="token operator">=</span> apple
+S <span class="token operator">=</span> small 
+W <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">;</span>
+no
+</code></pre>
+<p>如果不关心大小和重量，可以使用下面的询问，其中变量<code>‘_’</code>是匿名变量。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">location_s</span><span class="token punctuation">(</span><span class="token function">object</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> red<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">)</span><span class="token punctuation">,</span> kitchen<span class="token punctuation">)</span><span class="token operator">.</span> 
+X <span class="token operator">=</span> candle <span class="token operator">;</span>
+X <span class="token operator">=</span> apple <span class="token operator">;</span>
+no
+</code></pre>
+<p>使用这些结构，可以使得游戏更加真实。例如，我们可以修改以前所编写的<code>can_take/1</code>谓词，使得只有较轻的物品才能被玩家携带。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">can_take_s</span><span class="token punctuation">(</span>Thing<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">here</span><span class="token punctuation">(</span>Room<span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token function">location_s</span><span class="token punctuation">(</span>
+        <span class="token function">object</span><span class="token punctuation">(</span>Thing<span class="token punctuation">,</span> _<span class="token punctuation">,</span> small<span class="token punctuation">,</span>_<span class="token punctuation">)</span><span class="token punctuation">,</span> 
+        Room
+    <span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>同时，也可以把不能拿取某物品的原因说得更详细一些，现在有两个拿不了物品的原因。为了让Prolog在回溯时不把两个原因同时显示出来，我们为每个原因建立一条子句。这里要用到内部谓词<code>not/1</code>，它的参数是一个目标，如果此目标失败，则它成功；目标成功则它失败。例如，</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">not</span><span class="token punctuation">(</span> <span class="token function">room</span><span class="token punctuation">(</span>office<span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token operator">.</span> 
+no
+<span class="token operator">?-</span> <span class="token function">not</span><span class="token punctuation">(</span> <span class="token function">location</span><span class="token punctuation">(</span>cabbage<span class="token punctuation">,</span> <span class="token string">'living room'</span><span class="token punctuation">)</span> <span class="token punctuation">)</span> 
+yes
+</code></pre>
+<ul>
+<li>注意，在Prolog中的<code>not</code>的意思是：不能通过当前数据库中的事实和规则推出查询的目标。下面是使用<code>not</code>重新编写的<code>can_take_s/1</code>。</li>
+</ul>
+<pre class="language-"><code class="lang-prolog"><span class="token function">can_take_s</span><span class="token punctuation">(</span>Thing<span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">here</span><span class="token punctuation">(</span>Room<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">location_s</span><span class="token punctuation">(</span>
+        <span class="token function">object</span><span class="token punctuation">(</span>Thing<span class="token punctuation">,</span> _<span class="token punctuation">,</span> small<span class="token punctuation">,</span> _<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        Room
+    <span class="token punctuation">)</span><span class="token operator">.</span>
+
+<span class="token function">can_take_s</span><span class="token punctuation">(</span>Thing<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">here</span><span class="token punctuation">(</span>Room<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">location_s</span><span class="token punctuation">(</span>
+        <span class="token function">object</span><span class="token punctuation">(</span>Thing<span class="token punctuation">,</span> _<span class="token punctuation">,</span> big<span class="token punctuation">,</span> _<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        Room
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'The '</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span>Thing<span class="token punctuation">)</span><span class="token punctuation">,</span> 
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">' is too big to carry.'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token punctuation">,</span>
+    fail<span class="token operator">.</span>
+
+<span class="token function">can_take_s</span><span class="token punctuation">(</span>Thing<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">here</span><span class="token punctuation">(</span>Room<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token operator">not</span> <span class="token punctuation">(</span>
+        <span class="token function">location_s</span><span class="token punctuation">(</span>
+            <span class="token function">object</span><span class="token punctuation">(</span>Thing<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">,</span> _<span class="token punctuation">)</span><span class="token punctuation">,</span>
+            Room
+        <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'There is no '</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span>Thing<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">' here.'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token punctuation">,</span>
+    fail<span class="token operator">.</span>
+</code></pre>
+<p>下面来试试功能，假设玩家在厨房里。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">can_take_s</span><span class="token punctuation">(</span>candle<span class="token punctuation">)</span><span class="token operator">.</span>
+yes 
+<span class="token operator">?-</span> <span class="token function">can_take_s</span><span class="token punctuation">(</span>table<span class="token punctuation">)</span><span class="token operator">.</span>
+The table <span class="token operator">is</span> too big to carry<span class="token operator">.</span> 
+no
+<span class="token operator">?-</span> <span class="token function">can_take_s</span><span class="token punctuation">(</span>desk<span class="token punctuation">)</span><span class="token operator">.</span> 
+There <span class="token operator">is</span> no desk here<span class="token operator">.</span>
+no
+</code></pre>
+<p>原来的<code>list_things/1</code>谓词也可以加上一些功能，下面的<code>list_things_s/1</code>不但可以列出房间中的物品，还可以给出它们的描述。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">list_things_s</span><span class="token punctuation">(</span>Place<span class="token punctuation">)</span> <span class="token operator">:-</span> 
+    <span class="token function">location_s</span><span class="token punctuation">(</span>
+        <span class="token function">object</span><span class="token punctuation">(</span>Thing<span class="token punctuation">,</span> Color<span class="token punctuation">,</span> Size<span class="token punctuation">,</span> Weight<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        Place<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'A '</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">write</span><span class="token punctuation">(</span>Size<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">tab</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span>Color<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">tab</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span>Thing<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">', weighing '</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">write</span><span class="token punctuation">(</span>Weight<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">' pounds'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nl<span class="token punctuation">,</span>
+    fail<span class="token operator">.</span>
+
+<span class="token function">list_things_s</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>它的回答令人满意多了。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">list_things_s</span><span class="token punctuation">(</span>kitchen<span class="token punctuation">)</span><span class="token operator">.</span> 
+A small red candle<span class="token punctuation">,</span> weighing <span class="token number">1</span> pounds 
+A small red apple<span class="token punctuation">,</span> weighing <span class="token number">1</span> pounds
+A small green apple<span class="token punctuation">,</span> weighing <span class="token number">1</span> pounds 
+A big blue table<span class="token punctuation">,</span> weighing <span class="token number">50</span> pounds 
+yes
+</code></pre>
+<p>如果你觉得使用<code>1 pounds</code>不太准确的话，我们可以再使用另一个谓词来解决此问题。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">write_weight</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">:-</span>
+    <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">'1 pound'</span><span class="token punctuation">)</span><span class="token operator">.</span> 
+<span class="token function">write_weight</span><span class="token punctuation">(</span>W<span class="token punctuation">)</span> <span class="token operator">:-</span>
+    W <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span>W<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">write</span><span class="token punctuation">(</span><span class="token string">' pounds'</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>下面试试看</p>
+<pre class="language-"><code class="lang-prolog"><span class="token operator">?-</span> <span class="token function">write_weight</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token operator">.</span> 
+<span class="token number">4</span> pounds 
+yes 
+<span class="token operator">?-</span> <span class="token function">write_weight</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">.</span> 
+<span class="token number">1</span> pound 
+yes
+</code></pre>
+<p>第一个子句中不需要使用<code>W=1</code>这样的判断，我们可以直接把1写到谓词的参数中，因为只有为<code>1</code>时是使用单数，其他情况下都使用复数。第二个子句中需要加入<code>W&gt;1</code>，要不然当重量为<code>1</code>时两条子句就同时满足。</p>
+<p>结构可以任意的嵌套，下面使用<code>dimension</code>结构来描述物体的长、宽、高。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">object</span><span class="token punctuation">(</span>desk<span class="token punctuation">,</span> brown<span class="token punctuation">,</span> <span class="token function">dimension</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">90</span><span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>当然，也可以这样来表达物品的特性</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">object</span><span class="token punctuation">(</span>desk<span class="token punctuation">,</span> <span class="token function">color</span><span class="token punctuation">(</span>brown<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">size</span><span class="token punctuation">(</span>large<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">weight</span><span class="token punctuation">(</span><span class="token number">90</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<p>下面是针对它的一条查询。</p>
+<pre class="language-"><code class="lang-prolog"><span class="token function">location_s</span><span class="token punctuation">(</span><span class="token function">object</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> _<span class="token punctuation">,</span> <span class="token function">size</span><span class="token punctuation">(</span>large<span class="token punctuation">)</span><span class="token punctuation">,</span> _<span class="token punctuation">)</span><span class="token punctuation">,</span> office<span class="token punctuation">)</span><span class="token operator">.</span>
+</code></pre>
+<p>要注意变量的位置哟，不要搞混了。 </p>
+<footer class="page-footer"><span class="copyright">Copyright © zhzluke96 2020 all right reserved，powered by Gitbook</span><span class="footer-modification">该文件修订时间：
+2026-06-30 15:36
+</span></footer></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter9.html" class="navigation navigation-prev " aria-label="Previous page: 递归">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter11.html" class="navigation navigation-next " aria-label="Next page: 联合">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数据结构","level":"3.10","depth":1,"next":{"title":"联合","level":"3.11","depth":1,"path":"tut/chapter11.md","ref":"tut/chapter11.md","articles":[]},"previous":{"title":"递归","level":"3.9","depth":1,"path":"tut/chapter9.md","ref":"tut/chapter9.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-highlight","honkit-plugin-prism","github","splitter","anchors","copy-code-button","anchor-navigation-ex","disqus","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy zhzluke96 2020","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm"},"disqus":{"useIdentifier":false,"shortName":"prolog-tut-cn"},"github":{"url":"https://github.com/zhzLuke96/prolog-tut-cn"},"honkit-plugin-prism":{},"splitter":{},"search-pro":{"cutWordLib":"nodejieba"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"showLevel":true,"associatedWithSummary":false,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"zhzluke96","style":{"website":"styles/website.css"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Prolog 教程","language":"zh-hans","gitbook":"*"},"file":{"path":"tut/chapter10.md","mtime":"2026-06-30T15:36:35.939Z","type":"markdown"},"gitbook":{"version":"6.2.2","time":"2026-06-30T15:36:40.678Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
