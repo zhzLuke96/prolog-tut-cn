@@ -285,7 +285,7 @@ factorial_1(N,F):-
     N > 1,
     NN is N - 1,
     factorial_1(NN,FF),
-    F is N FF.
+    F is N * FF.
 ```
 ```prolog
 ?- factorial_1(5,X).
@@ -298,7 +298,7 @@ X = 120
 factorial_2(1,F,F).
 factorial_2(N,T,F):-
     N > 1,
-    TT is N T,
+    TT is N * T,
     NN is N - 1,
     factorial_2(NN,TT,F).
 ```

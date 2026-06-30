@@ -11,13 +11,10 @@
 %     L=[33,18,2,77,66,18,9,25],
 %     mysort(L).
 
-mysort(L) :- 
-    last(P,_),
-    (
-        quicksort(L,P,_),
-        write(P),
-        nl
-    ).
+mysort(L) :-
+    phrase(quicksort(L), S),
+    write(S),
+    nl.
 
 partition([], _, [], []).
 /* 此行表空集亦視為分割（分割成空集與空集）*/

@@ -9,5 +9,5 @@ friend(john,X):-
         likes(X,music).
 
 /** <examples> Your example queries go here, e.g.
-?- X #> friend(X,Y).
+?- friend(X,Y).
 */
