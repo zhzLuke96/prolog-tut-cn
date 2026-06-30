@@ -74,6 +74,7 @@ right(tape(Ls, [R|Rs], B), tape([R|Ls], Rs, B)).
 边界情况——如果需要延伸到空白区域，`Right = []` 时用 `[B]` 代替：
 
 ```prolog
+right(tape(Ls, [], B), tape(Ls, [B], B)).
 right(tape(Ls, [], B), tape([B|Ls], [], B)).
 ```
 

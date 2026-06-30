@@ -107,7 +107,7 @@ M = 3 .  % 错！
 :- use_module(library(reif)).
 
 max_if(A, B, M) :-
-    if_(A >= B, M = A, M = B).
+    (A >= B -> M = A ; M = B).
 
 ?- max_if(3, 5, M).
 M = 5 .

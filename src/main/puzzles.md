@@ -1,4 +1,5 @@
 # 脑筋急转弯
+:- use_module(library(clpfd)).
 
 > 前置：[列表与递归](../hello-pl/c3b_lists_recursion.md), [规则引擎与约束求解](../hello-pl/c9a.md) | 难度：★★★ | 后续：—
 

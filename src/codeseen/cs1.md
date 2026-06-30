@@ -75,7 +75,7 @@ value(X) --> dict(X).
 ```prolog
 integer(X) -->
     "i",
-    number_codes(X),
+    { number_codes(X) },
     "e".
 ```
 
@@ -87,7 +87,7 @@ integer(X) -->
 byte_string(S) -->
     length_codes(L),
     ":",
-    length_codes(S, L).
+    length_codes(S).
 ```
 
 先解析长度（`length_codes//1`），然后精确读取 L 个字节。
@@ -154,14 +154,17 @@ bencode(X, S) :-
 
 ```prolog
 encode(i(I)) -->             % 整数
-    "i", number_codes(I), "e".
+    "i", { number_codes(I) }, "e".
 encode(s(S)) -->             % 字节串
-    length_codes(L), ":", S,
+    length_codes(L), ":", codes(S),
     { length(S, L) }.
 encode(l(L)) -->             % 列表
     "l", encode_items(L), "e".
 encode(d(D)) -->             % 字典
     "d", encode_dict(D), "e".
+
+codes([]) --> [].
+codes([C|Cs]) --> [C], codes(Cs).
 ```
 
 编码和解码的类型标记不同：编码时 `s(S)` 表示字节串，`i(I)` 表示整数，`l(L)` 列表，`d(D)` 字典。解码时返回 Prolog 原生类型（整数、原子、列表、键值对列表）。
