@@ -14,18 +14,21 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Use NodeJS
-        uses: actions/setup-node@v1
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 10
 
       - name: Install and Build 🔧
         run: |
           npm install
-          npm run gitbook-init
-          npm run build
+          npm install -g gitbook-cli
+          gitbook install src
+          gitbook build src docs
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: docs
